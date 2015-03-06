@@ -15,3 +15,8 @@ def saiba_mais(request):
 def traducao_juramentada(request):
     dict_template = {}
     return render_to_response("traducao_juramentada.html", dict_template)
+
+
+def como_solicitar(request):
+    dict_template = {}
+    return render_to_response("como_solicitar.html", dict_template)

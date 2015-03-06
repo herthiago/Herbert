@@ -21,7 +21,8 @@ urlpatterns = patterns('',
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
     url(r'^saiba-mais/', 'base_site.views.saiba_mais', name='saiba_mais'),
-    url(r'o-que/', 'base_site.views.traducao_juramentada', name='traducao_juramentada')
+    url(r'o-que/', 'base_site.views.traducao_juramentada', name='traducao_juramentada'),
+    url(r'como-solicitar/', 'base_site.views.como_solicitar', name='como_solicitar'),
 )
 
 # Uncomment the next line to serve media files in dev.
