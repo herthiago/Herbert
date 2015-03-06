@@ -8,18 +8,19 @@ from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', TemplateView.as_view(template_name='index.html')),
+    # url(r'^$', TemplateView.as_view(template_name='index.html')),
 
     # Examples:
     # url(r'^$', 'juramentadarecife_site.views.home', name='home'),
     # url(r'^juramentadarecife_site/', include('juramentadarecife_site.foo.urls')),
+    url(r'^$', 'base_site.views.index', name='index'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^saiba-mais/', TemplateView.as_view(template_name='saiba_mais.html')),
+    url(r'^saiba-mais/', 'base_site.views.saiba_mais', name='saiba_mais'),
 )
 
 # Uncomment the next line to serve media files in dev.
