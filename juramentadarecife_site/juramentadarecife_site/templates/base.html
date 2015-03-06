@@ -107,12 +107,12 @@
                                 Tradução Juramentada
                             </a>
                             <ul class="dropdown-menu">
-                                <!-- Funny Boxes -->
+                                <!-- Informações -->
                                 <li><a href="{% url 'traducao_juramentada' %}">O que é</a></li>
                                 <li><a href="{% url 'como_solicitar' %}">Como Solicitar</a></li>
-                                <li><a href="page_funny_boxes.html">Quanto Custa</a></li>
-                                <li><a href="page_about_me.html">Dúvidas</a></li>
-                                <!-- End Funny Boxes -->
+                                <li><a href="{% url 'quanto_custa' %}">Quanto Custa</a></li>
+                                <li><a href="{% url 'faq' %}">Dúvidas</a></li>
+                                <!-- End Informações -->
 
                             </ul>
                         </li>
@@ -120,16 +120,9 @@
 
                         <!-- Contacts -->
                         <li>
-                            <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
+                            <a href="{% url 'contato' %}" class="dropdown-toggle" data-toggle="dropdown">
                                 Contato
                             </a>
-                            <ul class="dropdown-menu">
-                                <li><a href="page_contact1.html">Contacts Default</a></li>
-                                <li><a href="page_contact_advanced.php">Contacts Advanced</a></li>
-                                <li><a href="page_contact2.html">Contacts Option 1</a></li>
-                                <li><a href="page_contact3.html">Contacts Option 2</a></li>
-                                <li><a href="page_contact4.html">Contacts Option 3</a></li>
-                            </ul>
                         </li>                    
                         <!-- End Contacts -->
 
