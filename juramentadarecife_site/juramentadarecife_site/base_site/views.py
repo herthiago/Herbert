@@ -10,3 +10,8 @@ def index(request):
 def saiba_mais(request):
     dict_template = {}
     return render_to_response("saiba_mais.html", dict_template)
+
+
+def traducao_juramentada(request):
+    dict_template = {}
+    return render_to_response("traducao_juramentada.html", dict_template)
