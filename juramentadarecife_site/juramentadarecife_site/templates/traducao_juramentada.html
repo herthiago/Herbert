@@ -1,16 +1,15 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
+{% load i18n %}
 {% block content %}
 
 <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
     	<div class="container">
-            <h1 class="pull-left">About Us</h1>
+            <h1 class="pull-left">{% trans "O que é" %}</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="">Pages</a></li>
-                <li class="active">About Us</li>
+                <li><a href="{% url 'index' %}">{% trans "Início" %}</a></li>
+                <li class="active">{% trans "O que é" %}</li>
             </ul>
         </div><!--/container-->
     </div><!--/breadcrumbs-->
@@ -20,7 +19,8 @@
     <div class="container content">
     	<div class="row margin-bottom-40">
         	<div class="col-md-6 md-margin-bottom-40">
-                <p>Unify is an incredibly beautiful responsive Bootstrap Template for corporate and creative professionals. It works on all major web browsers, tablets and phone. Lorem sequat ipsum dolor lorem sit amet, consectetur adipiscing dolor elit. Unify is an incredibly beautiful responsive Bootstrap Template for It works on all major web.</p>
+                <h2>O QUE É tradução juramentada?</h2>
+                <p>{% trans "É uma tradução oficial, feita por um Tradutor Público, também chamado de Tradutor Juramentado. O Tradutor Público e Intérprete Comercial, nome correto do ofício, habilitado em um ou mais idiomas estrangeiros e português é nomeado e matriculado na Junta Comercial do seu estado de residência, após aprovação em concurso público." %}</p>
                 <ul class="list-unstyled">
                     <li><i class="fa fa-check color-green"></i> Donec id elit non mi porta gravida</li>
                     <li><i class="fa fa-check color-green"></i> Corporate and Creative</li>
@@ -43,59 +43,6 @@
             </div>
         </div><!--/row-->
 
-    	<!-- Meer Our Team -->
-    	<div class="headline"><h2>Meet Our Team</h2></div>
-        <div class="row team">
-            <div class="col-sm-3">
-                <div class="thumbnail-style">
-                    <img class="img-responsive" src="assets/img/team/1.jpg" alt="" />
-                    <h3><a>Jack Bour</a> <small>Chief Executive Officer</small></h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                    <ul class="list-unstyled list-inline team-socail">
-                    	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="thumbnail-style">
-                    <img class="img-responsive" src="assets/img/team/3.jpg" alt="" />
-                    <h3><a>Kate Metus</a> <small>Project Manager</small></h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                    <ul class="list-unstyled list-inline team-socail">
-                    	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="thumbnail-style">
-                    <img class="img-responsive" src="assets/img/team/2.jpg" alt="" />
-                    <h3><a>Porta Gravida</a> <small>VP of Operations</small></h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                    <ul class="list-unstyled list-inline team-socail">
-                    	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <div class="thumbnail-style">
-                    <img class="img-responsive" src="assets/img/team/4.jpg" alt="" />
-                    <h3><a>Donec Elit</a> <small>Director, R &amp; D Talent</small></h3>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, justo sit amet risus etiam porta sem...</p>
-                    <ul class="list-unstyled list-inline team-socail">
-                    	<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    	<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div><!--/team-->
-    	<!-- End Meer Our Team -->
 
         <!-- Our Clients -->
         <div id="clients-flexslider" class="flexslider home clients">
