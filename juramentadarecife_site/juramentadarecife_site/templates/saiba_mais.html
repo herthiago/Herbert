@@ -1,10 +1,10 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
+{% load i18n %}
 {% block extra_css %}
 
     <!-- CSS Page Style -->
-    <link rel="stylesheet" href="assets/css/pages/portfolio-v2.css">
+    <link rel="stylesheet" href="{% static 'css/pages/portfolio-v2.css' %}">
 
 {% endblock extra_css %}
 
@@ -13,11 +13,10 @@
 <!--=== Breadcrumbs ===-->
     <div class="breadcrumbs">
         <div class="container">
-            <h1 class="pull-left">Saiba Mais</h1>
+            <h1 class="pull-left">{% trans "Saiba Mais" %}</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="">Page</a></li>
-                <li class="active">Saiba Mais</li>
+                <li><a href="index.html">{% trans "Início" %}</a></li>
+                <li class="active">{% trans "Saiba Mais" %}</li>
             </ul>
         </div>
     </div><!--/breadcrumbs-->
@@ -35,7 +34,7 @@
                 <div class="overflow-h">
                     <div class="pull-left">
                         <h2>ANDREA VIVIANA BAYLÉ DE OLIVEIRA</h2>
-                        <span>Tradutora Pública e Intérprete Comercial de Espanhol</span>
+                        <span>{% trans "Tradutora Pública e Intérprete Comercial de Espanhol" %}</span>
                     </div>
                     <ul class="social-icons pull-right">
                         <li><a class="rounded-x social_facebook" data-original-title="Facebook" href="#"></a></li>
@@ -44,190 +43,76 @@
                         <li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
                     </ul>
                 </div>
-                <p>Nulla fermentum blandit dolor eu dictum. Nulla faucibus libero eget mi tempus, quis laoreet ante congue. Nullam sed tortor vitae magna auctor vestibulum. Fusce gravida, mauris at vulputate aliquet, arcu nunc scelerisque mi, pellentesque mollis lectus mauris in urna.</p>
-                <p>Suspendisse non magna sed justo tincidunt pellentesque. Proin sit amet ligula vel orci tempus viverra. Donec massa justo, sodales in leo pretium, adipiscing dictum mi. Nullam sed eleifend purus. Sed eget lacus eget urna venenatis hendrerit sed sit amet dui. Suspendisse lorem velit, tincidunt nec mattis ut, gravida adipiscing sapien.</p>
+                <p>{% trans "Todas as traduções juramentadas, entre os idiomas espanhol e português, são feitas pessoalmente por Andrea Baylé, tradutora pública juramentada, habilitada por concurso público promovido pela Junta Comercial do Estado de Pernambuco – JUCEPE em 2011, com registro nº 415." %}</p>
+                <p>{% trans "Argentina de nascimento e naturalizada brasileira mora no Brasil há 16 anos. Obteve o Certificado de Proficiência em Língua Portuguesa para Estrangeiros Celpe-Bras, nível superior, em 2008. Trabalhou como professora de Espanhol em renomadas escolas de idiomas por quatorze anos e atualmente ministra aulas no Instituto Cervantes de Recife, atuando também como palestrante e examinadora nas bancas do exame DELE (Diploma de Espanhol Língua Estrangeira) desde 2009." %}</p>
+                <p>{% trans "Tradutora com ampla experiência nas áreas:" %}</p>
                 <ul class="list-unstyled">
-                    <li><i class="color-green fa fa-check"></i> Nullam sed eleifend purus</li>
-                    <li><i class="color-green fa fa-check"></i> Proin sit amet ligula vel orci tempus viverra</li>
-                    <li><i class="color-green fa fa-check"></i> Nulla fermentum blandit dolor eu dictum</li>
-                    <li><i class="color-green fa fa-check"></i> Donec varius lacus et neque vestibulum hendrerit</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Jurídica" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Acadêmica" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Médica" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Farmacêutica" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Comercial" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Administrativa" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Contábil" %}</li>
+                    <li><i class="color-green fa fa-check"></i> {% trans "Outros" %}</li>
                 </ul>
+                <p>{% trans "É Licenciada em Letras Português e Pós-graduada em Tradução de Espanhol. Com o intuito de oferecer trabalhos de qualidade e agregar exatidão e precisão na tradução de terminologia, tem participado de diversos cursos de atualização em tradução técnica, como por exemplo a “Terceira Jornada de Tradução Jurídica” na Argentina e no Uruguai “Terminologia Jurídica – Semelhanças e Diferenças entre os Sistemas Brasileiro e Uruguaio”." %}</p>
             </div>
         </div>
 
-        <!-- About Me -->
-        <div class="row about-my-goals margin-bottom-20">
-            <div class="col-md-4 md-margin-bottom-20">
-                <h2 class="heading-md">My <span class="color-green">achievements</span></h2>
-                <p>Donec bibendum vitae lacus vitae eleifend. Curabitur vitae turpis eget mi vulputate volutpat. Curabitur molestie magna non tellus viverra ornare. Etiam enim sapien, tristique et faucibus et, scelerisque id risus.</p>
-                <p>Sed quis tortor metus. Morbi fringilla in mi ac accumsan. Vestibulum in arcu turpis. Donec congue interdum eleifend.</p>
-                <a class="btn-u" href="#">View more</a>
-            </div>
-            <div class="col-md-8">
-                <div class="row">
-                    <div class="col-sm-6 info-blocks">
-                        <i class="fa fa-bell-o icon-info-blocks"></i>
-                        <div class="info-blocks-in">
-                            <h3>New title comes here</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 info-blocks">
-                        <i class="fa fa-hdd-o icon-info-blocks"></i>
-                        <div class="info-blocks-in">
-                            <h3>New title comes here</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="row">
-                    <div class="col-sm-6 info-blocks">
-                        <i class="fa fa-lightbulb-o icon-info-blocks"></i>
-                        <div class="info-blocks-in">
-                            <h3>New title comes here</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 info-blocks">
-                        <i class="fa fa-thumbs-o-up icon-info-blocks"></i>
-                        <div class="info-blocks-in">
-                            <h3>New title comes here</h3>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum animi..</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End About Me -->
     </div>
     <!--=== End About Me Img ===-->
-
-    <!--=== Skills ===-->
-    <div class="about-skills margin-bottom-20">
-        <div class="container">
-            <div class="title-box-v2">
-                <h2>My <span class="color-green">Skills</span></h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <!-- Pie Charts v2 -->
-            <div class="row pie-progress-charts">
-                <div class="inner-pchart col-sm-3 col-xs-6">
-                    <div class="circle" id="circle-6"></div>
-                    <h3 class="circle-title">UI Design</h3>
-                </div>
-                <div class="inner-pchart col-sm-3 col-xs-6">
-                    <div class="circle" id="circle-7"></div>
-                    <h3 class="circle-title">Web Development</h3>
-                </div>
-                <div class="inner-pchart col-sm-3 col-xs-6">
-                    <div class="circle" id="circle-8"></div>
-                    <h3 class="circle-title">JavaScript</h3>
-                </div>
-                <div class="inner-pchart col-sm-3 col-xs-6">
-                    <div class="circle" id="circle-9"></div>
-                    <h3 class="circle-title">Web Animation</h3>
-                </div>
-            </div>
-            <!-- End Pie Charts v2 -->
-        </div>
-    </div>
-    <!--=== End Skills ===-->
 
     <!--=== Container Part ===-->
     <div class="container content margin-bottom-20">
         <div class="title-box-v2">
-            <h2>Latest <span class="color-green"> projects</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <h2><span class="color-green"> {% trans "Associada" %}</span></h2>
         </div>
         <div class="sorting-block">
-            <ul class="sorting-nav sorting-nav-v1 text-center">
-                <li data-filter="all" class="filter active">All</li>
-                <li data-filter="category_1" class="filter">UI Design</li>
-                <li data-filter="category_2" class="filter">Wordpress</li>
-                <li data-filter="category_3" class="filter">HTML5/CSS3</li>
-                <li data-filter="category_3 category_1" class="filter">Bootstrap 3</li>
-            </ul>
-
             <ul class="row sorting-grid" style="  transform:   ">
-                <li data-cat="1" class="col-md-3 col-sm-6 col-xs-12 mix category_1 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/11.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
+                <li data-cat="1" class="col-md-6 col-sm-6 col-xs-12 mix category_1 mix_all" style=" display: inline-block; opacity: 1;">
+                    <a href="http://www.sintra.org.br/site/index.php" target="_blank">
+                        <img alt="sintra" src="{% static 'img/sintra_logotipo.png' %}" class="img-responsive">
+                        <!--<span class="sorting-cover">
+                            <span>Sindicato Nacional dos Tradutores</span>
+                        </span>-->
                     </a>
                 </li>
-                <li data-cat="3" class="col-md-3 col-sm-6 col-xs-12 mix category_3 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/12.jpg" class="img-responsive">
-                        <span class="sorting-cover">
+                <li data-cat="3" class="col-md-6 col-sm-6 col-xs-12 mix category_3 mix_all" style=" display: inline-block; opacity: 1;">
+                    <a href="http://abrates.net.br/site/home" target="_blank">
+                        <img alt="" src="{% static 'img/abrates_logo.jpg' %}" class="img-responsive">
+                        <!--<span class="sorting-cover">
                             <span>Happy New Year</span>
                             <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
+                        </span>-->
                     </a>
                 </li>
-                <li data-cat="2" class="col-md-3 col-sm-6 col-xs-12 mix category_2 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/13.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
-                <li data-cat="3" class="col-md-3 col-sm-6 col-xs-12 mix category_3 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/3.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
-                <li data-cat="2" class="col-md-3 col-sm-6 col-xs-12 mix category_2 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/2.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
-                <li data-cat="1" class="col-md-3 col-sm-6 col-xs-12 mix category_1 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/6.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
-                <li data-cat="2" class="col-md-3 col-sm-6 col-xs-12 mix category_2 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/8.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
-                <li data-cat="1" class="col-md-3 col-sm-6 col-xs-12 mix category_1 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="#">
-                        <img alt="" src="assets/img/main/1.jpg" class="img-responsive">
-                        <span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>
-                    </a>
-                </li>
+
             </ul>
 
             <div class="clearfix"></div>
         </div>
     </div><!--/container-->
     <!--=== Container Part ===-->
+
+    <div class="container content margin-bottom-20">
+        <div class="title-box-v2">
+            <h2><span class="color-green"> {% trans "Credenciada" %}</span></h2>
+        </div>
+        <div class="sorting-block">
+            <ul class="row sorting-grid" style="  transform:   ">
+                <li data-cat="3" class="col-md-6 col-sm-6 col-xs-12 mix category_3 mix_all" style=" display: inline-block; opacity: 1;">
+                        <img alt="" src="{% static 'img/ministerioRE_logo.jpg' %}" class="img-responsive">
+                        <!--<span class="sorting-cover">
+                            <span>Happy New Year</span>
+                            <p>Anim pariatur cliche reprehenderit</p>
+                        </span>-->
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 
 {% endblock content %}
 

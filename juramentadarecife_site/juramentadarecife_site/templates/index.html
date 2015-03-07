@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-
+{% load i18n %}
 {% block content %}
 
     <!--=== Slider ===-->
@@ -36,11 +36,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 animated fadeInLeft">
-                    <span>Andrea Baylé - Traduções Juramentadas.</span>
-                    <p>Oferecemos serviços de tradução pública a pessoas físicas ou jurídicas, traduções oficiais válidas em todo o Brasil e no exterior, de documentos que tenham o idioma espanhol ou português como língua de partida ou de chegada. Feitas por uma Tradutora Juramentada, concursada, com ampla experiência e qualificação..</p>
+                    <span>{% trans "Andrea Baylé - Traduções Juramentadas" %}</span>
+                    <p>{% trans "Oferecemos serviços de tradução pública a pessoas físicas ou jurídicas, traduções oficiais válidas em todo o Brasil e no exterior, de documentos que tenham o idioma espanhol ou português como língua de partida ou de chegada. Feitas por uma Tradutora Juramentada, concursada, com ampla experiência e qualificação." %}</p>
                 </div>
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="#" class="btn-u btn-u-lg"><i class="fa fa-info"></i> Saiba Mais</a>
+                    <a href="{% url 'saiba_mais' %}" class="btn-u btn-u-lg"><i class="fa fa-info"></i>{% trans "Saiba Mais" %}</a>
                 </div>
             </div>
         </div>
@@ -210,7 +210,7 @@
 
         <!-- Our Clients -->
         <div id="clients-flexslider" class="flexslider home clients">
-            <div class="headline"><h2>Nossos Clientes</h2></div>
+            <div class="headline"><h2>{% trans "Nossos Clientes" %}</h2></div>
             <ul class="slides">
                 <li>
                     <a href="#">

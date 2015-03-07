@@ -28,6 +28,10 @@ urlpatterns = patterns('',
     url(r'^contato/', 'base_site.views.contato', name='contato'),
 )
 
+urlpatterns += patterns('',
+    url(r'^i18n/', include('django.conf.urls.i18n')),
+)
+
 # Uncomment the next line to serve media files in dev.
 # urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

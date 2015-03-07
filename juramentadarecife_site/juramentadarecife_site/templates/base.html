@@ -53,7 +53,7 @@
         <div class="topbar">
             <div class="container">
                 <!-- Topbar Navigation -->
-                <ul class="loginbar pull-right">
+                <!--<ul class="loginbar pull-right">
                     <li>
                         <i class="fa fa-globe"></i>
                         <a>Idioma</a>
@@ -61,12 +61,12 @@
                             <li class="active">
                                 <a href="#">Português <i class="fa fa-check"></i></a>
                             </li>
-                            <li><a href="#">Espanhol</a></li>
+                            <li><a href="/es-ar{{ request.get_full_path }}">Espanhol</a></li>
                         </ul>
                     </li>
                     <li class="topbar-devider"></li>   
-                    <li><a href="page_faq.html">Ajuda</a></li>
-                </ul>
+                    <li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>
+                </ul>-->
                 <!-- End Topbar Navigation -->
             </div>
         </div>
@@ -81,7 +81,7 @@
                         <span class="sr-only">Toggle navigation</span>
                         <span class="fa fa-bars"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">
+                    <a class="navbar-brand" href="{% url 'index' %}">
                         <img id="logo-header" src="{% static 'img/logo5_Andrea.png' %}" alt="Logo">
                     </a>
                 </div>
@@ -92,11 +92,11 @@
                         <!-- Home -->
                         <li class="dropdown active">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Início
+                                {% trans "Início" %}
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="active"><a href="index.html">Início</a></li>
-                                <li><a href="{% url 'saiba_mais' %}">Saiba Mais</a></li>
+                                <li class="active"><a href="{% url 'index' %}">{% trans "Início" %}</a></li>
+                                <li><a href="{% url 'saiba_mais' %}">{% trans "Saiba Mais" %}</a></li>
                             </ul>
                         </li>
                         <!-- End Home -->
@@ -104,14 +104,14 @@
                         <!-- Pages -->                        
                         <li class="dropdown">
                             <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">
-                                Tradução Juramentada
+                                {% trans "Tradução Juramentada" %}
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- Informações -->
-                                <li><a href="{% url 'traducao_juramentada' %}">O que é</a></li>
-                                <li><a href="{% url 'como_solicitar' %}">Como Solicitar</a></li>
-                                <li><a href="{% url 'quanto_custa' %}">Quanto Custa</a></li>
-                                <li><a href="{% url 'faq' %}">Dúvidas</a></li>
+                                <li><a href="{% url 'traducao_juramentada' %}">{% trans "O que é" %}</a></li>
+                                <li><a href="{% url 'como_solicitar' %}">{% trans "Como Solicitar" %}</a></li>
+                                <li><a href="{% url 'quanto_custa' %}">{% trans "Quanto Custa" %}</a></li>
+                                <li><a href="{% url 'faq' %}">{% trans "Dúvidas" %}</a></li>
                                 <!-- End Informações -->
 
                             </ul>
@@ -121,7 +121,7 @@
                         <!-- Contacts -->
                         <li>
                             <a href="{% url 'contato' %}" class="dropdown-toggle" data-toggle="dropdown">
-                                Contato
+                                {% trans "Contato" %}
                             </a>
                         </li>                    
                         <!-- End Contacts -->
@@ -156,17 +156,43 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
+                    <!-- Link List -->
+                    <div class="col-md-3 md-margin-bottom-40">
+                        <!--<div class="headline"><h2>Useful Links</h2></div>
+                        <ul class="list-unstyled link-list">
+                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
+                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
+                        </ul>-->
+                    </div><!--/col-md-3-->
+                    <!-- End Link List -->
+
                     <!-- About -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="assets/img/logo2-default.png" alt=""></a>
-                        <p>About Unify dolor sit amet, consectetur adipiscing elit. Maecenas eget nisl id libero tincidunt sodales.</p>
-                        <p>Duis eleifend fermentum ante ut aliquam. Cras mi risus, dignissim sed adipiscing ut, placerat non arcu.</p>    
+                        <a href="index.html"><img id="logo-footer" class="footer-logo" src="{% static 'img/logo5_Andrea.png' %}" alt="logo"></a>
+                        <p>{% trans "Dúvidas? Entre em contato por telefone ou e-mail" %}</p>
+
                     </div><!--/col-md-3-->
                     <!-- End About -->
 
+                    <!-- Address -->
+                    <div class="col-md-3 map-img md-margin-bottom-40">
+                        <div class="headline"><h2>{% trans "Contato" %}</h2></div>
+                        <address class="md-margin-bottom-40">
+                            <br />
+                            {% trans "Telefone" %}: (55-81) 30315491 – 94448483 <br />
+                            Email: <a href="mailto:andreabayle@gmail.com" class="">andreabayle@gmail.com</a> <br />
+                            <br />
+                            <br />
+                        </address>
+                    </div><!--/col-md-3-->
+                    <!-- End Address -->
+
                     <!-- Latest -->
                     <div class="col-md-3 md-margin-bottom-40">
-                        <div class="posts">
+                        <!--<div class="posts">
                             <div class="headline"><h2>Latest Posts</h2></div>
                             <ul class="list-unstyled latest-list">
                                 <li>
@@ -182,35 +208,10 @@
                                     <small>September 15, 2014</small>
                                 </li>
                             </ul>
-                        </div>
-                    </div><!--/col-md-3-->  
-                    <!-- End Latest --> 
-                    
-                    <!-- Link List -->
-                    <div class="col-md-3 md-margin-bottom-40">
-                        <div class="headline"><h2>Useful Links</h2></div>
-                        <ul class="list-unstyled link-list">
-                            <li><a href="#">About us</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Community</a><i class="fa fa-angle-right"></i></li>
-                            <li><a href="#">Contact us</a><i class="fa fa-angle-right"></i></li>
-                        </ul>
+                        </div>-->
                     </div><!--/col-md-3-->
-                    <!-- End Link List -->                    
+                    <!-- End Latest -->
 
-                    <!-- Address -->
-                    <div class="col-md-3 map-img md-margin-bottom-40">
-                        <div class="headline"><h2>Contact Us</h2></div>                         
-                        <address class="md-margin-bottom-40">
-                            25, Lorem Lis Street, Orange <br />
-                            California, US <br />
-                            Phone: 800 123 3456 <br />
-                            Fax: 800 123 3456 <br />
-                            Email: <a href="mailto:info@anybiz.com" class="">info@anybiz.com</a>
-                        </address>
-                    </div><!--/col-md-3-->
-                    <!-- End Address -->
                 </div>
             </div> 
         </div><!--/footer-->
@@ -247,21 +248,21 @@
                                     <i class="fa fa-linkedin"></i>
                                 </a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest">
                                     <i class="fa fa-pinterest"></i>
                                 </a>
-                            </li>
+                            </li>-->
                             <li>
                                 <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
                                     <i class="fa fa-twitter"></i>
                                 </a>
                             </li>
-                            <li>
+                            <!--<li>
                                 <a href="#" class="tooltips" data-toggle="tooltip" data-placement="top" title="" data-original-title="Dribbble">
                                     <i class="fa fa-dribbble"></i>
                                 </a>
-                            </li>
+                            </li>-->
                         </ul>
                     </div>
                     <!-- End Social Links -->
