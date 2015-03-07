@@ -15,7 +15,7 @@
         <div class="container">
             <h1 class="pull-left">{% trans "Saiba Mais" %}</h1>
             <ul class="pull-right breadcrumb">
-                <li><a href="index.html">{% trans "Início" %}</a></li>
+                <li><a href="{% url 'index' %}">{% trans "Início" %}</a></li>
                 <li class="active">{% trans "Saiba Mais" %}</li>
             </ul>
         </div>
@@ -74,9 +74,6 @@
                 <div>
                     <a href="http://www.sintra.org.br/site/index.php" target="_blank">
                         <img alt="sintra" src="{% static 'img/sintra_logotipo.png' %}" class="img-responsive">
-                        <!--<span class="sorting-cover">
-                            <span>Sindicato Nacional dos Tradutores</span>
-                        </span>-->
                     </a>
                 </div>
             </div>
@@ -84,36 +81,12 @@
                 <div>
                     <a href="http://abrates.net.br/site/home" target="_blank">
                         <img alt="" src="{% static 'img/abrates_logo.jpg' %}" class="img-responsive">
-                        <!--<span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>-->
                     </a>
                 </div>
             </div>
         </div>
 
         <div class="sorting-block">
-            <ul class="row sorting-grid" style="  transform:   ">
-                <li data-cat="1" class="col-md-6 col-sm-6 col-xs-12 mix category_1 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="http://www.sintra.org.br/site/index.php" target="_blank">
-                        <img alt="sintra" src="{% static 'img/sintra_logotipo.png' %}" class="img-responsive">
-                        <!--<span class="sorting-cover">
-                            <span>Sindicato Nacional dos Tradutores</span>
-                        </span>-->
-                    </a>
-                </li>
-                <li data-cat="3" class="col-md-6 col-sm-6 col-xs-12 mix category_3 mix_all" style=" display: inline-block; opacity: 1;">
-                    <a href="http://abrates.net.br/site/home" target="_blank">
-                        <img alt="" src="{% static 'img/abrates_logo.jpg' %}" class="img-responsive">
-                        <!--<span class="sorting-cover">
-                            <span>Happy New Year</span>
-                            <p>Anim pariatur cliche reprehenderit</p>
-                        </span>-->
-                    </a>
-                </li>
-
-            </ul>
 
             <div class="clearfix"></div>
         </div>

@@ -1,6 +1,25 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load i18n %}
+
+{% block extra_css %}
+<!-- CSS Page Style -->
+<link rel="stylesheet" href="assets/css/pages/page_faq1.css">
+{% endblock extra_css %}
 
 {% block content %}
+<!--=== Breadcrumbs v2 ===-->
+    <div class="breadcrumbs-v2 faq-breadcrumb margin-bottom-20">
+        <div class="breadcrumbs-v2-in">
+            <h1>Dúvidas frequentes</h1>
+            <ul class="breadcrumb-v2 list-inline">
+                <li><a href="{% url 'index' %}"><i class="rounded-x fa fa-angle-right"></i>{% trans "Início" %}</a></li>
+                <li class="active"><i class="rounded-x fa fa-angle-right"></i>{% trans 'Dúvidas' %}</li>
+            </ul>
+        </div>
+    </div>
+<!--=== End Breadcrumbs v2 ===-->
+
+
 
 {% endblock content %}
