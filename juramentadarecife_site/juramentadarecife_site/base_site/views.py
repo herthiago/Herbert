@@ -35,3 +35,8 @@ def faq(request):
 def contato(request):
     dict_template = {}
     return render_to_response("contato.html", dict_template)
+
+
+def consulados(request):
+    dict_template = {}
+    return render_to_response("consulados.html", dict_template)
