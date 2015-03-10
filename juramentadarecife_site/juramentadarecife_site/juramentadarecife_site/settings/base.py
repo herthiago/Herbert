@@ -258,6 +258,6 @@ SOUTH_TESTS_MIGRATE = False
 ugettext = lambda s: s
 
 LANGUAGES = (
-    ('pt-br', ugettext('Português')),
+    ('pt-br', ugettext('Portugues')),
     ('es-ar', ugettext('Espanhol')),
 )
