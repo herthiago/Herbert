@@ -30,11 +30,12 @@
                 <!-- End Google Map -->
 
                 <p>{% trans 'Estamos a disposição para esclarecer as suas dúvidas, receber suas solicitações e enviar nossa proposta de trabalho.' %}</p><br />
-                <form>
+                <form method="POST" name="contato" action="{% url 'contato' %}">
+                    {% csrf_token %}
                     <label>{% trans 'Nome' %}</label>
                     <div class="row margin-bottom-20">
                         <div class="col-md-7 col-md-offset-0">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" name="nome" placeholder="Nome" title="Nome">
                         </div>
                     </div>
 
@@ -197,7 +198,6 @@
     jQuery(document).ready(function() {
         App.init();
         App.initSliders();
-        ContactPage.initMap();
     });
 </script>
 

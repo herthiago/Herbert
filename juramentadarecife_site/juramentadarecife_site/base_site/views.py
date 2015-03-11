@@ -1,5 +1,8 @@
 from django.shortcuts import render_to_response
+from django.core.mail import send_mail
+from django.template import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
+from base_site.models import ContatoForm
 
 
 def index(request):
@@ -43,5 +46,28 @@ def consulados(request):
 
 
 def contato(request):
-    dict_template = {}
-    return render_to_response("contato.html", dict_template)
+    if request.method == 'POST':
+        form = ContatoForm(request.POST)
+        if form.is_valid():
+            nome = form.cleaned_data['nome']
+            email = form.cleaned_data['email']
+            mensagem = form.cleaned_data['mensagem']
+
+            send_mail(
+                "E-mail: %s\n\nMensagem:\n%s" % (email, mensagem),
+                "andersonberg@gmail.com",
+                ["andersonberg@gmail.com"],
+                #settings.DEFAULT_FROM_EMAIL,
+                #[settings.DEFAULT_TO_EMAIL],
+                fail_silently=False
+            )
+
+            return render_to_response("contato.html")
+
+    else:
+        form = ContatoForm()
+
+    dict_template = {
+        'form': form,
+    }
+    return render_to_response("contato.html", dict_template, context_instance=RequestContext(request))
