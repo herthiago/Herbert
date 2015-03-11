@@ -40,3 +40,8 @@ def contato(request):
 def consulados(request):
     dict_template = {}
     return render_to_response("consulados.html", dict_template)
+
+
+def contato(request):
+    dict_template = {}
+    return render_to_response("contato.html", dict_template)

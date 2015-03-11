@@ -1,6 +1,204 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load i18n %}
+
+{% block extra_css %}
+<!-- CSS Page Style -->
+<link rel="stylesheet" href="assets/css/pages/page_contact.css">
+{% endblock extra_css %}
 
 {% block content %}
 
+<!--=== Breadcrumbs ===-->
+    <div class="breadcrumbs">
+        <div class="container">
+            <h1 class="pull-left">{% trans 'Contato' %}</h1>
+            <ul class="pull-right breadcrumb">
+                <li><a href="{% url 'index' %}">{% trans "Início" %}</a></li>
+                <li class="active">{% trans 'Contato' %}</li>
+            </ul>
+        </div>
+    </div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+    <div class="container content">
+        <div class="row margin-bottom-30">
+            <div class="col-md-9 mb-margin-bottom-30">
+                <!-- Google Map -->
+                <!--<div id="map" class="map map-box map-box-space margin-bottom-40"></div>-->
+                <!-- End Google Map -->
+
+                <p>{% trans 'Estamos a disposição para esclarecer as suas dúvidas, receber suas solicitações e enviar nossa proposta de trabalho.' %}</p><br />
+                <form>
+                    <label>{% trans 'Nome' %}</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-7 col-md-offset-0">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <label>Email <span class="color-red">*</span></label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-7 col-md-offset-0">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <label>{% trans 'Mensagem' %}</label>
+                    <div class="row margin-bottom-20">
+                        <div class="col-md-11 col-md-offset-0">
+                            <textarea rows="8" class="form-control"></textarea>
+                        </div>
+                    </div>
+
+                    <p><button type="submit" class="btn-u">{% trans 'Enviar' %}</button></p>
+                </form>
+            </div><!--/col-md-9-->
+
+            <div class="col-md-3">
+                <!-- Contacts -->
+                <div class="headline"><h2>{% trans 'Contato' %}</h2></div>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><a href="mailto:andreabayle@gmail.com"><i class="fa fa-envelope"></i>andreabayle@gmail.com</a></li>
+                    <li><i class="fa fa-phone"></i>(55-81) 30315491 – 94448483</li>
+                    <li><a href="#"><i class="fa fa-globe"></i>http://www.example.com</a></li>
+                </ul>
+
+                <!-- Business Hours -->
+                <!--<div class="headline"><h2>{% trans 'Horário de Trabalho' %}</h2></div>
+                <ul class="list-unstyled margin-bottom-30">
+                    <li><strong>Monday-Friday:</strong> 10am to 8pm</li>
+                    <li><strong>Saturday:</strong> 11am to 3pm</li>
+                    <li><strong>Sunday:</strong> Closed</li>
+                </ul>-->
+
+            </div><!--/col-md-3-->
+        </div><!--/row-->
+
+        <!-- Our Clients -->
+        <div id="clients-flexslider" class="flexslider home clients">
+            <div class="headline"><h2>Our Clients</h2></div>
+            <ul class="slides">
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/hp_grey.png" alt="" />
+                        <img src="assets/img/clients/hp.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/igneus_grey.png" alt="" />
+                        <img src="assets/img/clients/igneus.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/vadafone_grey.png" alt="" />
+                        <img src="assets/img/clients/vadafone.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/walmart_grey.png" alt="" />
+                        <img src="assets/img/clients/walmart.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/shell_grey.png" alt="" />
+                        <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/natural_grey.png" alt="" />
+                        <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/aztec_grey.png" alt="" />
+                        <img src="assets/img/clients/aztec.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/gamescast_grey.png" alt="" />
+                        <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/cisco_grey.png" alt="" />
+                        <img src="assets/img/clients/cisco.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/everyday_grey.png" alt="" />
+                        <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/cocacola_grey.png" alt="" />
+                        <img src="assets/img/clients/cocacola.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/spinworkx_grey.png" alt="" />
+                        <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/shell_grey.png" alt="" />
+                        <img src="assets/img/clients/shell.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/natural_grey.png" alt="" />
+                        <img src="assets/img/clients/natural.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/gamescast_grey.png" alt="" />
+                        <img src="assets/img/clients/gamescast.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/everyday_grey.png" alt="" />
+                        <img src="assets/img/clients/everyday.png" class="color-img" alt="" />
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="assets/img/clients/spinworkx_grey.png" alt="" />
+                        <img src="assets/img/clients/spinworkx.png" class="color-img" alt="" />
+                    </a>
+                </li>
+            </ul>
+        </div><!--/flexslider-->
+        <!-- End Our Clients -->
+    </div><!--/container-->
+    <!--=== End Content Part ===-->
+
 {% endblock content %}
+
+{% block extra_js %}
+
+<script type="text/javascript" src="assets/js/pages/page_contacts.js"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+        ContactPage.initMap();
+    });
+</script>
+
+{% endblock extra_js %}
