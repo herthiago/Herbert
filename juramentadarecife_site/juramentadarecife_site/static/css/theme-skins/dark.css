@@ -1220,7 +1220,8 @@ body.dark .pager li > span:hover {
 /*Accordion
 ------------------------------------*/
 body.dark .acc-v1 .panel-heading a {
-	color: #ccc;
+        color: #72c02c;
+	/*color: #ccc;*/
 	background: #202020;
 }
 
