@@ -1,0 +1,16 @@
+You can use the following SFTP credentials to upload your files (using FileZilla/WinSCP/Rsync):
+Host: 45.55.165.70
+User: django
+Pass: BAH3YNFtmO
+-------------------------------------------------------------------------------------
+You can use the following Postgres database credentials:
+DB: django
+User: django
+Pass: Qq04ADbO2F
+-------------------------------------------------------------------------------------
+Nginx listens on public IP (45.55.165.70) port 80 and forwards requests to Gunicorn on port 9000
+Nginx access log is in /var/log/nginx/access.log and error log is in /var/log/nginx/error.log
+Gunicorn is started using an Upstart script located at /etc/init/gunicorn.conf
+To restart your Django project, run : sudo service gunicorn restart
+-------------------------------------------------------------------------------------
+To delete this message of the day: rm -rf /etc/motd.tail
