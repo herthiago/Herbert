@@ -21,7 +21,7 @@ def get_env_setting(setting):
 
 ########## HOST CONFIGURATION
 # See: https://docs.djangoproject.com/en/1.5/releases/1.5/#allowed-hosts-required-in-production
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['45.55.165.70']
 ########## END HOST CONFIGURATION
 
 ########## EMAIL CONFIGURATION
@@ -57,11 +57,16 @@ DATABASES = {}
 
 ########## CACHE CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#caches
-CACHES = {}
+#CACHES = {}
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
+    }
+}
 ########## END CACHE CONFIGURATION
 
 
 ########## SECRET CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
-SECRET_KEY = get_env_setting('SECRET_KEY')
+SECRET_KEY = r"5*ph#td8b4li=2)s$deqqhb^n6@8^h&hlvu*371i(e_py*!y!)" #get_env_setting('SECRET_KEY')
 ########## END SECRET CONFIGURATION
