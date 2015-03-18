@@ -24,7 +24,7 @@
 
     <!--=== About Me Img ===-->
     <div class="container content">
-        <div class="row about-me margin-bottom-20">
+        <div class="row about-me margin-bottom-10">
             <div class="col-md-5 shadow-wrapper md-margin-bottom-20">
                 <div class="box-shadow shadow-effect-2">
                     <img class="img-responsive" src="assets/img/team/team1.jpg" alt="">
@@ -37,10 +37,10 @@
                         <span>{% trans "Tradutora Pública e Intérprete Comercial de Espanhol" %}</span>
                     </div>
                     <ul class="social-icons pull-right">
-                        <li><a class="rounded-x social_facebook" data-original-title="Facebook" href="#"></a></li>
-                        <li><a class="rounded-x social_twitter" data-original-title="Twitter" href="#"></a></li>
-                        <li><a class="rounded-x social_googleplus" data-original-title="Google Plus" href="#"></a></li>
-                        <li><a class="rounded-x social_linkedin" data-original-title="Linkedin" href="#"></a></li>
+                        <li><a class="rounded-x social_facebook" target="_blank" data-original-title="Facebook" href="https://www.facebook.com/pages/Andrea-Bayl%C3%A9-Tradu%C3%A7%C3%B5es-Juramentadas/634420899904641?ref=hl"></a></li>
+                        <!--<li><a class="rounded-x social_twitter" data-original-title="Twitter" href="#"></a></li>-->
+                        <li><a class="rounded-x social_googleplus" target="_blank" data-original-title="Google Plus" href="https://plus.google.com/u/0/105537593069876746935/posts"></a></li>
+                        <li><a class="rounded-x social_linkedin" target="_blank" data-original-title="Linkedin" href="#"></a></li>
                     </ul>
                 </div>
                 <p>{% trans "Todas as traduções juramentadas, entre os idiomas espanhol e português, são feitas pessoalmente por Andrea Baylé, tradutora pública juramentada, habilitada por concurso público promovido pela Junta Comercial do Estado de Pernambuco – JUCEPE em 2011, com registro nº 415." %}</p>
@@ -62,8 +62,46 @@
     </div>
     <!--=== End About Me Img ===-->
 
+    <div class="container content margin-bottom-10">
+        <div class="title-box-v2">
+            <h2><span class="color-green"> {% trans "Nomeada Pela" %}</span></h2>
+        </div>
+        <div class="sorting-block">
+            <div class="row margin-bottom-10">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img alt="" src="{% static 'img/jucepe.jpg' %}" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container content margin-bottom-10">
+        <div class="title-box-v2">
+            <h2><span class="color-green"> {% trans "Credenciada" %}</span></h2>
+        </div>
+        <div class="sorting-block">
+            <div class="row margin-bottom-10">
+                <div class="col-md-3">
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img alt="" src="{% static 'img/ministerioRE_logo.jpg' %}" class="img-responsive">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!--=== Container Part ===-->
-    <div class="container content margin-bottom-20">
+    <div class="container content margin-bottom-10">
         <div class="title-box-v2">
             <h2><span class="color-green"> {% trans "Associada" %}</span></h2>
         </div>
@@ -90,25 +128,6 @@
         </div>
     </div><!--/container-->
     <!--=== Container Part ===-->
-
-    <div class="container content margin-bottom-20">
-        <div class="title-box-v2">
-            <h2><span class="color-green"> {% trans "Credenciada" %}</span></h2>
-        </div>
-        <div class="sorting-block">
-            <div class="row margin-bottom-10">
-                <div class="col-md-3">
-                </div>
-                <div class="col-md-6">
-                    <div>
-                        <img alt="" src="{% static 'img/ministerioRE_logo.jpg' %}" class="img-responsive">
-                    </div>
-                </div>
-                <div class="col-md-3">
-                </div>
-            </div>
-        </div>
-    </div>
 
 {% endblock content %}
 
