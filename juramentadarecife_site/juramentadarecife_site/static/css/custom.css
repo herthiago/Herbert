@@ -8,3 +8,15 @@ img.img-responsive {
 body.dark .about-me h2 {
   color: #72c02c;
 }
+
+body.dark  .pricing-head h3 span strong{
+    color:#fafafa;
+}
+
+body.dark  .pricing-head h3 p{
+    color:#fafafa;
+}
+
+body.dark .pricing-content li.bg-color{
+    text-transform: uppercase;
+}

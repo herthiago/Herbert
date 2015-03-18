@@ -38,7 +38,7 @@
 
                     <div class="content-boxes-in-v3">
                         <h3><a href="#"> {% trans 'Tamanho do documento' %}</a></h3>
-                        <p><strong> {% trans 'O valor da tradução depende da quantidade de texto do documento.' %} </strong></p>
+                        <p>{% trans 'O valor da tradução depende da quantidade de texto do documento.' %}</p>
                         <p><span style="text-decoration: underline;">{% trans 'Exemplo' %}</span> {% trans ": Uma certidão de nascimento ou de casamento do Brasil, que em português ocupa uma única página, ao ser traduzida pode chegar a ter entre 2 e 3 laudas juramentadas. Já uma certidão de nascimento, de casamento ou de óbito estrangeira, apesar de em espanhol ocupar uma página ou duas, ao ser traduzida pode ocupar até 5 laudas juramentadas. Isto ocorre porque muitas vezes o documento contém texto em letra muito pequena, carimbos, assinaturas, selos, consularizações, autenticações que são traduzidos e mencionados na tradução juramentada, por este motivo o orçamento baseia-se na quantidade de texto e não no número de páginas do documento original." %}</p>
                     </div>
 
@@ -74,9 +74,12 @@
             <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
                 <div class="pricing hidden-area">
                     <div class="pricing-head ">
-                        <h4 class="price"></h4>
+
                     </div>
                     <ul  class="pricing-content list-unstyled">
+                        <li class="bg-color">
+
+                        </li>
                         <li class="bg-color">
                             <i class="fa fa-inbox"></i> {% trans 'Documentos comuns' %}
                         </li>
@@ -92,17 +95,19 @@
                     <div class="pricing-head">
                         <h3>
                             {% trans 'Tradução' %}
-                        </h3>
-                        <h4 class="price">
                             <span><strong> {% trans 'Espanhol para Português' %}</strong></span>
                             <p>{% trans '(por lauda de 1.000 caracteres sem espaços)' %}</p>
-                            <span class="hidden-md hidden-lg"></span>
-                        </h4>
+                        </h3>
+                        <!--<h4 class="price">-->
+                            <!--<span><strong> {% trans 'Espanhol para Português' %}</strong></span>-->
+                            <!--<p>{% trans '(por lauda de 1.000 caracteres sem espaços)' %}</p>-->
+                            <!--<span class="hidden-md hidden-lg"></span>-->
+                        <!--</h4>-->
                     </div>
                     <ul class="pricing-content list-unstyled ">
                         <li class="bg-color">
                             <strong> R$ 55,00</strong>
-                            <span class="hidden-md hidden-lg">{% trans 'Documentos comuns' %}</span>
+                            <span class="hidden-md hidden-lg">{% trans 'DOCUMENTOS COMUNS' %}</span>
                         </li>
                         <li>
                             <strong> R$ 60,00</strong><span class="hidden-md hidden-lg">{% trans 'Documentos especiais' %}</span>
@@ -123,12 +128,13 @@
                     <div class="pricing-head">
                         <h3>
                             {% trans 'Versão' %}
-                        </h3>
-                        <h4 class="price">
                             <span><strong> {% trans 'Português para Espanhol' %}</strong></span>
                             <p>{% trans '(por lauda de 1.000 caracteres sem espaços)' %}</p>
-                            <span class="hidden-md hidden-lg"></span>
-                        </h4>
+                        </h3>
+                        <!--<h4 class="price">-->
+                            <!---->
+                            <!--<span class="hidden-md hidden-lg"></span>-->
+                        <!--</h4>-->
                     </div>
                     <ul class="pricing-content list-unstyled ">
                         <li class="bg-color">
