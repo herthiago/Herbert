@@ -48,7 +48,7 @@
                     <p>{% trans "Oferecemos serviços de tradução pública a pessoas físicas ou jurídicas, traduções oficiais válidas em todo o Brasil e no exterior, de documentos que tenham o idioma espanhol ou português como língua de partida ou de chegada. Feitas por uma Tradutora Juramentada, concursada, com ampla experiência e qualificação." %}</p>
                 </div>
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="{% url 'saiba_mais' %}" class="btn-u btn-u-lg"><i class="fa fa-info"></i>{% trans "Saiba Mais" %}</a>
+                    <a href="{% url 'saiba_mais' %}" class="btn-u btn-u-lg"><i class="fa fa-plus-square"></i>{% trans "Saiba Mais" %}</a>
                 </div>
             </div>
         </div>
@@ -65,7 +65,7 @@
                     <i class="fa fa-gavel service-icon"></i>
         			<div class="desc">
         				<h4>{% trans 'O qué é tradução juramentada?' %}</h4>
-                        <p>{% trans 'Tradução Juramentada é a tradução feita por um Tradutor Público concursado e habilitado pela Junta Comercial do seu Estado, de um documento oficial que precise produzir efeitos legais no Brasil ou no exterior' %}</p>
+                        <p>{% trans 'Tradução Juramentada é a tradução feita por um Tradutor Público concursado e habilitado pela Junta Comercial do seu Estado, de um documento oficial que precise produzir efeitos legais no Brasil ou no exterior. ' %}<a href="{% url 'traducao_juramentada' %}">{% trans 'Saiba mais'%}</a></p>
         			</div>
         		</div>
         	</div>
@@ -74,7 +74,7 @@
                     <i class="fa fa-usd service-icon"></i>
         			<div class="desc">
         				<h4>{% trans 'Quanto custa uma tradução juramentada?' %}</h4>
-                        <p>{% trans 'O custo da tradução juramentada é calculado com base em Tabela de Emolumentos homologada pelas Juntas Comerciais dos Estados' %}</p>
+                        <p>{% trans 'O custo da tradução juramentada é calculado com base em Tabela de Emolumentos homologada pelas Juntas Comerciais dos Estados. ' %}<a href="{% url 'quanto_custa' %}">{% trans 'Saiba mais'%}</a></p>
         			</div>
         		</div>
         	</div>
