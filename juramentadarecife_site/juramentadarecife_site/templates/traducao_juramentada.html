@@ -3,7 +3,9 @@
 {% load i18n %}
 
 {% block extra_css %}
-
+<!--<link rel="stylesheet" href="{% static 'css/blocks.css' %}">-->
+<!--<link rel="stylesheet" href="{% static 'css/custom.css' %}">-->
+<!--<link rel="stylesheet" href="{% static 'css/footers/footer-v7.css' %}">-->
 {% endblock extra_css %}
 
 {% block content %}
@@ -21,6 +23,7 @@
     <!--=== End Breadcrumbs ===-->
 
     <!--=== Content Part ===-->
+    <div class="bg-image-v1">
     <div class="container content">
     	<div class="row margin-bottom-40">
         	<div class="col-md-6 md-margin-bottom-40">
@@ -34,14 +37,19 @@
                 {% trans 'E lê-se, no Código de Processo Civil, Art. 156 e 157, que ' %}<em>{% trans '"Em todos os atos e termos do processo é obrigatório o uso do vernáculo" e que "Só poderá ser junto aos autos documento redigido em língua estrangeira, quando acompanhado de versão em vernáculo, firmada por tradutor juramentado".' %}</em></p>
             </div>
 
-        	<div class="col-md-6 md-margin-bottom-40">
+        	<!--<div class="col-md-6 md-margin-bottom-40">
                 <div class="box-shadow shadow-effect-2">
                     <img class="img-responsive" src="{% static 'img/gavel4.jpg' %}" alt="moedas">
                 </div>
-            </div>
+            </div>-->
         </div><!--/row-->
 
     </div><!--/container-->
+    </div>
     <!--=== End Content Part ===-->
 
 {% endblock content %}
+
+{% block extra_js %}
+
+{% endblock extra_js %}

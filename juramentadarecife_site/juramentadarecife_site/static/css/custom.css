@@ -24,3 +24,11 @@ body.dark .pricing-content li.bg-color{
 body.dark .breadcrumbs-v2 h1 {
     color: #000;
 }
+
+.bg-image-v1 {
+  background: url(../img/bg/oque2.jpg) repeat fixed;
+}
+
+.bg-image-v1:before {
+  background: rgba(0, 0, 0, 0.69);
+}
