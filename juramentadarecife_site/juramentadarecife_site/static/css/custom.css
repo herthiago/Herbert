@@ -20,3 +20,7 @@ body.dark  .pricing-head h3 p{
 body.dark .pricing-content li.bg-color{
     text-transform: uppercase;
 }
+
+body.dark .breadcrumbs-v2 h1 {
+    color: #000;
+}
