@@ -3,7 +3,7 @@ from django.core.mail import send_mail
 from django.template import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from base_site.models import ContatoForm
-from smtplib import SMTPException
+from django.core.urlresolvers import reverse
 
 
 def index(request):
@@ -64,7 +64,7 @@ def contato(request):
                 fail_silently=False
             )
 
-            return render_to_response("contato.html")
+            return HttpResponseRedirect(reverse("contato_ok"))
 
     else:
         form = ContatoForm()
@@ -73,3 +73,8 @@ def contato(request):
         'form': form,
     }
     return render_to_response("contato.html", dict_template, context_instance=RequestContext(request))
+
+
+def contato_ok(request):
+    dict_template = {}
+    return render_to_response("contato_ok.html", dict_template, context_instance=RequestContext(request))

@@ -28,6 +28,7 @@ urlpatterns = patterns('',
     url(r'^contato/', 'base_site.views.contato', name='contato'),
     url(r'^consulados/', 'base_site.views.consulados', name='consulados'),
     url(r'^contato/', 'base_site.views.contato', name='contato'),
+    url(r'^contato_ok/', 'base_site.views.contato_ok', name='contato_ok'),
 )
 
 urlpatterns += patterns('',

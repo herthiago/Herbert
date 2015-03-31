@@ -30,35 +30,7 @@
                 <!-- End Google Map -->
 
                 <p>{% trans 'Estamos a disposição para esclarecer as suas dúvidas, receber suas solicitações e enviar nossa proposta de trabalho.' %}</p><br />
-                <form method="POST" name="contato" action="{% url 'contato' %}">
-                    {% csrf_token %}
-                    {{ form.non_field_errors }}
-                    <label>{% trans 'Nome ' %}<span class="color-red">*</span></label>
-                    <div class="row margin-bottom-20">
-                        <div class="col-md-7 col-md-offset-0">
-                            {{form.nome.errors}}
-                            <input type="text" class="form-control" name="nome" placeholder="{% trans 'Nome' %}" title="Nome">
-                        </div>
-                    </div>
-
-                    <label>Email <span class="color-red">*</span></label>
-                    <div class="row margin-bottom-20">
-                        <div class="col-md-7 col-md-offset-0">
-                            {{form.email.errors}}
-                            <input type="text" class="form-control" name="email" placeholder="{% trans 'Email' %}" title="Email">
-                        </div>
-                    </div>
-
-                    <label>{% trans 'Mensagem ' %}<span class="color-red">*</span></label>
-                    <div class="row margin-bottom-20">
-                        <div class="col-md-11 col-md-offset-0">
-                            {{form.mensagem.errors}}
-                            <textarea rows="8" class="form-control" name="mensagem" placeholder="{% trans 'Sua mensagem' %}" title="Mensagem"></textarea>
-                        </div>
-                    </div>
-
-                    <p><input type="submit" class="btn-u" value="{% trans 'Enviar' %}" /></p>
-                </form>
+                <h3>Mensagem enviada com sucesso!</h3>
             </div><!--/col-md-9-->
 
             <div class="col-md-3">
