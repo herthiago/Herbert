@@ -62,8 +62,21 @@
                 </form>
             </div><!--/col-md-9-->
         </div><!--/row-->
-        
+        <!-- Our Clients -->
+        {% include 'includes/clients.html' %}
+        <!-- End Our Clients -->
     </div><!--/container-->
     <!--=== End Content Part ===-->
 
 {% endblock content %}
+
+{% block extra_js %}
+
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        App.init();
+        App.initSliders();
+    });
+</script>
+
+{% endblock extra_js %}
