@@ -1,9 +1,43 @@
 {% extends "base.html" %}
 
-{% block title %}Page Not found{% endblock %}
+{% load staticfiles %}
+{% load i18n %}
+{% block title %}{% trans 'Página não encontrada' %}{% endblock %}
 
-{% block page_title %}Page Not found{% endblock page_title %}
+{% block page_title %}{% trans 'Página não encontrada' %}{% endblock page_title %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/pages/page_404_error.css' %}">
+{% endblock extra_css %}
 
 {% block content %}
-<p>This is not the page you were looking for.</p>
+ <!--=== Breadcrumbs ===-->
+<div class="breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">{% trans 'Erro' %} 404</h1>
+        <ul class="pull-right breadcrumb">
+            <li><a href="{% url 'index' %}">{% trans "Início" %}</a></li>
+            <li class="active">{% trans 'Erro' %} 404</li>
+        </ul>
+    </div>
+</div><!--/breadcrumbs-->
+<!--=== End Breadcrumbs ===-->
+
+<!--=== Content Part ===-->
+<div class="container content">
+    <!--Error Block-->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="error-v1">
+                <span class="error-v1-title">404</span>
+                <span>{% trans 'Ocorreu um erro' %}</span>
+                <p>{% trans 'A página que você procura não existe.'  %}</p>
+                <a class="btn-u btn-bordered" href="{% url 'index' %}">{% trans 'Voltar ao Início' %}</a>
+            </div>
+        </div>
+    </div>
+    <!--End Error Block-->
+</div>
+<!--=== End Content Part ===-->
+
 {% endblock content %}

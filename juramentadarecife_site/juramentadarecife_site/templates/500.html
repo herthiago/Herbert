@@ -1,1 +1,26 @@
-<h1>Whoops!</h1>
+{% extends "base.html" %}
+
+{% block title %}{% trans 'Ocorreu um erro' %}{% endblock %}
+
+{% block page_title %}{% trans 'Ocorreu um erro' %}{% endblock page_title %}
+
+{% block content %}
+
+<!--=== Content Part ===-->
+<div class="container content">
+    <!--Error Block-->
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="error-v1">
+                <span class="error-v1-title">500</span>
+                <span>{% trans 'Ocorreu um erro no servidor' %}</span>
+                <p>{% trans 'Contate o administrador.'  %}</p>
+                <a class="btn-u btn-bordered" href="{% url 'index' %}">{% trans 'Voltar ao Início' %}</a>
+            </div>
+        </div>
+    </div>
+    <!--End Error Block-->
+</div>
+<!--=== End Content Part ===-->
+
+{% endblock content %}
