@@ -13,8 +13,8 @@
         <div class="breadcrumbs-v2-in">
             <h1>{% trans 'Dúvidas Frequentes' %}</h1>
             <ul class="breadcrumb-v2 list-inline">
-                <li><a href="{% url 'index' %}"><i class="rounded-x fa fa-angle-right"></i>{% trans "Tradução Juramentada" %}</a></li>
-                <li class="active"><i class="rounded-x fa fa-angle-right"></i>{% trans 'Dúvidas Frequentes' %}</li>
+                <li><a style="color:black;" href="{% url 'index' %}"><i class="rounded-x fa fa-angle-right"></i>{% trans "Tradução Juramentada" %}</a></li>
+                <li class="active" style="color:black;"><i class="rounded-x fa fa-angle-right"></i>{% trans 'Dúvidas Frequentes' %}</li>
             </ul>
         </div>
     </div>
@@ -155,7 +155,7 @@
                                     </div>
                                     <div class="panel-collapse collapse" id="collapse-Seven">
                                         <div class="panel-body">
-                                            {% trans 'Basta entrar em contato com a Tradutora Pública Andrea Baylé através do formulário.' %}
+                                            {% trans 'Entre em contato com a Tradutora Pública Andrea Baylé pelo chat, por telefone, e-mail ou através do formulário disponível no site e receberá informação detalhada sobre valores, prazos, etc.' %}
                                             <p>{% trans 'Clique ' %}<a href="{% url 'como_solicitar' %}">{% trans 'aqui' %}</a>{% trans ' para solicitar sua tradução.' %}</p>
                                         </div>
                                     </div>
@@ -245,104 +245,7 @@
         <!-- End FAQ Content -->
 
         <!-- Our Clients -->
-        <div id="clients-flexslider" class="flexslider home clients">
-            <div class="headline"><h2>{% trans "Nossos Clientes" %}</h2></div>
-            <ul class="slides">
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/queiroz_galvao.png' %}" alt="">
-                        <img src="{% static 'img/clients/queiroz_galvao.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/serttel.png' %}" alt="">
-                        <img src="{% static 'img/clients/serttel.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/pamesa.png' %}" alt="">
-                        <img src="{% static 'img/clients/pamesa.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/subiton.png' %}" alt="">
-                        <img src="{% static 'img/clients/subiton.png' %}" class="color-img" alt="">
-                    </a>
-                </li>                 
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/banco_azteca.png' %}" alt="">
-                        <img src="{% static 'img/clients/banco_azteca.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/albuquerquepinto.png' %}" alt="">
-                        <img src="{% static 'img/clients/albuquerquepinto.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/cervantes.png' %}" alt="">
-                        <img src="{% static 'img/clients/cervantes.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/rebeca_lucia.png' %}" alt="">
-                        <img src="{% static 'img/clients/rebeca_lucia.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/iberdrola.png' %}" alt="">
-                        <img src="{% static 'img/clients/iberdrola.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/bertolin.png' %}" alt="">
-                        <img src="{% static 'img/clients/bertolin.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/tecon.png' %}" alt="">
-                        <img src="{% static 'img/clients/tecon.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/gestamp.png' %}" alt="">
-                        <img src="{% static 'img/clients/gestamp.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/cristalpet.png' %}" alt="">
-                        <img src="{% static 'img/clients/cristalpet.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/impsa_wind.png' %}" alt="">
-                        <img src="{% static 'img/clients/impsa_wind.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="{% static 'img/clients/fav.png' %}" alt="">
-                        <img src="{% static 'img/clients/fav.png' %}" class="color-img" alt="">
-                    </a>
-                </li>
-                
-                               
-                
-            </ul>
-        </div><!--/flexslider-->
+        {% include 'includes/clients.html' %}
         <!-- End Our Clients -->
     </div><!--/container-->
     <!--=== End FAQ Page ===-->
