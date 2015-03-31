@@ -3,6 +3,7 @@ from django.core.mail import send_mail
 from django.template import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from base_site.models import ContatoForm
+from smtplib import SMTPException
 
 
 def index(request):
@@ -54,7 +55,8 @@ def contato(request):
             mensagem = form.cleaned_data['mensagem']
 
             send_mail(
-                "E-mail: %s\n\nMensagem:\n%s" % (email, mensagem),
+                "E-mail: %s" % email,
+                "Mensagem:\n%s" % mensagem,
                 "andersonberg@gmail.com",
                 ["andersonberg@gmail.com"],
                 #settings.DEFAULT_FROM_EMAIL,
