@@ -25,8 +25,12 @@ body.dark .breadcrumbs-v2 h1 {
     color: #000;
 }
 
-.bg-image-v1 {
-  background: url(../img/bg/oque.jpg) repeat fixed;
+.contato {
+  background: url(../img/bg/bg_contato.jpg) repeat fixed;
+}
+
+.solicitar {
+  background: url(../img/bg/bg_comosolicitar.jpg) repeat fixed;
 }
 
 .bg-image-v1:before {
