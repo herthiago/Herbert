@@ -25,6 +25,10 @@ body.dark .breadcrumbs-v2 h1 {
     color: #000;
 }
 
+.oque {
+    background: url(../img/bg/oque.jpg) repeat fixed;
+}
+
 .contato {
   background: url(../img/bg/bg_contato.jpg) repeat fixed;
 }
