@@ -34,6 +34,6 @@ body.dark .breadcrumbs-v2 h1 {
 }
 
 .bg-image-v1:before {
-  background: url(../img/patterns/gridtile.png) repeat;
-  /*background: rgba(0, 0, 0, 0.69);*/
+  /*background: url(../img/patterns/gridtile.png) repeat;*/
+  background: rgba(0, 0, 0, 0.69);
 }
