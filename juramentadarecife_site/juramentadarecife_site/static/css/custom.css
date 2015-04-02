@@ -21,6 +21,10 @@ body.dark .pricing-content li.bg-color{
     text-transform: uppercase;
 }
 
+body.dark .form-control{
+    background: rgba(32, 32, 32, 0);
+}
+
 body.dark .breadcrumbs-v2 h1 {
     color: #000;
 }
