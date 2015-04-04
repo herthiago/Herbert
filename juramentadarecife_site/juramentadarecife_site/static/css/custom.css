@@ -22,7 +22,7 @@ body.dark .pricing-content li.bg-color{
 }
 
 body.dark .form-control{
-    background: rgba(32, 32, 32, 0);
+    background: rgba(32, 32, 32, 0.5);
 }
 
 body.dark .breadcrumbs-v2 h1 {
@@ -44,4 +44,8 @@ body.dark .breadcrumbs-v2 h1 {
 .bg-image-v1:before {
   /*background: url(../img/patterns/gridtile.png) repeat;*/
   background: rgba(0, 0, 0, 0.69);
+}
+
+label {
+  color: #FFF;
 }
