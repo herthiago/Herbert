@@ -34,7 +34,7 @@ body.dark .breadcrumbs-v2 h1 {
 }
 
 .contato {
-  background: url(../img/bg/bg_contato.jpg) repeat fixed;
+  background: url(../img/bg/contato_bg.jpg) repeat fixed;
 }
 
 .solicitar {
@@ -48,4 +48,21 @@ body.dark .breadcrumbs-v2 h1 {
 
 label {
   color: #FFF;
+}
+
+/*body.dark .wrapper p {
+  color: #FFFFFF;
+}*/
+
+.da-slide p i {
+    color: #FFFFFF;
+}
+
+
+.da-slider{
+    background: transparent url(../img/bg/bg_slider.jpg) repeat 0% 0%;
+}
+
+body.dark .form-control {
+    border-color: #FFFFFF;
 }
