@@ -54,17 +54,18 @@ def contato(request):
             email = form.cleaned_data['email']
             mensagem = form.cleaned_data['mensagem']
 
-            send_mail(
-                "E-mail: %s" % email,
-                "Mensagem:\n%s" % mensagem,
-                "andersonberg@gmail.com",
-                ["andersonberg@gmail.com"],
-                #settings.DEFAULT_FROM_EMAIL,
-                #[settings.DEFAULT_TO_EMAIL],
-                fail_silently=False
-            )
+#            send_mail(
+#                "E-mail: %s" % email,
+#                "Mensagem:\n%s" % mensagem,
+#                "example@gmail.com",
+#                ["example@gmail.com"],
+#                #settings.DEFAULT_FROM_EMAIL,
+#                #[settings.DEFAULT_TO_EMAIL],
+#                fail_silently=False
+#            )
 
-            return HttpResponseRedirect(reverse("contato_ok"))
+#            return HttpResponseRedirect(reverse("contato_ok"))
+            return render_to_response("contato.html")
 
     else:
         form = ContatoForm()
