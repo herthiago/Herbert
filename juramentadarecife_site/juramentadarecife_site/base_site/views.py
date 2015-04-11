@@ -1,6 +1,7 @@
 from django.shortcuts import render_to_response
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from django.template import RequestContext
+from django.conf import settings
 from django.http import HttpResponseRedirect, HttpResponse
 from base_site.models import ContatoForm
 from django.core.urlresolvers import reverse
@@ -63,9 +64,7 @@ def contato(request):
 #                #[settings.DEFAULT_TO_EMAIL],
 #                fail_silently=False
 #            )
-
-#            return HttpResponseRedirect(reverse("contato_ok"))
-            return render_to_response("contato.html")
+            return HttpResponseRedirect(reverse("contato_ok"))
 
     else:
         form = ContatoForm()
