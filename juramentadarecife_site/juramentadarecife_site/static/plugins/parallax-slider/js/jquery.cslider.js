@@ -113,7 +113,7 @@
 				
 				}
 				
-				this.$el.css( 'background-position' , this.bgpositer * this.options.bgincrement + '% 0%' );
+				this.$el.css( 'background-position' , 50 + this.bgpositer * this.options.bgincrement + '% 0%' );
 			
 			}
 			
