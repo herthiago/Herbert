@@ -1,6 +1,7 @@
 from django.shortcuts import render_to_response
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from django.template import RequestContext
+from django.conf import settings
 from django.http import HttpResponseRedirect, HttpResponse
 from base_site.models import ContatoForm
 from django.core.urlresolvers import reverse
@@ -54,15 +55,25 @@ def contato(request):
             email = form.cleaned_data['email']
             mensagem = form.cleaned_data['mensagem']
 
-            send_mail(
-                "E-mail: %s" % email,
-                "Mensagem:\n%s" % mensagem,
-                "andersonberg@gmail.com",
-                ["andersonberg@gmail.com"],
-                #settings.DEFAULT_FROM_EMAIL,
-                #[settings.DEFAULT_TO_EMAIL],
-                fail_silently=False
-            )
+            email = EmailMessage("E-mail: %s" % email,
+                                 "Mensagem:\n%s" % mensagem,
+                                 "andersonberg@gmail.com",
+                                 ["andersonberg@gmail.com"],
+                                 )
+
+            # file_name = settings.SITE_ROOT + '/static/img/demo.jpg'
+            # email.attach_file(file_name)
+            email.send()
+
+            # send_mail(
+            #     "E-mail: %s" % email,
+            #     "Mensagem:\n%s" % mensagem,
+            #     "andersonberg@gmail.com",
+            #     ["andersonberg@gmail.com"],
+            #     #settings.DEFAULT_FROM_EMAIL,
+            #     #[settings.DEFAULT_TO_EMAIL],
+            #     fail_silently=False
+            # )
 
             return HttpResponseRedirect(reverse("contato_ok"))
 
