@@ -29,17 +29,21 @@ body.dark .breadcrumbs-v2 h1 {
     color: #000;
 }
 
-.oque {
-    background: url(../img/bg/oque.jpg) repeat fixed;
+.consulados {
+    background: url(../img/bg/breadcrumb_consulados.jpg) no-repeat center;
 }
+
+/*.oque {
+    background: url(../img/bg/oque.jpg) repeat fixed;
+}*/
 
 .contato {
-  background: url(../img/bg/contato_bg.jpg) repeat fixed;
+  background: url(../img/bg/bg_contato.jpg) repeat fixed;
 }
 
-.solicitar {
+/*.solicitar {
   background: url(../img/bg/bg_comosolicitar.jpg) repeat fixed;
-}
+}*/
 
 .bg-image-v1:before {
   /*background: url(../img/patterns/gridtile.png) repeat;*/
