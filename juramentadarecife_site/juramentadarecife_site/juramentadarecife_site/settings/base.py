@@ -102,7 +102,7 @@ STATICFILES_DIRS = (
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'compressor.finders.CompressorFinder',
+    # 'compressor.finders.CompressorFinder',
 )
 
 LOCALE_PATHS = [
@@ -200,7 +200,7 @@ DJANGO_APPS = (
 
 # Apps specific for this project go here.
 LOCAL_APPS = (
-    'compressor',
+    # 'compressor',
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps

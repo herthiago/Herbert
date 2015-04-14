@@ -4,7 +4,7 @@
 
 {% block extra_css %}
 <!-- CSS Page Style -->
-<link rel="stylesheet" href="assets/css/pages/page_contact.css">
+<link rel="stylesheet" href="{% static 'css/pages/page_contact.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
@@ -22,16 +22,16 @@
     <!--=== End Breadcrumbs ===-->
 
     <!--=== Content Part ===-->
-<div class="bg-image-v1 solicitar">
+<!--<div class="bg-image-v1 solicitar">-->
     <div class="container content">
     	<div class="row margin-bottom-40">
-        	<div class="col-md-6 md-margin-bottom-40">
+        	<div class="col-md-4 md-margin-bottom-40">
                 <div class="headline"><h2>COMO SOLICITAR uma tradução juramentada?</h2></div>
                 <p>{% trans 'Para fins de orçamento, envie um e-mail com o documento a ser traduzido digitalizado ou poderá entregá-lo pessoalmente. Entre em contato com a Tradutora pública ou preencha o formulário.' %}</p>
                 <p>{% trans 'Assumimos o compromisso de enviar um orçamento detalhado para apreciação com a maior celeridade e sem nenhum compromisso.' %}</p>
             </div>
 
-            <div class="col-md-9 mb-margin-bottom-30">
+            <div class="col-md-8 mb-margin-bottom-40">
                 <!-- Google Map -->
                 <!--<div id="map" class="map map-box map-box-space margin-bottom-40"></div>-->
                 <!-- End Google Map -->
@@ -62,12 +62,13 @@
                     <p><button type="submit" class="btn-u">{% trans 'Enviar' %}</button></p>
                 </form>
             </div><!--/col-md-9-->
+
         </div><!--/row-->
         <!-- Our Clients -->
         {% include 'includes/clients.html' %}
         <!-- End Our Clients -->
     </div><!--/container-->
-</div>
+<!--</div>-->
     <!--=== End Content Part ===-->
 
 {% endblock content %}

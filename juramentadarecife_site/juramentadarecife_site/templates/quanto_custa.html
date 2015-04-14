@@ -10,16 +10,28 @@
 {% block content %}
 
 <!--=== Breadcrumbs ===-->
-    <div class="breadcrumbs">
+    <!--<div class="breadcrumbs">
     	<div class="container">
             <h1 class="pull-left">{% trans "Quanto custa" %}</h1>
             <ul class="pull-right breadcrumb">
                 <li><a href="{% url 'index' %}">{% trans "Tradução Juramentada" %}</a></li>
                 <li class="active">{% trans "Quanto custa" %}</li>
             </ul>
-        </div><!--/container-->
-    </div><!--/breadcrumbs-->
+        </div>&lt;!&ndash;/container&ndash;&gt;
+    </div>--><!--/breadcrumbs-->
     <!--=== End Breadcrumbs ===-->
+
+<!--=== Breadcrumbs v2 ===-->
+    <div class="breadcrumbs-v2 quanto faq-breadcrumb margin-bottom-20">
+        <div class="breadcrumbs-v2-in">
+            <h1>{% trans 'Quanto custa' %}</h1>
+            <ul class="breadcrumb-v2 list-inline">
+                <li><a style="color:black;" href="{% url 'index' %}"><i class="rounded-x fa fa-angle-right"></i>{% trans "Tradução Juramentada" %}</a></li>
+                <li class="active" style="color:black;"><i class="rounded-x fa fa-angle-right"></i>{% trans 'Quanto custa' %}</li>
+            </ul>
+        </div>
+    </div>
+<!--=== End Breadcrumbs v2 ===-->
 
 <!--=== Content Part ===-->
     <div class="container content">
