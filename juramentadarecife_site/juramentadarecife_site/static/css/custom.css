@@ -9,11 +9,11 @@ body.dark .about-me h2 {
   color: #72c02c;
 }
 
-body.dark  .pricing-head h3 span strong{
+body.dark .pricing-head h3 span strong{
     color:#fafafa;
 }
 
-body.dark  .pricing-head h3 p{
+body.dark .pricing-head h3 p{
     color:#fafafa;
 }
 
@@ -30,7 +30,7 @@ body.dark .breadcrumbs-v2 h1 {
 }
 
 .quanto {
-    background: url(../img/bg/breadcrumb_consulados.jpg) no-repeat center;
+    background: url(../img/bg/breadcrumb_quanto.jpg) no-repeat center;
 }
 
 /*.oque {
@@ -50,9 +50,9 @@ body.dark .breadcrumbs-v2 h1 {
   background: rgba(0, 0, 0, 0.69);
 }
 
-label {
+/*label {
   color: #FFF;
-}
+}*/
 
 /*body.dark .wrapper p {
   color: #FFFFFF;
@@ -61,7 +61,6 @@ label {
 .da-slide p i {
     color: #FFFFFF;
 }
-
 
 .da-slider{
     background: transparent url(../img/bg/bg_slider.jpg) repeat 0% 0%;
