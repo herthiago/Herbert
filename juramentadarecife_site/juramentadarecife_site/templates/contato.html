@@ -38,7 +38,7 @@
                     <div class="row margin-bottom-20">
                         <div class="col-md-7 col-md-offset-0">
                             {{form.nome.errors}}
-                            <input type="text" class="form-control" name="nome" placeholder="{% trans 'Nome' %}" title="Nome">
+                            <input type="text" class="form-control" name="nome" placeholder="{% trans 'Nome' %}" title="Nome" required="required">
                         </div>
                     </div>
 
@@ -46,7 +46,7 @@
                     <div class="row margin-bottom-20">
                         <div class="col-md-7 col-md-offset-0">
                             {{form.email.errors}}
-                            <input type="text" class="form-control" name="email" placeholder="{% trans 'Email' %}" title="Email">
+                            <input type="text" class="form-control" name="email" placeholder="{% trans 'Email' %}" title="Email" required="required">
                         </div>
                     </div>
 
@@ -54,7 +54,7 @@
                     <div class="row margin-bottom-20">
                         <div class="col-md-9 col-md-offset-0">
                             {{form.mensagem.errors}}
-                            <textarea rows="8" class="form-control" name="mensagem" placeholder="{% trans 'Sua mensagem' %}" title="Mensagem"></textarea>
+                            <textarea rows="8" class="form-control" name="mensagem" placeholder="{% trans 'Sua mensagem' %}" title="Mensagem" required="required"></textarea>
                         </div>
                     </div>
 
