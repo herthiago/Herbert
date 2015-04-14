@@ -50,9 +50,9 @@ body.dark .breadcrumbs-v2 h1 {
   background: rgba(0, 0, 0, 0.69);
 }
 
-/*label {
+.contato label{
   color: #FFF;
-}*/
+}
 
 /*body.dark .wrapper p {
   color: #FFFFFF;
