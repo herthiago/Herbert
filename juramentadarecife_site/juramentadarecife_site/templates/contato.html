@@ -30,7 +30,7 @@
                 <!--<div id="map" class="map map-box map-box-space margin-bottom-40"></div>-->
                 <!-- End Google Map -->
 
-                <p>{% trans 'Estamos a disposição para esclarecer as suas dúvidas, receber suas solicitações e enviar nossa proposta de trabalho.' %}</p><br />
+                <p>{% trans 'Precisa da Tradução Juramentada dos seus documentos? Entre em contato conosco por telefone ou e-mail, estamos à sua disposição para esclarecer qualquer dúvida, receber suas solicitações e enviar prontamente nossa proposta de trabalho. Se preferir, utilize o formulário abaixo.' %}</p><br />
                 <form method="POST" name="contato" action="{% url 'contato' %}">
                     {% csrf_token %}
                     {{ form.non_field_errors }}
