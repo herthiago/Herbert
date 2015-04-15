@@ -5,7 +5,7 @@ from django.core.mail import send_mail, EmailMessage
 from django.template import RequestContext
 from django.conf import settings
 from django.http import HttpResponseRedirect, HttpResponse
-from base_site.models import ContatoForm, OrcamentoForm, Documento
+from base_site.models import ContatoForm, OrcamentoForm
 from django.core.urlresolvers import reverse
 
 
@@ -57,15 +57,14 @@ def contato(request):
             email = form.cleaned_data['email']
             mensagem = form.cleaned_data['mensagem']
 
-#            send_mail(
-#                "E-mail: %s" % email,
-#                "Mensagem:\n%s" % mensagem,
-#                "example@gmail.com",
-#                ["example@gmail.com"],
-#                #settings.DEFAULT_FROM_EMAIL,
-#                #[settings.DEFAULT_TO_EMAIL],
-#                fail_silently=False
-#            )
+            send_mail(
+                "E-mail: %s" % email,
+                "Mensagem:\n%s" % mensagem,
+                settings.DEFAULT_FROM_EMAIL,
+                [settings.DEFAULT_TO_EMAIL],
+                fail_silently=False
+            )
+
             return HttpResponseRedirect(reverse("contato_ok"))
 
     else:
@@ -97,13 +96,13 @@ def como_solicitar(request):
             # salva o documento no diretório especificado
             save_document(docfile, docpath)
 
-            email = EmailMessage("Orçamento para: %s" % email_str,
+            email = EmailMessage("Email: %s" % email_str,
                                  "Mensagem:\n%s" % mensagem,
-                                 "example@gmail.com",
-                                 ["example@gmail.com"],
-                                 fail_silently=False)
+                                 settings.DEFAULT_FROM_EMAIL,
+                                 [settings.DEFAULT_TO_EMAIL])
 
-            email.attach_file(docpath+docfile)
+            email.attach_file(docpath+docfile.name)
+            email.send(fail_silently=False)
 
             return HttpResponseRedirect(reverse("contato_ok"))
 
