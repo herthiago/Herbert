@@ -12,4 +12,5 @@ class ContatoForm(forms.Form):
 class OrcamentoForm(forms.Form):
     nome = forms.CharField(max_length=255, required=True)
     email = forms.EmailField(max_length=255, required=True)
+    documento = forms.FileField()
     descricao = forms.CharField(required=True, widget=forms.Textarea())

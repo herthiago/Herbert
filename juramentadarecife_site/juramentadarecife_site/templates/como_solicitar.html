@@ -38,7 +38,7 @@
                 <!-- End Google Map -->
 
                 <h3>{% trans 'Orçamento Rápido' %}</h3><br />
-                <form class="sky-form" method="POST" name="orcamento" enctype="multipart/form-data">
+                <form class="sky-form" method="POST" name="orcamento" enctype="multipart/form-data" action="{% url 'como_solicitar' %}">
                     {% csrf_token %}
 
                     <fieldset>
@@ -46,7 +46,8 @@
                         <label>{% trans 'Nome' %}</label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <input type="text" class="form-control">
+                                {{form.nome.errors}}
+                                <input type="text" class="form-control" name="nome">
                             </section>
 
                             <!--<div class="col-md-12 col-md-offset-0">
@@ -57,7 +58,8 @@
                         <label>Email <span class="color-red">*</span></label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <input type="text" class="form-control">
+                                {{form.email.errors}}
+                                <input type="text" class="form-control" name="email">
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <input type="text" class="form-control">
@@ -68,7 +70,8 @@
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 <label for="file" class="input input-file">
-                                    <div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Selecionar</div><input type="text" readonly>
+                                    {{form.documento.errors}}
+                                    <div class="button"><input type="file" name="documento" id="file" onchange="this.parentNode.nextSibling.value = this.value">Selecionar</div><input type="text" readonly>
                                 </label>
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
@@ -83,7 +86,8 @@
                         <label>{% trans 'Descrição do documento' %}</label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <textarea rows="10" class="form-control"></textarea>
+                                {{form.descricao.errors}}
+                                <textarea rows="10" class="form-control" name="descricao"></textarea>
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <textarea rows="10" class="form-control"></textarea>
