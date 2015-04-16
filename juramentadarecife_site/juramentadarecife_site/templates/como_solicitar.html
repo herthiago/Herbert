@@ -43,11 +43,11 @@
 
                     <fieldset>
                         {{ form.non_field_errors }}
-                        <label>{% trans 'Nome' %}</label>
+                        <label>{% trans 'Nome' %} <span class="color-red">*</span></label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 {{form.nome.errors}}
-                                <input type="text" class="form-control" name="nome">
+                                <input type="text" class="form-control" name="nome" required="required">
                             </section>
 
                             <!--<div class="col-md-12 col-md-offset-0">
@@ -59,7 +59,7 @@
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 {{form.email.errors}}
-                                <input type="text" class="form-control" name="email">
+                                <input type="text" class="form-control" name="email" required="required">
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <input type="text" class="form-control">
@@ -70,7 +70,6 @@
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 <label for="file" class="input input-file">
-                                    {{form.documento.errors}}
                                     <div class="button"><input type="file" name="documento" id="file" onchange="this.parentNode.nextSibling.value = this.value">Selecionar</div><input type="text" readonly>
                                 </label>
                             </section>
@@ -83,11 +82,11 @@
                             </div>-->
                         </div>
 
-                        <label>{% trans 'Descrição do documento' %}</label>
+                        <label>{% trans 'Descrição do documento' %} <span class="color-red">*</span></label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 {{form.descricao.errors}}
-                                <textarea rows="10" class="form-control" name="descricao"></textarea>
+                                <textarea rows="10" class="form-control" name="descricao" required="required"></textarea>
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <textarea rows="10" class="form-control"></textarea>
