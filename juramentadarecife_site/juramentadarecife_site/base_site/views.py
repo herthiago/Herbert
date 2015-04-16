@@ -57,13 +57,13 @@ def contato(request):
             email = form.cleaned_data['email']
             mensagem = form.cleaned_data['mensagem']
 
-            send_mail(
-                "E-mail: %s" % email,
-                "Mensagem:\n%s" % mensagem,
-                settings.DEFAULT_FROM_EMAIL,
-                [settings.DEFAULT_TO_EMAIL],
-                fail_silently=False
-            )
+            # send_mail(
+            #     "E-mail: %s" % email,
+            #     "Mensagem:\n%s" % mensagem,
+            #     settings.DEFAULT_FROM_EMAIL,
+            #     [settings.DEFAULT_TO_EMAIL],
+            #     fail_silently=False
+            # )
 
             return HttpResponseRedirect(reverse("contato_ok"))
 
@@ -96,13 +96,13 @@ def como_solicitar(request):
             # salva o documento no diretório especificado
             save_document(docfile, docpath)
 
-            email = EmailMessage("Email: %s" % email_str,
-                                 "Mensagem:\n%s" % mensagem,
-                                 settings.DEFAULT_FROM_EMAIL,
-                                 [settings.DEFAULT_TO_EMAIL])
-
-            email.attach_file(docpath+docfile.name)
-            email.send(fail_silently=False)
+            # email = EmailMessage("Email: %s" % email_str,
+            #                      "Mensagem:\n%s" % mensagem,
+            #                      settings.DEFAULT_FROM_EMAIL,
+            #                      [settings.DEFAULT_TO_EMAIL])
+            #
+            # email.attach_file(docpath+docfile.name)
+            # email.send(fail_silently=False)
 
             return HttpResponseRedirect(reverse("contato_ok"))
 
