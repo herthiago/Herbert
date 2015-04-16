@@ -31,7 +31,7 @@
                 <!-- End Google Map -->
 
                 <p>{% trans 'Precisa da Tradução Juramentada dos seus documentos?' %}</p>
-                <p>{% trans 'Entre em contato conosco por telefone ou e-mail, estamos à sua disposição para esclarecer qualquer dúvida, receber suas solicitações e enviar prontamente nossa proposta de trabalho.' %}</p>
+                <p>{% trans 'Entre em contato conosco por telefone ou e-mail, estamos à sua disposição para esclarecer qualquer dúvida,' %} <br /> {% trans 'receber suas solicitações e enviar prontamente nossa proposta de trabalho.' %}</p>
                 <p>{% trans 'Se preferir, utilize o formulário abaixo.' %}</p><br />
                 <form method="POST" name="contato" action="{% url 'contato' %}">
                     {% csrf_token %}
@@ -66,7 +66,7 @@
 
             <div class="col-md-3">
                 <!-- Contacts -->
-                <div class="headline"><h2>{% trans 'Contato' %}</h2></div>
+                <div class="headline"><h2>{% trans 'Fale Conosco' %}</h2></div>
                 <ul class="list-unstyled who margin-bottom-30">
                     <li><a href="mailto:andreabayle@gmail.com"><i class="fa fa-envelope"></i>andreabayle@gmail.com</a></li>
                     <li><i class="fa fa-phone"></i>(55-81) 3031-5491</li>

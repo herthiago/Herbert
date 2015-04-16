@@ -26,9 +26,9 @@
 <!--<div class="bg-image-v1 solicitar">-->
     <div class="container content">
     	<div class="row margin-bottom-40">
-        	<div class="col-md-4 md-margin-bottom-40">
+        	<div class="col-md-3 md-margin-bottom-40">
                 <div class="headline"><h2>COMO SOLICITAR uma tradução juramentada?</h2></div>
-                <p>{% trans 'Para fins de orçamento, envie um e-mail a andreabayle@gmail.com anexando o(s) documento(s) digitalizado(s) que necessitam ser traduzidos ou marque uma hora com a Tradutora Pública Andrea Baylé  para entregá-los pessoalmente. Entre em contato pelos telefones (55-81) 3031-5491, (55-81) 9444-8483, (55-81) 9680-1999 para maiores esclarecimentos ou preencha o formulário ao lado.' %}</p>
+                <p>{% trans 'Para fins de orçamento, envie um e-mail anexando o(s) documento(s) digitalizado(s) que necessitam ser traduzidos ou marque uma hora com a Tradutora Pública Andrea Baylé  para entregá-los pessoalmente. Entre em contato através dos telefones para maiores esclarecimentos ou preencha o formulário ao lado.' %}</p>
                 <p>{% trans 'Assumimos o compromisso de enviar um orçamento detalhado, para apreciação, com a maior celeridade.' %}</p>
             </div>
 
@@ -38,7 +38,7 @@
                 <!-- End Google Map -->
 
                 <h3>{% trans 'Orçamento Rápido' %}</h3><br />
-                <form class="sky-form" method="POST" name="orcamento" enctype="multipart/form-data">
+                <form class="sky-form" method="POST" name="orcamento" enctype="multipart/form-data" action="{% url 'como_solicitar' %}">
                     {% csrf_token %}
 
                     <fieldset>
@@ -46,7 +46,8 @@
                         <label>{% trans 'Nome' %}</label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <input type="text" class="form-control">
+                                {{form.nome.errors}}
+                                <input type="text" class="form-control" name="nome">
                             </section>
 
                             <!--<div class="col-md-12 col-md-offset-0">
@@ -57,7 +58,8 @@
                         <label>Email <span class="color-red">*</span></label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <input type="text" class="form-control">
+                                {{form.email.errors}}
+                                <input type="text" class="form-control" name="email">
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <input type="text" class="form-control">
@@ -68,7 +70,8 @@
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
                                 <label for="file" class="input input-file">
-                                    <div class="button"><input type="file" id="file" onchange="this.parentNode.nextSibling.value = this.value">Selecionar</div><input type="text" readonly>
+                                    {{form.documento.errors}}
+                                    <div class="button"><input type="file" name="documento" id="file" onchange="this.parentNode.nextSibling.value = this.value">Selecionar</div><input type="text" readonly>
                                 </label>
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
@@ -83,7 +86,8 @@
                         <label>{% trans 'Descrição do documento' %}</label>
                         <div class="row margin-bottom-20">
                             <section class="col col-md-12">
-                                <textarea rows="10" class="form-control"></textarea>
+                                {{form.descricao.errors}}
+                                <textarea rows="10" class="form-control" name="descricao"></textarea>
                             </section>
                             <!--<div class="col-md-12 col-md-offset-0">
                                 <textarea rows="10" class="form-control"></textarea>
@@ -100,7 +104,14 @@
                 </form>
             </div><!--/col-md-9-->
 
-            <div class="col-md-2 mb-margin-bottom-40">
+            <div class="col-md-3 mb-margin-bottom-40">
+                <div class="headline"><h2>{% trans 'Fale Conosco' %}</h2></div>
+                <ul class="list-unstyled who margin-bottom-30">
+                    <li><a href="mailto:andreabayle@gmail.com"><i class="fa fa-envelope"></i>andreabayle@gmail.com</a></li>
+                    <li><i class="fa fa-phone"></i>(55-81) 3031-5491</li>
+                    <li><i class="fa fa-mobile"></i>(55-81) 9444-8483/9680-1999</li>
+                    <li><a href="http://www.juramentadarecife.com"><i class="fa fa-globe"></i>www.juramentadarecife.com</a></li>
+                </ul>
             </div>
 
         </div><!--/row-->

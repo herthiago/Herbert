@@ -1,9 +1,11 @@
+# -*- coding:utf-8 -*-
+
 from django.shortcuts import render_to_response
 from django.core.mail import send_mail, EmailMessage
 from django.template import RequestContext
 from django.conf import settings
 from django.http import HttpResponseRedirect, HttpResponse
-from base_site.models import ContatoForm
+from base_site.models import ContatoForm, OrcamentoForm
 from django.core.urlresolvers import reverse
 
 
@@ -22,9 +24,9 @@ def traducao_juramentada(request):
     return render_to_response("traducao_juramentada.html", dict_template)
 
 
-def como_solicitar(request):
-    dict_template = {}
-    return render_to_response("como_solicitar.html", dict_template)
+# def como_solicitar(request):
+#     dict_template = {}
+#     return render_to_response("como_solicitar.html", dict_template)
 
 
 def quanto_custa(request):
@@ -55,15 +57,14 @@ def contato(request):
             email = form.cleaned_data['email']
             mensagem = form.cleaned_data['mensagem']
 
-#            send_mail(
-#                "E-mail: %s" % email,
-#                "Mensagem:\n%s" % mensagem,
-#                "example@gmail.com",
-#                ["example@gmail.com"],
-#                #settings.DEFAULT_FROM_EMAIL,
-#                #[settings.DEFAULT_TO_EMAIL],
-#                fail_silently=False
-#            )
+            # send_mail(
+            #     "E-mail: %s" % email,
+            #     "Mensagem:\n%s" % mensagem,
+            #     settings.DEFAULT_FROM_EMAIL,
+            #     [settings.DEFAULT_TO_EMAIL],
+            #     fail_silently=False
+            # )
+
             return HttpResponseRedirect(reverse("contato_ok"))
 
     else:
@@ -78,3 +79,45 @@ def contato(request):
 def contato_ok(request):
     dict_template = {}
     return render_to_response("contato_ok.html", dict_template, context_instance=RequestContext(request))
+
+
+def como_solicitar(request):
+    if request.method == 'POST':
+        form = OrcamentoForm(request.POST, request.FILES)
+        if form.is_valid():
+            nome = form.cleaned_data['nome']
+            email_str = form.cleaned_data['email']
+            mensagem = form.cleaned_data['descricao']
+
+            # obtém o documento do form
+            docfile = request.FILES['documento']
+            docpath = settings.SITE_ROOT + "/documentos/"
+
+            # salva o documento no diretório especificado
+            save_document(docfile, docpath)
+
+            # email = EmailMessage("Email: %s" % email_str,
+            #                      "Mensagem:\n%s" % mensagem,
+            #                      settings.DEFAULT_FROM_EMAIL,
+            #                      [settings.DEFAULT_TO_EMAIL])
+            #
+            # email.attach_file(docpath+docfile.name)
+            # email.send(fail_silently=False)
+
+            return HttpResponseRedirect(reverse("contato_ok"))
+
+    else:
+        form = OrcamentoForm()
+
+    dict_template = {
+        'form': form,
+    }
+
+    return render_to_response("como_solicitar.html", dict_template, context_instance=RequestContext(request))
+
+
+def save_document(docfile, docpath):
+    doc_fullpath = docpath + docfile.name
+    with open(doc_fullpath, 'wb+') as documento:
+        for chunk in docfile.chunks():
+            documento.write(chunk)

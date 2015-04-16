@@ -263,3 +263,6 @@ LANGUAGES = (
     ('pt-br', ugettext('Portugues')),
     ('es-ar', ugettext('Espanhol')),
 )
+
+# DEFAULT_FROM_EMAIL = "andreabayle@gmail.com"
+# DEFAULT_TO_EMAIL = "andreabayle@gmail.com"
