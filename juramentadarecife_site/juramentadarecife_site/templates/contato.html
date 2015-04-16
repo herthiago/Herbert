@@ -31,7 +31,7 @@
                 <!-- End Google Map -->
 
                 <p>{% trans 'Precisa da Tradução Juramentada dos seus documentos?' %}</p>
-                <p>{% trans 'Entre em contato conosco por telefone ou e-mail, estamos à sua disposição para esclarecer qualquer dúvida, receber suas solicitações e enviar prontamente nossa proposta de trabalho.' %}</p>
+                <p>{% trans 'Entre em contato conosco por telefone ou e-mail, estamos à sua disposição para esclarecer qualquer dúvida,' %} <br /> {% trans 'receber suas solicitações e enviar prontamente nossa proposta de trabalho.' %}</p>
                 <p>{% trans 'Se preferir, utilize o formulário abaixo.' %}</p><br />
                 <form method="POST" name="contato" action="{% url 'contato' %}">
                     {% csrf_token %}
