@@ -58,10 +58,10 @@ def contato(request):
             mensagem = form.cleaned_data['mensagem']
 
             send_mail(
-                "E-mail para Andrea Baylé - Contato: %s" % email,
+                "E-mail para Andrea Bayle - Contato: %s" % email,
                 "Mensagem:\n%s" % mensagem,
                 settings.DEFAULT_FROM_EMAIL,
-                [settings.DEFAULT_TO_EMAIL, "andersonberg@gmail.com"],
+                [settings.DEFAULT_TO_EMAIL],
                 fail_silently=False
             )
 
@@ -99,7 +99,7 @@ def como_solicitar(request):
             email = EmailMessage("Email: %s" % email_str,
                                  "Mensagem:\n%s" % mensagem,
                                  settings.DEFAULT_FROM_EMAIL,
-                                 [settings.DEFAULT_TO_EMAIL, "andersonberg@gmail.com"])
+                                 [settings.DEFAULT_TO_EMAIL])
 
             email.attach_file(docpath+docfile.name)
             email.send(fail_silently=False)
