@@ -33,7 +33,7 @@ TEMPLATE_DEBUG = DEBUG
 ########## MANAGER CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#admins
 ADMINS = (
-    ('Your Name', 'your_email@example.com'),
+    ('Anderson Berg', 'andersonberg@gmail.com'),
 )
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#managers
@@ -264,8 +264,8 @@ LANGUAGES = (
     ('es-ar', ugettext('Espanhol')),
 )
 
-DEFAULT_FROM_EMAIL = "andreabayle@gmail.com"
-DEFAULT_TO_EMAIL = "andreabayle@gmail.com"
+DEFAULT_FROM_EMAIL = "andersonberg@gmail.com"
+DEFAULT_TO_EMAIL = "andersonberg@gmail.com"
 
 FILE_UPLOAD_HANDLERS = ("django.core.files.uploadhandler.MemoryFileUploadHandler",
                         "django.core.files.uploadhandler.TemporaryFileUploadHandler",)
