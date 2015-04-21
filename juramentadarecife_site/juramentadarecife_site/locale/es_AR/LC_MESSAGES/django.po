@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-03-07 08:32-0300\n"
+"POT-Creation-Date: 2015-04-21 17:14-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,1141 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/base.html:68
+#: juramentadarecife_site/settings/base.py:263
+msgid "Portugues"
+msgstr ""
+
+#: juramentadarecife_site/settings/base.py:264
+msgid "Espanhol"
+msgstr ""
+
+#: templates/404.html:5 templates/404.html.py:7
+msgid "Página não encontrada"
+msgstr ""
+
+#: templates/404.html:17 templates/404.html.py:20
+msgid "Erro"
+msgstr ""
+
+#: templates/404.html:19 templates/base.html:97 templates/base.html.py:100
+#: templates/contato.html:17 templates/contato_ok.html:17
+#: templates/saiba_mais.html:18
+msgid "Início"
+msgstr "Inicio"
+
+#: templates/404.html:33 templates/500.html:3 templates/500.html.py:5
+msgid "Ocorreu um erro"
+msgstr ""
+
+#: templates/404.html:34
+msgid "A página que você procura não existe."
+msgstr ""
+
+#: templates/404.html:35 templates/500.html:18
+msgid "Voltar ao Início"
+msgstr ""
+
+#: templates/500.html:16
+msgid "Ocorreu um erro no servidor"
+msgstr ""
+
+#: templates/500.html:17
+msgid "Contate o administrador."
+msgstr ""
+
+#: templates/base.html:70
 msgid "Ajuda"
 msgstr "Ayuda"
 
-#: templates/base.html:95
-msgid "Início"
-msgstr "Comienzo"
+#: templates/base.html:101 templates/saiba_mais.html:16
+#: templates/saiba_mais.html.py:19
+msgid "Saiba Mais"
+msgstr "Leer Más"
+
+#: templates/base.html:109 templates/como_solicitar.html:18
+#: templates/consulados.html:13 templates/faq.html:16
+#: templates/quanto_custa.html:17 templates/quanto_custa.html.py:29
+#: templates/traducao_juramentada.html:16
+msgid "Tradução Juramentada"
+msgstr "Traducción Jurada"
+
+#: templates/base.html:113 templates/traducao_juramentada.html:14
+#: templates/traducao_juramentada.html:17
+msgid "O que é"
+msgstr "Qué es"
+
+#: templates/base.html:114 templates/como_solicitar.html:16
+#: templates/como_solicitar.html.py:19
+msgid "Como Solicitar"
+msgstr "Cómo Solicitar"
+
+#: templates/base.html:115
+msgid "Quanto Custa"
+msgstr "Tarifas"
+
+#: templates/base.html:116 templates/faq.html:14 templates/faq.html.py:17
+msgid "Dúvidas Frequentes"
+msgstr "Preguntas Frecuentes"
+
+#: templates/base.html:117 templates/consulados.html:11
+#: templates/consulados.html.py:14
+msgid "Consulados e links úteis"
+msgstr "Consulados y links útiles"
+
+#: templates/base.html:127 templates/base.html.py:185
+#: templates/contato.html:15 templates/contato.html.py:18
+#: templates/contato_ok.html:15 templates/contato_ok.html.py:18
+#: templates/contato_ok.html:38
+msgid "Contato"
+msgstr "Contáctenos"
+
+#: templates/base.html:178
+msgid "Dúvidas? Entre em contato por telefone ou e-mail"
+msgstr "¿Dudas? Contáctenos por teléfono o e-mail"
+
+#: templates/base.html:188
+msgid "Telefone"
+msgstr "Teléfono"
+
+#: templates/base.html:189
+msgid "Celular"
+msgstr "Celular"
+
+#: templates/como_solicitar.html:30
+msgid "COMO SOLICITAR uma tradução juramentada?"
+msgstr "¿CÓMO SOLICITAR una traducción jurada?"
+
+#: templates/como_solicitar.html:31
+msgid ""
+"Para fins de orçamento, envie um e-mail anexando o(s) documento(s) "
+"digitalizado(s) que necessitam ser traduzidos ou marque uma hora com a "
+"Tradutora Pública Andrea Baylé  para entregá-los pessoalmente. Entre em "
+"contato através dos telefones para maiores esclarecimentos ou preencha o "
+"formulário ao lado."
+msgstr ""
+"Para poder emitir rápidamente un presupuesto conforme a sus necesidades, le "
+"rogamos que nos envíe un e-mail adjuntando todos los documentos, "
+"digitalizados, que precisan ser traducidos o si lo prefiere podrá "
+"entregarlos personalmente. Póngase en contacto a través de los números de "
+"teléfono para mayores detalles o rellene el formulario al lado."
+
+#: templates/como_solicitar.html:32
+msgid ""
+"Assumimos o compromisso de enviar um orçamento detalhado, para apreciação, "
+"com a maior celeridade."
+msgstr ""
+"Le garantizamos una respuesta inmediata a sus inquietudes, la Traductora "
+"Púbica Andrea Baylé atenderá sus pedidos independientemente de si usted se "
+"encuentra en Recife, en alguna ciudad del interior de Pernambuco o en "
+"cualquier otro punto del país."
+
+#: templates/como_solicitar.html:40
+msgid "Orçamento Rápido"
+msgstr "Presupuesto Rápido"
+
+#: templates/como_solicitar.html:46
+msgid "Nome"
+msgstr "Nombre"
+
+#: templates/como_solicitar.html:69
+msgid "Selecione um documento"
+msgstr "Seleccionar archivo"
+
+#: templates/como_solicitar.html:85
+msgid "Descrição do documento"
+msgstr "Descripción del documento"
+
+#: templates/como_solicitar.html:98 templates/contato.html:63
+msgid "Enviar"
+msgstr ""
+
+#: templates/como_solicitar.html:107 templates/contato.html:69
+msgid "Fale Conosco"
+msgstr "Contáctenos"
+
+#: templates/como_solicitar.html:112 templates/contato.html:74
+msgid "Serviço de Tradução Urgente"
+msgstr "Servicio de Traducción Urgente"
+
+#: templates/consulados.html:26
+msgid "Consulados"
+msgstr "Consulados"
+
+#: templates/consulados.html:34
+msgid "Consulado-Honorário da Espanha"
+msgstr ""
+
+#: templates/consulados.html:39
+msgid "Expediente: Segundas e Terças das 8 às 11h"
+msgstr "Horario de Atención: Lunes y Martes de 8 a 11 h"
+
+#: templates/consulados.html:52
+msgid "Consulado-Honorário do México"
+msgstr ""
+
+#: templates/consulados.html:57
+msgid "Expediente: das 09:00 às 11:00h e 13:30 às 15:30h"
+msgstr "Horario de Atención: de 09:00 a 11:00h y de 13:30 a 15:30h"
+
+#: templates/consulados.html:70
+msgid "Consulado da Argentina"
+msgstr ""
+
+#: templates/consulados.html:75
+msgid "Expediente: 9:00 às 13:00"
+msgstr "Horario de Atención: de 9:00 a 13:00h"
+
+#: templates/consulados.html:85
+msgid "Consulado Geral da República Bolivariana da Venezuela"
+msgstr ""
+
+#: templates/consulados.html:100
+msgid "Outros consulados estrangeiros no Brasil"
+msgstr "Otros consulados extranjeros en Brasil"
+
+#: templates/consulados.html:112
+msgid "Outros consulados do Brasil no exterior"
+msgstr "Otras representaciones consulares de Brasil en el extranjero"
+
+#: templates/consulados.html:121
+msgid "SLRC – Setor de Legalizações e Rede Consular Estrangeira"
+msgstr "SLRC – Sector de Legalizaciones y Red Consular Extranjera"
+
+#: templates/consulados.html:122
+msgid ""
+"O serviço de legalização de documentos para fins exclusivos de produzir "
+"efeitos no exterior é prestado, em caráter voluntário e gratuito, pelo SLRC, "
+"em Brasília, e pelos Escritórios Regionais do MRE nos seguintes estados: Rio "
+"de Janeiro, Rio Grande do Sul, São Paulo, Paraná, Santa Catarina, Minas "
+"Gerais e Pernambuco"
+msgstr ""
+"El servicio de legalización de documentos, con el fin exclusivo de producir "
+"efectos en el exterior, lo realiza de forma voluntaria y gratuita el SLRC, "
+"en Brasília, y en los Escritorios Regionales del MRE en los siguientes "
+"estados: Rio de Janeiro, Rio Grande do Sul, San Pablo, Paraná, Santa "
+"Catarina, Minas Gerais y Pernambuco"
+
+#: templates/consulados.html:127
+msgid "Escritório de Representação do MRE na Região Nordeste – ERENE"
+msgstr ""
+
+#: templates/consulados.html:131
+msgid ""
+"Obs.: O ERENE legaliza somente documentos emitidos nos Estados de Alagoas, "
+"Sergipe, Pernambuco, Paraíba, Rio Grande do Norte, Ceará, Piauí e Maranhão."
+msgstr ""
+"Obs.: El ERENE legaliza apenas documentos emitidos en los Estados de "
+"Alagoas, Sergipe, Pernambuco, Paraíba, Rio Grande do Norte, Ceará, Piauí y "
+"Maranhão."
+
+#: templates/consulados.html:138
+msgid "Cartórios para Reconhecimento de Firma da Tradutora"
+msgstr "Notarías donde certificar la Firma de la Traductora"
+
+#: templates/consulados.html:143
+msgid "Cartório Andrade Lima - 1º Ofício de Notas do Recife"
+msgstr ""
+
+#: templates/consulados.html:156
+msgid "Cartório Arnaldo Maciel – 5º Cartório de Notas da Capital"
+msgstr ""
+
+#: templates/consulados.html:169
+msgid "Cartório João Roma – 6º Ofício de Notas da Capital"
+msgstr ""
+
+#: templates/consulados.html:182
+msgid "Cartório do Registro Civil da Boa Vista"
+msgstr ""
+
+#: templates/consulados.html:195
+msgid "Tabelionato Figueiredo – 8º Ofício de Notas do Recife"
+msgstr ""
+
+#: templates/contato.html:33
+msgid "Precisa da Tradução Juramentada dos seus documentos?"
+msgstr "¿Precisa que sus documentos sean traducidos por un Traductor Jurado?"
+
+#: templates/contato.html:34
+msgid ""
+"Entre em contato conosco por telefone ou e-mail, estamos à sua disposição "
+"para esclarecer qualquer dúvida,"
+msgstr ""
+"Póngase en contacto con nosotros por teléfono o e-mail, estamos a su "
+"disposición para aclarar cualquier duda,"
+
+#: templates/contato.html:34
+msgid ""
+"receber suas solicitações e enviar prontamente nossa proposta de trabalho."
+msgstr ""
+"recibir sus consultas y enviarle rápidamente nuestra propuesta de trabajo."
+
+#: templates/contato.html:35
+msgid "Se preferir, utilize o formulário abaixo."
+msgstr "O si así lo prefiere, utilice el formulario de abajo."
+
+#: templates/contato.html:39
+msgid "Nome "
+msgstr "Nombre"
+
+#: templates/contato.html:55
+msgid "Mensagem "
+msgstr ""
+
+#: templates/contato.html:79 templates/contato_ok.html:47
+msgid "Horário de Trabalho"
+msgstr ""
+
+#: templates/contato_ok.html:32
+msgid ""
+"Estamos a disposição para esclarecer as suas dúvidas, receber suas "
+"solicitações e enviar nossa proposta de trabalho."
+msgstr ""
+
+#: templates/faq.html:40
+msgid "Quais são os documentos que exigem tradução juramentada?"
+msgstr "¿Qué documentos requieren traducción jurada para su tramitación?"
+
+#: templates/faq.html:46
+msgid ""
+"Alguns órgãos ou repartições do Governo ou empresas particulares, como os "
+"estabelecimentos de ensino, exigem tradução juramentada de documentos em "
+"língua estrangeira. Se o documento em língua estrangeira tiver que ser "
+"apresentado à Justiça brasileira ou protocolado em Cartórios de Títulos e "
+"Documentos ou em outros tipos de cartórios, terá que ter obrigatoriamente "
+"anexada a tradução juramentada. Os documentos que comumente exigem tradução "
+"juramentada são: atas, carteira de habilitação, certidão de nascimento, "
+"casamento e óbito, documentos escolares (certificados de 1º e 2º Graus, "
+"diplomas universitários e históricos escolares), certificados de origem, "
+"contratos, autos de processos judiciais, documentos de embarcações "
+"estrangeiras, manifestos, passaporte, procurações, sentenças e testamentos."
+msgstr ""
+"Algunas entidades u organismos judiciales, públicos o empresas particulares, "
+"como los establecimientos educativos, exigen la traducción jurada de los "
+"documentos en lengua extranjera. Si el documento en lengua extranjera tiene "
+"que surtir efectos en la Justicia brasilera o ser protocolado en Notarias o "
+"en otros tipos de registros, deberá llevar obligatoriamente adjunta la "
+"traducción jurada. Los documentos que normalmente requieren que sean "
+"traducidos por traductor jurado son: Certificado de nacimiento, Certificado "
+"de matrimonio, Certificado de defunción, Título universitario, Expediente "
+"académico, Certificación del Registro Mercantil, Estatutos sociales, Cuentas "
+"anuales, Sentencia judicial (sentencia de divorcio, separación, etc.), Poder "
+"notarial, Certificado de empadronamiento, Fe de vida, Antecedentes penales, "
+"Permiso de conducir, etc."
+
+#: templates/faq.html:55
+msgid "A tradução juramentada é válida no Brasil todo?"
+msgstr "¿La traducción jurada tiene validez en todo el territorio brasileño?"
+
+#: templates/faq.html:61
+msgid ""
+"Sim, a tradução juramentada tem validade em todo o território nacional, "
+"apesar de os tradutores juramentados estarem lotados em um determinado "
+"Estado e subordinados à Junta Comercial desse Estado."
+msgstr ""
+"Sí, la traducción jurada tiene validez en todo el territorio nacional, sin "
+"perjuicio de los traductores jurados estar matriculados y subordinados a la "
+"Junta Comercial del Estado donde residen."
+
+#: templates/faq.html:70
+msgid "O Tradutor Público pode oferecer descontos?"
+msgstr "¿El Traductor Público puede ofrecer descuentos?"
+
+#: templates/faq.html:76
+msgid ""
+"De acordo com as leis e resoluções que regem o exercício do ofício de "
+"tradutor juramentado, não é ilícito ao tradutor juramentado praticar o ágio "
+"ou conceder descontos, sendo passível de multas e penalidades."
+msgstr ""
+"En conformidad con las leyes y resoluciones que rigen el ejercicio del "
+"oficio, no es lícito al traductor jurado practicar el agio o conceder "
+"descuentos en beneficio de quien quiera que sea, bajo pena de multas e "
+"penalidades."
+
+#: templates/faq.html:78
+msgid "DECRETO Nº 13.609, DE 21 DE OUTUBRO DE 1943. - Art. 35"
+msgstr ""
+
+#: templates/faq.html:79
+msgid ""
+"\"Parágrafo único.- Não é lícito aos tradutores abater, em benefício de quem "
+"quer que seja, os emolumentos que lhes forem fixados na mesma tabela, sob "
+"pena de multa elevada ao dobro na reincidência, cabendo-lhes anotar no final "
+"de cada tradução o total dos emolumentos e selos cobrados\"."
+msgstr ""
+
+#: templates/faq.html:89
+msgid "O que é consularização?"
+msgstr "¿En qué consiste el trámite de consularización?"
+
+#: templates/faq.html:95
+msgid ""
+"A consularização (ou legalização consular) é um endosso de autoridade "
+"diplomática brasileira "
+msgstr ""
+"La consularización (o legalización consular) es una certificación de la "
+"autoridad diplomática brasilera "
+
+#: templates/faq.html:96
+msgid "no país em que foi emitido um documento,"
+msgstr "en el país donde fue emitido el documento,"
+
+#: templates/faq.html:97
+msgid ""
+"para legitimá-lo. Geralmente é feita, em português, em documento apenso ao "
+"documento assinado e deve ser providenciada antes da tradução juramentada. "
+"Consulte com o consulado ou embaixada mais próxima no site do Ministério de "
+"Relações Exteriores: "
+msgstr ""
+"que le otorga validez en el territorio brasileño. Generalmente, se realiza "
+"en portugués, en documento adjunto al documento firmado y debe hacerse antes "
+"de la traducción jurada. Consulte el consulado o embajada más próxima a "
+"usted en el site del Ministerio de Relaciones Exteriores: "
+
+#: templates/faq.html:100
+msgid "Itamaraty MRE - Portal Consular:"
+msgstr ""
+
+#: templates/faq.html:101
+msgid ""
+"“O Brasil não é signatário da Apostila da Convenção da Haia. Assim, para "
+"produzir efeitos legais no Brasil, os documentos emitidos em países "
+"estrangeiros devem ser legalizados, unicamente, junto às Repartições "
+"Consulares do Ministério das Relações Exteriores (MRE) no exterior. O "
+"Ministério das Relações Exteriores em Brasília, bem como seus Escritórios "
+"Regionais em alguns Estados brasileiros, não têm competência para efetuar "
+"legalização em documentos emitidos em países estrangeiros”. "
+msgstr ""
+
+#: templates/faq.html:104
+msgid ""
+"Acordo Internacional Bilateral sobre Legalização de Documentos Brasil – "
+"Argentina"
+msgstr ""
+"Acuerdo Internacional Bilateral sobre Legalización en Documentos Públicos "
+"Brasil – Argentina"
+
+#: templates/faq.html:105
+msgid ""
+"“Acordo, por troca de Notas, sobre Simplificação de Legalizações em "
+"Documentos Públicos, de 16/10/2003, publicado no D.O.U. de 23/04/2004. O "
+"Acordo, que não prevê a isenção total de legalização, estabelece que os "
+"documentos públicos originados em ambos os países, para terem validade no "
+"território do outro, devem ser legalizados apenas pelos respectivos "
+"Ministérios das Relações Exteriores, não havendo necessidade de serem "
+"submetidos à legalização consular”."
+msgstr ""
+"Acuerdo sobre Simplificación de Legalizaciones en Documentos Públicos "
+"argentinos y brasileños, del 16/10/2003, publicado em el D.O.U. del "
+"23/04/2004. El Acuerdo, que no prevé la eximición total de legalización, "
+"establece que los documentos públicos emitidos en ambos países, para tener "
+"validez en el territorio del otro, deberán ser legalizados apenas pelos "
+"respectivos Ministerios de Relaciones Exteriores, no  siendo necesaria la "
+"intervención consular a la legalización de los documentos contemplados en el "
+"Acuerdo. "
+
+#: templates/faq.html:107
+msgid "Vide:"
+msgstr ""
+
+#: templates/faq.html:116
+msgid "As traduções juramentadas feitas no Brasil são aceitas no exterior?"
+msgstr ""
+"¿Las traducciones juradas realizadas en Brasil son válidas en el extranjero?"
+
+#: templates/faq.html:122
+msgid ""
+"Cada país tem as suas próprias leis e, se não houver legislação específica a "
+"respeito, cada entidade nesses países terá suas próprias regras internas a "
+"respeito das traduções. Portanto, convém consultar a entidade destinatária "
+"dos seus documentos."
+msgstr ""
+"Sí, en la mayoría de los países de Latinoamérica y en España. Sin embargo, "
+"debemos tener en cuenta que cada país tiene sus propios procedimientos de "
+"legalización, por este motivo, es importante consultar con la representación "
+"consular correspondiente y la entidad destinataria de sus documentos, sobre "
+"los requisitos exigidos y trámites necesarios antes de solicitar una "
+"traducción jurada."
+
+#: templates/faq.html:131
+msgid "Há necessidade de reconhecimento de firma do tradutor juramentado?"
+msgstr "¿Es necesario certificar la firma del traductor jurado?"
+
+#: templates/faq.html:137
+msgid ""
+"O Tradutor Juramentado, por lei, tem fé pública em todo o território "
+"nacional. Ao assinar uma tradução pública, afirma, perante a lei e a "
+"sociedade, que o conteúdo traduzido está correto e em conformidade com as "
+"práticas de linguagem entre as duas línguas e as duas culturas envolvidas no "
+"processo tradutório em questão."
+msgstr ""
+"No, ya que el Traductor Jurado es un fedatario público. Al firmar una "
+"traducción pública, da fe, ante la ley y la sociedad, que el contenido "
+"traducido está correcto y  conforme a las prácticas de lenguaje entre las "
+"dos lenguas y las dos culturas envueltas en el proceso de traducción."
+
+#: templates/faq.html:139
+msgid "Decreto 13.609 de 21⁄10⁄43, III, Art. 20. "
+msgstr ""
+
+#: templates/faq.html:140
+msgid ""
+"“Os tradutores públicos e intérpretes comerciais terão jurisdição em todo o "
+"território do Estado em que forem nomeados ou no Distrito Federal quando "
+"nomeados pelo Presidente da República. Entretanto, terão fé pública em todo "
+"o país as traduções por eles feitas e as certidões que passarem”."
+msgstr ""
+
+#: templates/faq.html:142
+msgid ""
+"No entanto, se a tradução juramentada estiver destinada a um pais de idioma "
+"espanhol, as exigências variam de país para país e o reconhecimento de firma "
+"poderá ser complementado com a legalização do Ministério de Relações "
+"Exteriores e a consularização no Consulado do país destinatário da tradução. "
+"Informações a respeito podem ser obtidas no consulado respectivo."
+msgstr ""
+"Sin embargo, si la traducción jurada está destinada a un país de idioma "
+"español, las exigencias varían de país para país, a la certificación de la "
+"firma, normalmente, se le suman la legalización del Ministerio de Relaciones "
+"Exteriores y del Consulado del país destinatario de la traducción. Podrá "
+"asesorarse sobre cada procedimiento en particular consultando al consulado "
+"correspondiente."
+
+#: templates/faq.html:145
+msgid ""
+"RELAÇÃO DE CONSULADOS E CARTÓRIOS PARA RECONHECIMENTO DE FIRMA DA TRADUTORA "
+"ANDREA BAYLÉ"
+msgstr "NOTARÍAS DONDE CERTIFICAR LA FIRMA DE LA TRADUCTORA ANDREA BAYLÉ"
+
+#: templates/faq.html:154
+msgid "Como faço para solicitar uma tradução juramentada?"
+msgstr "¿Cómo puedo solicitar una traducción jurada?"
+
+#: templates/faq.html:160
+msgid ""
+"Entre em contato com a Tradutora Pública Andrea Baylé pelo chat, por "
+"telefone, e-mail ou através do formulário disponível no site e receberá "
+"informação detalhada sobre valores, prazos, etc."
+msgstr ""
+"Póngase en contacto con la Traductora Pública Andrea Baylé por el chat, por "
+"teléfono, e-mail o a través de los formularios disponibles en el site y "
+"recibirá asesoramiento de cómo proceder."
+
+#: templates/faq.html:161
+msgid "Clique "
+msgstr "Pulse "
+
+#: templates/faq.html:161 templates/index.html:18 templates/index.html.py:86
+msgid "aqui"
+msgstr "aquí"
+
+#: templates/faq.html:161
+msgid " para solicitar sua tradução."
+msgstr "para solicitar su traducción."
+
+#: templates/faq.html:170
+msgid "Posso solicitar a emissão de uma segunda via da tradução juramentada?"
+msgstr "¿Y si necesito varias copias de la traducción jurada?"
+
+#: templates/faq.html:176
+msgid ""
+"Sim, o cliente pode solicitar uma ou várias cópias originais, junto com a "
+"tradução ou versão ou posteriormente. Os valores cobrados por este serviço "
+"seguem a Tabela de Emolumentos da Junta Comercial de cada estado."
+msgstr ""
+"El cliente puede solicitar una o varias copias certificadas. El importe "
+"cobrado por este servicio está contemplado en la Tarifa Oficial estipulada "
+"por la Junta Comercial de cada estado, en Pernambuco se cobra a un 20% de "
+"los honorarios debidos por el servicio si se emite simultáneamente con la "
+"traducción, y un 50% si se solicita posteriormente. Resolución JUCEPE Nº 02 "
+"del 25 de agosto de 2011, Arts. 3º y 4º."
+
+#: templates/index.html:16
+msgid "TRADUÇÕES OFICIAIS"
+msgstr "TRADUCCIONES OFICIALES"
+
+#: templates/index.html:16 templates/index.html.py:17
+msgid "Português – Espanhol"
+msgstr "Portugués - Español"
+
+#: templates/index.html:16 templates/index.html.py:17
+msgid "Espanhol – Português"
+msgstr "Español - Portugués"
+
+#: templates/index.html:18
+msgid "Solicite já o seu orçamento. Clique "
+msgstr "Solicite aquí su presupuesto. Pulse "
+
+#: templates/index.html:22
+msgid "Serviços de tradução juramentada"
+msgstr "Servicios de traducción jurada"
+
+#: templates/index.html:22
+msgid "para pessoas físicas"
+msgstr "para personas físicas"
+
+#: templates/index.html:22
+msgid "e jurídicas"
+msgstr "y jurídicas"
+
+#: templates/index.html:23
+msgid "Válidas em todo o Brasil"
+msgstr "Con validez en todo el territorio brasileño "
+
+#: templates/index.html:23
+msgid "e no Exterior"
+msgstr "Y en el extranjero"
+
+#: templates/index.html:47
+msgid "Andrea Baylé - Traduções Juramentadas"
+msgstr "Andrea Baylé – Traducciones Juradas"
+
+#: templates/index.html:48
+msgid ""
+"Oferecemos serviços de tradução pública a pessoas físicas ou jurídicas, "
+"traduções oficiais válidas em todo o Brasil e no exterior, de documentos que "
+"tenham o idioma espanhol ou português como língua de partida ou de chegada. "
+"Feitas por uma Tradutora Juramentada, concursada, com ampla experiência e "
+"qualificação."
+msgstr ""
+"Prestamos servicios de traducción pública a personas físicas o jurídicas, "
+"traducciones oficiales con validez en todo el territorio brasileño y en el "
+"extranjero, de documentos que posean el idioma español o portugués como "
+"lengua de partida o de llegada. Realizadas por una Traductora Jurada, "
+"nombrada por la JUCEPE y acreditada por el MRE, con amplia experiencia y "
+"alto grado de capacitación."
+
+#: templates/index.html:51
+msgid "SAIBA MAIS"
+msgstr "LEER MÁS"
+
+#: templates/index.html:67
+msgid "O qué é tradução juramentada?"
+msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
+
+#: templates/index.html:68
+msgid ""
+"Tradução Juramentada é a tradução feita por um Tradutor Público concursado e "
+"habilitado pela Junta Comercial do seu Estado, de um documento oficial que "
+"precise produzir efeitos legais no Brasil ou no exterior. "
+msgstr ""
+"La Traducción Jurada es un tipo de traducción especial, realizada por un "
+"Traductor Público nombrado por la Junta Comercial de su Estado, de un "
+"documento oficial que precise producir efectos legales en Brasil o en el "
+"extranjero."
+
+#: templates/index.html:68 templates/index.html.py:77
+msgid "Saiba mais"
+msgstr "Leer Más"
+
+#: templates/index.html:76
+msgid "Quanto custa uma tradução juramentada?"
+msgstr "¿Qué tarifas se aplican?"
+
+#: templates/index.html:77
+msgid ""
+"O custo da tradução juramentada é calculado com base em Tabela de "
+"Emolumentos homologada pelas Juntas Comerciais dos Estados. "
+msgstr ""
+"Son aplicadas las tarifas oficiales estipuladas por la Junta Comercial de "
+"Pernambuco y publicadas en el Diario Oficial del Estado, es un valor único "
+"que debe ser observado por todos los traductores públicos, bajo pena de ley "
+"e invalidación de la traducción."
+
+#: templates/index.html:85
+msgid "Como solicitar uma tradução juramentada?"
+msgstr "¿CÓMO SOLICITAR UNA TRADUCCIÓN JURADA?"
+
+#: templates/index.html:86
+msgid ""
+"Entre em contato com a Tradutora Pública Andrea Baylé e peça um orçamento. "
+"Clique "
+msgstr ""
+"Póngase en contacto con la Traductora Pública Andrea Baylé y solicite su "
+"presupuesto, le haremos llegar de inmediato nuestra propuesta de trabajo. "
+"PULSE "
+
+#: templates/index.html:94
+msgid "Nossos Serviços"
+msgstr "NUESTROS SERVICIOS"
+
+#: templates/index.html:105
+msgid "EMPRESAS"
+msgstr ""
+
+#: templates/index.html:107
+msgid "CONTRATOS"
+msgstr "ESTATUTOS SOCIETARIOS"
+
+#: templates/index.html:108
+msgid "ESCRITURAS DE CONSTITUIÇÃO"
+msgstr "ESCRITURAS DE CONSTITUCIÓN"
+
+#: templates/index.html:109
+msgid "PROCURAÇÕES"
+msgstr "PODERES"
+
+#: templates/index.html:110
+msgid "BALANÇOS"
+msgstr "ESTADOS CONTABLES"
+
+#: templates/index.html:111
+msgid "LICITAÇÕES PÚBLICAS"
+msgstr "LICITACIONES PÚBLICAS"
+
+#: templates/index.html:112
+msgid "Etc."
+msgstr ""
+
+#: templates/index.html:128
+msgid "CERTIDÃO DE CASAMENTO"
+msgstr "CERTIFICADO DE MATRIMONIO"
+
+#: templates/index.html:129
+msgid "AVERBAÇÃO DE DIVÓRCIO"
+msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
+
+#: templates/index.html:130
+msgid "DECLARAÇÃO DE ESTADO CIVIL"
+msgstr "FE DE VIDA Y ESTADO"
+
+#: templates/index.html:131
+msgid "ANTECEDENTES PENAIS"
+msgstr "ANTECEDENTES PENALES"
+
+#: templates/index.html:132 templates/index.html.py:152
+#: templates/index.html:173
+msgid "Etc..."
+msgstr ""
+
+#: templates/index.html:146
+msgid "ESTUDOS INTERNACIONAIS"
+msgstr "ESTUDIOS INTERNACIONALES"
+
+#: templates/index.html:148
+msgid "HISTÓRICOS ESCOLARES"
+msgstr "CERTIFICADO ACADÉMICO"
+
+#: templates/index.html:149
+msgid "DIPLOMA UNIVERSITÁRIO"
+msgstr "TÍTULO UNIVERSITARIO"
+
+#: templates/index.html:150
+msgid "DECLARAÇÕES"
+msgstr "CONSTANCIAS"
+
+#: templates/index.html:151
+msgid "HOMOLOGAÇÃO DE ESTUDOS"
+msgstr "HOMOLOGACIÓN DE ESTUDIOS"
+
+#: templates/index.html:166
+msgid "DOCUMENTAÇÃO PESSOAL"
+msgstr "DOCUMENTACIÓN PERSONAL"
+
+#: templates/index.html:168
+msgid "CARTEIRA DE IDENTIDADE"
+msgstr "DOCUMENTO DE IDENTIDAD"
+
+#: templates/index.html:169
+msgid "CARTEIRA DE MOTORISTA"
+msgstr "LICENCIA DE CONDUCIR"
+
+#: templates/index.html:170
+msgid "PASSAPORTE"
+msgstr "PASAPORTE"
+
+#: templates/index.html:171
+msgid "CARTEIRA DE IDENTIDADE PROFISSIONAL"
+msgstr "CARNÉ PROFESIONAL"
+
+#: templates/index.html:172
+msgid "CERTIDÃO DE NASCIMENTO"
+msgstr "CERTIFICADO DE NACIMIENTO"
+
+#: templates/quanto_custa.html:15 templates/quanto_custa.html.py:18
+#: templates/quanto_custa.html:27 templates/quanto_custa.html.py:30
+msgid "Quanto custa"
+msgstr "QUÉ TARIFAS se aplican"
+
+#: templates/quanto_custa.html:43
+msgid ""
+"O valor da tradução juramentada é determinado por tabela de emolumentos, "
+"aprovada e divulgada pelas juntas comerciais no seu Diário Oficial, a qual o "
+"Tradutor Público é obrigado a seguir por lei. Atualmente em Pernambuco rege "
+"a tabela oficial publicada na Resolução JUCEPE Nº 02 de 25 de agosto de "
+"2011, atualizada pela Resolução JUCEPE Nº 001 de 14 de agosto de 2012."
+msgstr ""
+"El precio de una traducción jurada se calcula con base en la tarifa "
+"estipulada y divulgada por las Juntas Comerciales en el Diario Oficial, la "
+"cual debe ser seguida por todos los traductores nombrados por la JUCEPE, "
+"bajo pena de las sanciones previstas y anulación de la traducción "
+"correspondiente. Actualmente en Pernambuco está en vigor la publicada en la "
+"Resolución JUCEPE Nº 02 del 25 de agosto de 2011, actualizada por la "
+"Resolución JUCEPE Nº 001 del 14 de agosto de 2012."
+
+#: templates/quanto_custa.html:44
+msgid "Esses preços variam de acordo com:"
+msgstr "Estos precios varían de acuerdo con:"
+
+#: templates/quanto_custa.html:46
+msgid "Tipo de documento"
+msgstr "EL TIPO DE DOCUMENTO:"
+
+#: templates/quanto_custa.html:48
+msgid "Textos Comuns"
+msgstr "Textos Comunes"
+
+#: templates/quanto_custa.html:48
+msgid ""
+": passaportes, certidões de registro civil, carteiras de identidade, de "
+"habilitação profissional e documentos similares, inclusive cartas pessoais "
+"que não envolvam textos jurídicos, técnicos ou científicos."
+msgstr ""
+": pasaportes, actas del registro civil, documentos de identidad, de "
+"habilitación profesional y documentos semejantes, incluso cartas personales "
+"que no envuelvan textos jurídicos, técnicos o científicos."
+
+#: templates/quanto_custa.html:49
+msgid "Textos Especiais"
+msgstr "Textos Especiales"
+
+#: templates/quanto_custa.html:49
+msgid ""
+": jurídicos, técnicos, científicos, comerciais, inclusive bancários e "
+"contábeis, certificados e diplomas escolares. "
+msgstr ""
+": jurídicos, técnicos, científicos, comerciales, incluso bancarios y "
+"contables, certificados y diplomas escolares."
+
+#: templates/quanto_custa.html:54 templates/quanto_custa.html.py:63
+msgid "Tamanho do documento"
+msgstr "EL TAMAÑO DEL DOCUMENTO"
+
+#: templates/quanto_custa.html:55
+msgid "O valor da tradução depende da quantidade de texto do documento."
+msgstr "O sea, depende de la cantidad de texto que posee el documento. "
+
+#: templates/quanto_custa.html:56
+msgid "Exemplo"
+msgstr "Ejemplo"
+
+#: templates/quanto_custa.html:56
+msgid ""
+": Uma certidão de nascimento ou de casamento do Brasil, que em português "
+"ocupa uma única página, ao ser traduzida pode chegar a ter entre 2 e 3 "
+"laudas juramentadas. Já uma certidão de nascimento, de casamento ou de óbito "
+"estrangeira, apesar de em espanhol ocupar uma página ou duas, ao ser "
+"traduzida pode ocupar até 5 laudas juramentadas. Isto ocorre porque muitas "
+"vezes o documento contém texto em letra muito pequena, carimbos, "
+"assinaturas, selos, consularizações, autenticações que são traduzidos e "
+"mencionados na tradução juramentada, por este motivo o orçamento baseia-se "
+"na quantidade de texto e não no número de páginas do documento original."
+msgstr ""
+"Un certificado de nacimiento o de matrimonio de Brasil, que en portugués "
+"ocupa una única página, al ser traducida puede llegar a tener entre 2 y 3 "
+"laudas juradas. Asimismo, un certificado de nacimiento, de matrimonio o de "
+"defunción extranjero, a pesar de que en español ocupa una página o dos, al "
+"ser traducida puede llevar hasta 5 laudas juradas. Esto ocurre porque muchas "
+"veces el documento posee texto en letra muy pequeña, sellos, firmas, "
+"timbres, legalizaciones, autenticaciones que deben ser traducidos y "
+"mencionados en la traducción jurada para que esta resulte en un testimonio "
+"fiel del documento original, por este motivo el presupuesto está basado en "
+"la cantidad de texto y no en el número de páginas del documento original."
+
+#: templates/quanto_custa.html:60
+msgid "Prazo de entrega"
+msgstr "EL PLAZO PARA LA ENTREGA"
+
+#: templates/quanto_custa.html:61
+msgid "O prazo para a entrega varia de acordo com alguns fatores como:"
+msgstr ""
+"El plazo para la entrega puede variar, pues depende de algunos factores como:"
+
+#: templates/quanto_custa.html:64
+msgid "Urgência do cliente"
+msgstr "La urgencia del cliente"
+
+#: templates/quanto_custa.html:64
+#, python-format
+msgid ""
+"Resolução Nº 02 – JUCEPE Art. 10 § 1 e 2: Será cobrado um acréscimo de 50%% "
+"(cinquenta por cento) para os serviços urgentes e de 100%% para serviços "
+"extraordinários (sábados, domingos, feriados e pontos facultativos)"
+msgstr ""
+"Resolución JUCEPE Nº 02 – Art. 10 § 1 y 2 Será cobrado um acréscimo de 50%% "
+"(cinquenta por cento) para os serviços urgentes e de 100%% para serviços "
+"extraordinários (sábados, domingos, feriados e pontos facultativos) "
+
+#: templates/quanto_custa.html:65
+msgid "Volume de entregas já agendadas com outros clientes"
+msgstr "c. La cantidad de entregas agendadas con otros clientes"
+
+#: templates/quanto_custa.html:80
+msgid "Tabela de preços"
+msgstr "Tarifa Oficial"
+
+#: templates/quanto_custa.html:81
+msgid ""
+"Preços obrigatórios determinados por Resolução JUCEPE nº 001 de 14 de agosto "
+"de 2012"
+msgstr ""
+"Tarifa Oficial determinada por Resolución JUCEPE nº 001 del 14 de agosto de "
+"2012"
+
+#: templates/quanto_custa.html:99 templates/quanto_custa.html.py:157
+msgid "Documentos comuns"
+msgstr "Documentos comunes"
+
+#: templates/quanto_custa.html:102 templates/quanto_custa.html.py:128
+#: templates/quanto_custa.html:160
+msgid "Documentos especiais"
+msgstr "Documentos especiales"
+
+#: templates/quanto_custa.html:112
+msgid "Tradução"
+msgstr "TRADUCCIÓN"
+
+#: templates/quanto_custa.html:113 templates/quanto_custa.html.py:117
+msgid "Espanhol para Português"
+msgstr "Español al Portugués"
+
+#: templates/quanto_custa.html:114 templates/quanto_custa.html.py:118
+#: templates/quanto_custa.html:147
+msgid "(por lauda de 1.000 caracteres sem espaços)"
+msgstr "(por lauda de 1.000 caracteres sin espacios)"
+
+#: templates/quanto_custa.html:125
+msgid "DOCUMENTOS COMUNS"
+msgstr "DOCUMENTOS COMUNES"
+
+#: templates/quanto_custa.html:135 templates/quanto_custa.html.py:167
+msgid "Peça seu orçamento"
+msgstr "Pida su presupuesto"
+
+#: templates/quanto_custa.html:145
+msgid "Versão"
+msgstr "Versión"
+
+#: templates/quanto_custa.html:146
+msgid "Português para Espanhol"
+msgstr "Portugués al Español"
+
+#: templates/saiba_mais.html:37
+msgid "Tradutora Pública e Intérprete Comercial de Espanhol"
+msgstr "Traductora Pública e Intérprete Comercial de Español"
+
+#: templates/saiba_mais.html:46
+msgid ""
+"Todas as traduções juramentadas, entre os idiomas espanhol e português, são "
+"feitas pessoalmente por Andrea Baylé, tradutora pública juramentada, "
+"habilitada por concurso público promovido pela Junta Comercial do Estado de "
+"Pernambuco – JUCEPE em 2011, com registro nº 415."
+msgstr ""
+"Todas las traducciones juradas o públicas, entre los idiomas español y "
+"portugués, son realizadas personalmente por la Prof.ª Andrea Baylé, "
+"Traductora Pública e Intérprete Comercial, aprobada en el Concurso de "
+"Oposición solicitado por la Junta Comercial do Estado de Pernambuco – JUCEPE "
+"en el año 2011. Habilitada con la matrícula profesional nº 415∕2012, "
+"publicada en el Diario Oficial del Estado."
+
+#: templates/saiba_mais.html:47
+msgid ""
+"Argentina de nascimento e naturalizada brasileira mora no Brasil há 26 anos. "
+"Obteve o Certificado de Proficiência em Língua Portuguesa para Estrangeiros"
+msgstr ""
+"Es natural de Argentina, vive en Brasil desde 1998 y en el 2012 adquirió la "
+"nacionalidad brasileña. Obtuvo el Certificado de Proficiencia en Lengua "
+"Portuguesa para Extranjeros Celpe-Bras, desarrollado y otorgado por el "
+"Ministerio de Educación Brasileño (MEC),"
+
+#: templates/saiba_mais.html:47
+msgid ""
+"nível superior, em 2008. Trabalhou como professora de Espanhol em renomadas "
+"escolas de idiomas por quatorze anos e atualmente ministra aulas no "
+"Instituto Cervantes de Recife, atuando também como palestrante e examinadora "
+"nas bancas do exame DELE (Diploma de Espanhol Língua Estrangeira) desde 2009."
+msgstr ""
+"nivel superior, en el año 2008. Trabajó como profesora de Español en "
+"reconocidas escuelas de idiomas por quince años hasta la llegada a Recife "
+"del Instituto Cervantes, siendo la primera profesora colaboradora contratada "
+"por esta prestigiosa institución; donde dicta clases hasta el día de la "
+"fecha y  participa como examinadora en los tribunales DELE (Diploma de "
+"Español Lengua Extranjera), título otorgado por el Instituto Cervantes de "
+"Recife en nombre del Ministerio de Educación, Cultura y Deporte de España. "
+"Actuó, también, como conferenciante invitada en diversos eventos, tales como "
+"el Curso de Actualización para Profesores de Español, organizado por la "
+"Consejería de Educación – Embajada de España conjuntamente con la SEDUC-PE "
+"(“La Diversidad Cultural del Mundo Hispano”), en la Semana de la Hispanidad "
+"del Instituto Cervantes de Recife y  de la Universidad Católica de "
+"Pernambuco (“Voces Afroargentinas”), y últimamente, en la Tertulia Literaria "
+"del Instituto Cervantes de Recife con la ponencia “Todo lo que le gustaría "
+"saber sobre la Traducción Pública”."
+
+#: templates/saiba_mais.html:48
+msgid "Tradutora com ampla experiência nas áreas:"
+msgstr "Traductora con amplia experiencia en las áreas:"
+
+#: templates/saiba_mais.html:50
+msgid "Jurídica"
+msgstr ""
+
+#: templates/saiba_mais.html:51
+msgid "Acadêmica"
+msgstr "académica"
+
+#: templates/saiba_mais.html:52
+msgid "Médica"
+msgstr ""
+
+#: templates/saiba_mais.html:53
+msgid "Farmacêutica"
+msgstr "farmacéutica"
+
+#: templates/saiba_mais.html:54
+msgid "Comercial"
+msgstr ""
+
+#: templates/saiba_mais.html:55
+msgid "Administrativa"
+msgstr ""
+
+#: templates/saiba_mais.html:56
+msgid "Contábil"
+msgstr "contable"
+
+#: templates/saiba_mais.html:57
+msgid "Outros"
+msgstr ""
+
+#: templates/saiba_mais.html:59
+msgid ""
+"É Licenciada em Letras Português e Pós-graduada em Tradução de Espanhol. Com "
+"o intuito de oferecer trabalhos de qualidade e agregar exatidão e precisão "
+"na tradução de terminologia, tem participado de diversos cursos de "
+"atualização em tradução técnica, como por exemplo a “Terceira Jornada de "
+"Tradução Jurídica” na Argentina e no Uruguai “Terminologia Jurídica – "
+"Semelhanças e Diferenças entre os Sistemas Brasileiro e Uruguaio”."
+msgstr ""
+"Licenciada en Letras Portugués y Posgraduada en Traducción de Español. A fin "
+"de prestar siempre un servicio impecable, con calidad y precisión en la "
+"traducción de la terminología jurídica y técnica, participa con regularidad "
+"en diversos cursos de formación en traducción especializada como, por "
+"ejemplo, la “Tercera Jornada de Traducción Jurídica” en el Colegio de "
+"Traductores Públicos de Buenos Aires, en la República Argentina, y en el "
+"curso de Terminología Jurídica: “El Derecho Procesal Civil - Semejanzas y "
+"Diferencias entre los Sistemas Brasileño y Uruguayo” organizado por el "
+"Colegio de Traductores Públicos de Uruguay en la ciudad de Montevideo. Su "
+"profesionalidad, compromiso y cordialidad en el atendimiento hacen con que "
+"los clientes se sientan muy satisfechos con el servicio de traducción "
+"recibido."
+
+#: templates/saiba_mais.html:70
+msgid "Nomeada Pela"
+msgstr "NOMBRADA"
+
+#: templates/saiba_mais.html:78
+msgid "Credenciada"
+msgstr "ACREDITADA"
+
+#: templates/saiba_mais.html:106
+msgid "Associada"
+msgstr "ASOCIADA"
+
+#: templates/traducao_juramentada.html:28
+msgid "O QUE É tradução juramentada?"
+msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
+
+#: templates/traducao_juramentada.html:29
+msgid ""
+"É uma tradução oficial, feita por um Tradutor Público, também chamado de "
+"Tradutor Juramentado. O Tradutor Público e Intérprete Comercial, nome "
+"correto do ofício, habilitado em um ou mais idiomas estrangeiros e português "
+"é nomeado e matriculado na Junta Comercial do seu estado de residência, após "
+"aprovação em concurso público."
+msgstr ""
+"Es una traducción oficial realizada por un Traductor Público, también "
+"llamado Traductor Jurado, nombrado y habilitado por la Junta Comercial del "
+"estado donde reside, una vez aprobado en el Concurso de Oposición diseñado "
+"para tal fin.  La firma y sello de este fedatario público otorga carácter "
+"oficial a estas traducciones, dando fe de la veracidad y fidelidad del "
+"contenido de un documento en cualquier otro idioma."
+
+#: templates/traducao_juramentada.html:30
+msgid ""
+"Somente a tradução juramentada é reconhecida oficialmente por instituições e "
+"órgãos públicos no Brasil e tem validade como documento oficial ou legal. "
+"Segundo o Decreto N° 13.609, de 21 de outubro de 1943, capítulo III, artigo "
+"18,"
+msgstr ""
+"Apenas las traducciones juradas son consideradas válidas y pueden producir "
+"efectos legales ante instituciones oficiales y organismos públicos en "
+"Brasil, en conformidad con el Decreto N° 13.609, del 21 de octubre de 1943, "
+"capítulo III, artículo 18,"
+
+#: templates/traducao_juramentada.html:31
+msgid ""
+"\"Nenhum livro, documento ou papel de qualquer natureza que for exarado "
+"(redigido) em idioma estrangeiro, produzirá efeito em repartições da União "
+"dos Estados e dos municípios, em qualquer instância, Juízo ou Tribunal ou "
+"entidades mantidas, fiscalizadas ou orientadas pelos poderes públicos, sem "
+"ser acompanhado da respectiva tradução feita na conformidade deste "
+"regulamento\"."
+msgstr ""
+
+#: templates/traducao_juramentada.html:32
+msgid ""
+"Com efeito, é necessário que funcionários ou juízes saibam com exatidão o "
+"que consta do documento que recebem para poder agir de acordo com a lei. "
+"Ora, o único idioma que uma pessoa domina obrigatoriamente é o nacional, não "
+"se pode exigir de todos os funcionários que conheçam outro idioma "
+"profundamente ou que sejam especialistas de tradução. E as autoridades "
+"precisam de traduções rigorosas e claras, para poder tomar decisões em que "
+"os direitos dos cidadãos envolvidos sejam garantidos."
+msgstr ""
+"En la práctica, indubitablemente, es necesario que los funcionarios "
+"gubernamentales o los jueces  cuenten con una traducción exacta del "
+"documento que reciben para poder actuar de acuerdo con la ley. Puesto que, "
+"el único idioma que una persona que trabaja en la administración pública "
+"obligatoriamente debe dominar es el nacional, no se puede exigir que todos "
+"los funcionarios conozcan otro idioma profundamente o que sean especialistas "
+"en traducción. Las autoridades precisan traducciones rigurosas y claras, "
+"para que puedan tomar decisiones en las que los derechos de los ciudadanos "
+"envueltos estén garantizados."
+
+#: templates/traducao_juramentada.html:33
+msgid "O Art. 13 da Constituição de 1988 afirma que "
+msgstr ""
+"Si nos remitimos al Art. 13 de la Constitución  brasileña de 1988 "
+"observaremos donde se establece que "
+
+#: templates/traducao_juramentada.html:33
+msgid ""
+"\"A língua portuguesa é o idioma oficial da República Federativa do Brasil."
+"\" "
+msgstr ""
+
+#: templates/traducao_juramentada.html:34
+msgid "Por isso, o Código Civil estabelece no Art. 140 que "
+msgstr "Por este motivo, el Código Civil estipula en el Art. 140 que "
+
+#: templates/traducao_juramentada.html:34
+msgid ""
+"\"Os escritos de obrigação redigidos em língua estrangeira serão, para ter "
+"efeitos legais no país, vertidos em português.\" "
+msgstr ""
+
+#: templates/traducao_juramentada.html:35
+msgid "E lê-se, no Código de Processo Civil, Art. 156 e 157, que "
+msgstr "Y leemos, en el Código de Procedimiento Civil, Art. 156 y 157, que "
+
+#: templates/traducao_juramentada.html:35
+msgid ""
+"\"Em todos os atos e termos do processo é obrigatório o uso do vernáculo\" e "
+"que \"Só poderá ser junto aos autos documento redigido em língua "
+"estrangeira, quando acompanhado de versão em vernáculo, firmada por tradutor "
+"juramentado\"."
+msgstr ""
+
+#: templates/includes/clients.html:5
+msgid "Nossos Clientes"
+msgstr ""
