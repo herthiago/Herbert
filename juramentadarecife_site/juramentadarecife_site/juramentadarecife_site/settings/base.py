@@ -264,11 +264,8 @@ LANGUAGES = (
     ('es-ar', ugettext('Espanhol')),
 )
 
-# DEFAULT_FROM_EMAIL = "andreabayle@gmail.com"
-# DEFAULT_TO_EMAIL = "andreabayle@gmail.com"
-
-DEFAULT_FROM_EMAIL = "andersonberg@gmail.com"
-DEFAULT_TO_EMAIL = "andersonberg@gmail.com"
+DEFAULT_FROM_EMAIL = "andreabayle@gmail.com"
+DEFAULT_TO_EMAIL = "andreabayle@gmail.com"
 
 FILE_UPLOAD_HANDLERS = ("django.core.files.uploadhandler.MemoryFileUploadHandler",
                         "django.core.files.uploadhandler.TemporaryFileUploadHandler",)
