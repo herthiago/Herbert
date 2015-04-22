@@ -225,7 +225,7 @@ LOGGING = {
     },
     'handlers': {
         'mail_admins': {
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'filters': ['require_debug_false'],
             'class': 'django.utils.log.AdminEmailHandler'
         }
@@ -233,7 +233,7 @@ LOGGING = {
     'loggers': {
         'django.request': {
             'handlers': ['mail_admins'],
-            'level': 'DEBUG',
+            'level': 'ERROR',
             'propagate': True,
         },
     }
