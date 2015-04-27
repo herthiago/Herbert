@@ -13,13 +13,14 @@
     <div class="slider-inner">
         <div id="da-slider" class="da-slider">
             <div class="da-slide">
-                <h2><i>{% trans "TRADUÇÕES OFICIAIS" %}</i> <br /> <i>{% trans "Português – Espanhol" %}</i> <br /> <i>{% trans "Espanhol – Português" %}</i> </h2>
+                <h2><i>{% trans "TRADUÇÕES OFICIAIS" %}</i> <br /> <i>{% trans "Português e Espanhol" %}</i> <!--<br /> <i>{% trans "Espanhol – Português" %}</i>--> </h2>
                 <!--<p><i>{% trans "Português – Espanhol" %}</i> <br /> <i>{% trans "Espanhol – Português" %}</i></p>-->
-                <p><i>{% trans "Solicite " %}<a href="{% url 'como_solicitar' %}">{% trans 'aqui'%}</a>{% trans " o seu orçamento." %}</i></p>
+                <p><a href="{% url 'como_solicitar' %}"><button class="btn-u btn-u-dark rounded" type="button">{% trans "SOLICITE JÁ SEU ORÇAMENTO" %}</button></a></p>
+                <!--<p><i>{% trans "Solicite " %}<a href="{% url 'como_solicitar' %}">{% trans 'aqui'%}</a>{% trans " o seu orçamento." %}</i></p>-->
                 <div class="da-img"><img class="img-responsive" src="{% static 'img/Logo Andrea Bayle gr.png' %}" alt="logo"></div>
             </div>
             <div class="da-slide">
-                <h2><i>{% trans "Serviços de tradução juramentada" %}</i> <br /> <i>{% trans "para pessoas físicas" %}</i> <br /> <i>{% trans "e jurídicas" %}</i></h2>
+                <h2><i>{% trans "Tradução juramentada" %}</i> <br /> <i>{% trans "para pessoas físicas" %}</i> <br /> <i>{% trans "e jurídicas" %}</i></h2>
                 <p><i>{% trans "Válidas em todo o Brasil" %}</i> <br /> <i>{% trans "e no Exterior" %}</i></p>
 
                 <!--<div class="da-img">-->
