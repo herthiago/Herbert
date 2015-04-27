@@ -37,8 +37,12 @@ body.dark .breadcrumbs-v2 h1 {
     background: url(../img/bg/oque.jpg) repeat fixed;
 }*/
 
-.contato {
+.contato_bg {
   background: url(../img/bg/bg_contato.jpg) repeat fixed;
+}
+
+body.dark .contato li, body.dark .contato li a{
+    color: #FFF;
 }
 
 /*.solicitar {
