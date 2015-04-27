@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-22 10:40-0400\n"
+"POT-Creation-Date: 2015-04-26 17:39-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -123,12 +123,19 @@ msgid "COMO SOLICITAR uma tradução juramentada?"
 msgstr "¿CÓMO SOLICITAR una traducción jurada?"
 
 #: templates/como_solicitar.html:31
+#, fuzzy
 msgid ""
-"Para fins de orçamento, envie um e-mail anexando o(s) documento(s) "
-"digitalizado(s) que necessitam ser traduzidos ou marque uma hora com a "
-"Tradutora Pública Andrea Baylé  para entregá-los pessoalmente. Entre em "
-"contato através dos telefones para maiores esclarecimentos ou preencha o "
-"formulário ao lado."
+"\n"
+"                <p>Para fins de orçamento, envie um e-mail anexando o(s) "
+"documento(s) digitalizado(s) que necessitam ser traduzidos ou marque uma "
+"hora com a Tradutora Pública Andrea Baylé para entregá-los pessoalmente. "
+"Entre em contato através dos telefones ao lado para maiores esclarecimentos "
+"ou preencha o formulário.</p>\n"
+"                <p>Assumimos o compromisso de enviar um orçamento detalhado, "
+"para apreciação, com a maior celeridade. Atenderemos com prazer as suas "
+"solicitações, independentemente de você estar em Recife, em alguma cidade do "
+"interior de Pernambuco ou em qualquer outro ponto do país.</p>\n"
+"                "
 msgstr ""
 "Para poder emitir rápidamente un presupuesto conforme a sus necesidades, le "
 "rogamos que nos envíe un e-mail adjuntando todos los documentos, "
@@ -136,41 +143,31 @@ msgstr ""
 "entregarlos personalmente. Póngase en contacto a través de los números de "
 "teléfono para mayores detalles o rellene el formulario al lado."
 
-#: templates/como_solicitar.html:32
-msgid ""
-"Assumimos o compromisso de enviar um orçamento detalhado, para apreciação, "
-"com a maior celeridade."
-msgstr ""
-"Le garantizamos una respuesta inmediata a sus inquietudes, la Traductora "
-"Púbica Andrea Baylé atenderá sus pedidos independientemente de si usted se "
-"encuentra en Recife, en alguna ciudad del interior de Pernambuco o en "
-"cualquier otro punto del país."
-
-#: templates/como_solicitar.html:40
+#: templates/como_solicitar.html:42
 msgid "Orçamento Rápido"
 msgstr "Presupuesto Rápido"
 
-#: templates/como_solicitar.html:46
+#: templates/como_solicitar.html:48
 msgid "Nome"
 msgstr "Nombre"
 
-#: templates/como_solicitar.html:69
+#: templates/como_solicitar.html:71
 msgid "Selecione um documento"
 msgstr "Seleccionar archivo"
 
-#: templates/como_solicitar.html:85
+#: templates/como_solicitar.html:87
 msgid "Descrição do documento"
 msgstr "Descripción del documento"
 
-#: templates/como_solicitar.html:98 templates/contato.html:63
+#: templates/como_solicitar.html:100 templates/contato.html:63
 msgid "Enviar"
 msgstr ""
 
-#: templates/como_solicitar.html:107 templates/contato.html:69
+#: templates/como_solicitar.html:109 templates/contato.html:69
 msgid "Fale Conosco"
 msgstr "Contáctenos"
 
-#: templates/como_solicitar.html:112 templates/contato.html:74
+#: templates/como_solicitar.html:114 templates/contato.html:74
 msgid "Serviço de Tradução Urgente"
 msgstr "Servicio de Traducción Urgente"
 
@@ -542,7 +539,7 @@ msgstr ""
 msgid "Clique "
 msgstr "Pulse "
 
-#: templates/faq.html:161 templates/index.html:18 templates/index.html.py:86
+#: templates/faq.html:161 templates/index.html:18 templates/index.html.py:87
 msgid "aqui"
 msgstr "aquí"
 
@@ -580,8 +577,13 @@ msgid "Espanhol – Português"
 msgstr "Español - Portugués"
 
 #: templates/index.html:18
-msgid "Solicite já o seu orçamento. Clique "
-msgstr "Solicite aquí su presupuesto. Pulse "
+#, fuzzy
+msgid "Solicite "
+msgstr "Cómo Solicitar"
+
+#: templates/index.html:18
+msgid " o seu orçamento."
+msgstr " su presupuesto"
 
 #: templates/index.html:22
 msgid "Serviços de tradução juramentada"
@@ -622,15 +624,24 @@ msgstr ""
 "nombrada por la JUCEPE y acreditada por el MRE, con amplia experiencia y "
 "alto grado de capacitación."
 
-#: templates/index.html:51
+#: templates/index.html:49
+msgid ""
+"O atendimento personalizado, localização adequada do texto, padronização "
+"terminológica, agilidade na execução do serviço, pontualidade na entrega e "
+"absoluto sigilo, são as principais caraterísticas do nosso trabalho. Nosso "
+"diferencial garante um serviço preciso e de qualidade, deixando os nossos "
+"clientes muito satisfeitos com o resultado."
+msgstr ""
+
+#: templates/index.html:52
 msgid "SAIBA MAIS"
 msgstr "LEER MÁS"
 
-#: templates/index.html:67
-msgid "O qué é tradução juramentada?"
+#: templates/index.html:68
+msgid "O que é tradução juramentada?"
 msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
 
-#: templates/index.html:68
+#: templates/index.html:69
 msgid ""
 "Tradução Juramentada é a tradução feita por um Tradutor Público concursado e "
 "habilitado pela Junta Comercial do seu Estado, de um documento oficial que "
@@ -641,131 +652,133 @@ msgstr ""
 "documento oficial que precise producir efectos legales en Brasil o en el "
 "extranjero."
 
-#: templates/index.html:68 templates/index.html.py:77
+#: templates/index.html:69 templates/index.html.py:78
 msgid "Saiba mais"
 msgstr "Leer Más"
 
-#: templates/index.html:76
+#: templates/index.html:77
 msgid "Quanto custa uma tradução juramentada?"
 msgstr "¿Qué tarifas se aplican?"
 
-#: templates/index.html:77
+#: templates/index.html:78
 msgid ""
-"O custo da tradução juramentada é calculado com base em Tabela de "
-"Emolumentos homologada pelas Juntas Comerciais dos Estados. "
+"O custo da tradução juramentada é calculado com base na Tabela de "
+"Emolumentos oficial, homologada pela Junta Comercial de Pernambuco e "
+"publicada no DOE, a qual deve ser seguida por todos os tradutores nomeados "
+"pela JUCEPE, sob pena de sanções e anulação da tradução. "
 msgstr ""
 "Son aplicadas las tarifas oficiales estipuladas por la Junta Comercial de "
 "Pernambuco y publicadas en el Diario Oficial del Estado, es un valor único "
 "que debe ser observado por todos los traductores públicos, bajo pena de ley "
 "e invalidación de la traducción."
 
-#: templates/index.html:85
+#: templates/index.html:86
 msgid "Como solicitar uma tradução juramentada?"
 msgstr "¿CÓMO SOLICITAR UNA TRADUCCIÓN JURADA?"
 
-#: templates/index.html:86
+#: templates/index.html:87
 msgid ""
 "Entre em contato com a Tradutora Pública Andrea Baylé e peça um orçamento. "
-"Clique "
+"Será dada prontamente uma resposta com a nossa proposta detalhada. Clique "
 msgstr ""
 "Póngase en contacto con la Traductora Pública Andrea Baylé y solicite su "
 "presupuesto, le haremos llegar de inmediato nuestra propuesta de trabajo. "
 "PULSE "
 
-#: templates/index.html:94
+#: templates/index.html:95
 msgid "Nossos Serviços"
 msgstr "NUESTROS SERVICIOS"
 
-#: templates/index.html:105
+#: templates/index.html:106
 msgid "EMPRESAS"
 msgstr ""
 
-#: templates/index.html:107
+#: templates/index.html:108
 msgid "CONTRATOS"
 msgstr "ESTATUTOS SOCIETARIOS"
 
-#: templates/index.html:108
+#: templates/index.html:109
 msgid "ESCRITURAS DE CONSTITUIÇÃO"
 msgstr "ESCRITURAS DE CONSTITUCIÓN"
 
-#: templates/index.html:109
+#: templates/index.html:110
 msgid "PROCURAÇÕES"
 msgstr "PODERES"
 
-#: templates/index.html:110
+#: templates/index.html:111
 msgid "BALANÇOS"
 msgstr "ESTADOS CONTABLES"
 
-#: templates/index.html:111
+#: templates/index.html:112
 msgid "LICITAÇÕES PÚBLICAS"
 msgstr "LICITACIONES PÚBLICAS"
 
-#: templates/index.html:112
+#: templates/index.html:113
 msgid "Etc."
 msgstr ""
 
-#: templates/index.html:128
+#: templates/index.html:129
 msgid "CERTIDÃO DE CASAMENTO"
 msgstr "CERTIFICADO DE MATRIMONIO"
 
-#: templates/index.html:129
-msgid "AVERBAÇÃO DE DIVÓRCIO"
-msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
-
 #: templates/index.html:130
+msgid "SENTENÇA JUDICIAL (DIVÓRCIO, SEPARAÇÃO)"
+msgstr ""
+
+#: templates/index.html:131
 msgid "DECLARAÇÃO DE ESTADO CIVIL"
 msgstr "FE DE VIDA Y ESTADO"
 
-#: templates/index.html:131
+#: templates/index.html:132
 msgid "ANTECEDENTES PENAIS"
 msgstr "ANTECEDENTES PENALES"
 
-#: templates/index.html:132 templates/index.html.py:152
-#: templates/index.html:173
+#: templates/index.html:133 templates/index.html.py:153
+#: templates/index.html:174
 msgid "Etc..."
 msgstr ""
 
-#: templates/index.html:146
+#: templates/index.html:147
 msgid "ESTUDOS INTERNACIONAIS"
 msgstr "ESTUDIOS INTERNACIONALES"
 
-#: templates/index.html:148
+#: templates/index.html:149
 msgid "HISTÓRICOS ESCOLARES"
 msgstr "CERTIFICADO ACADÉMICO"
 
-#: templates/index.html:149
+#: templates/index.html:150
 msgid "DIPLOMA UNIVERSITÁRIO"
 msgstr "TÍTULO UNIVERSITARIO"
 
-#: templates/index.html:150
+#: templates/index.html:151
 msgid "DECLARAÇÕES"
 msgstr "CONSTANCIAS"
 
-#: templates/index.html:151
+#: templates/index.html:152
 msgid "HOMOLOGAÇÃO DE ESTUDOS"
 msgstr "HOMOLOGACIÓN DE ESTUDIOS"
 
-#: templates/index.html:166
+#: templates/index.html:167
 msgid "DOCUMENTAÇÃO PESSOAL"
 msgstr "DOCUMENTACIÓN PERSONAL"
 
-#: templates/index.html:168
+#: templates/index.html:169
 msgid "CARTEIRA DE IDENTIDADE"
 msgstr "DOCUMENTO DE IDENTIDAD"
 
-#: templates/index.html:169
+#: templates/index.html:170
 msgid "CARTEIRA DE MOTORISTA"
 msgstr "LICENCIA DE CONDUCIR"
 
-#: templates/index.html:170
+#: templates/index.html:171
 msgid "PASSAPORTE"
 msgstr "PASAPORTE"
 
-#: templates/index.html:171
+#: templates/index.html:172
 msgid "CARTEIRA DE IDENTIDADE PROFISSIONAL"
 msgstr "CARNÉ PROFESIONAL"
 
-#: templates/index.html:172
+#: templates/index.html:173
 msgid "CERTIDÃO DE NASCIMENTO"
 msgstr "CERTIFICADO DE NACIMIENTO"
 
@@ -944,9 +957,9 @@ msgstr "Traductora Pública e Intérprete Comercial de Español"
 #: templates/saiba_mais.html:46
 msgid ""
 "Todas as traduções juramentadas, entre os idiomas espanhol e português, são "
-"feitas pessoalmente por Andrea Baylé, tradutora pública juramentada, "
-"habilitada por concurso público promovido pela Junta Comercial do Estado de "
-"Pernambuco – JUCEPE em 2011, com registro nº 415."
+"feitas pessoalmente pela Profª Andrea Baylé, Tradutora Pública e Intérprete "
+"Comercial, habilitada por concurso público promovido pela Junta Comercial do "
+"Estado de Pernambuco – JUCEPE em 2011, com Matricula nº 415∕2012."
 msgstr ""
 "Todas las traducciones juradas o públicas, entre los idiomas español y "
 "portugués, son realizadas personalmente por la Prof.ª Andrea Baylé, "
@@ -957,36 +970,26 @@ msgstr ""
 
 #: templates/saiba_mais.html:47
 msgid ""
-"Argentina de nascimento e naturalizada brasileira mora no Brasil há 26 anos. "
-"Obteve o Certificado de Proficiência em Língua Portuguesa para Estrangeiros"
+"Argentina de nascimento e naturalizada brasileira, mora no Brasil há 26 "
+"anos. Ela é Licenciada em Letras Português e Pós-graduada em Tradução de "
+"Espanhol, obteve o Certificado de Proficiência em Língua Portuguesa para "
+"Estrangeiros Celpe-Bras, desenvolvido e outorgado pelo Ministério da "
+"Educação do Brasil (MEC), nível superior, em 2008. Trabalhou como professora "
+"de Espanhol em renomadas escolas de idiomas por quinze anos, até a chegada "
+"em Recife do Instituto Cervantes em 2008, do qual foi a primeira professora "
+"colaboradora contratada, instituição onde, até a presente data, ministra "
+"aulas e participa como examinadora nas bancas do exame DELE (Diploma de "
+"Espanhol Língua Estrangeira), aplicado pelo Instituto Cervantes em nome do "
+"Ministério da Educação, Cultura e Esporte da Espanha. Atuou também como "
+"palestrante convidada em diversos eventos, entre eles podemos citar o Curso "
+"de Atualização para Professores de Espanhol, organizado pela Consejería de "
+"Educación em conjunto com a SEDUC-PE (<em>\"La Diversidad Cultural del Mundo "
+"Hispano\"</em>), na <em>Semana de la Hispanidad</em> no Instituto Cervantes "
+"de Recife e na Universidade Católica de Pernambuco – UNICAP (<em>\"Voces "
+"Afroargentinas\"</em>), e ultimamente, na Tertúlia Literária do Instituto "
+"Cervantes de Recife com a comunicação <em>\"Todo lo que le gustaría saber "
+"sobre la Traducción Pública\"</em>."
 msgstr ""
-"Es natural de Argentina, vive en Brasil desde 1998 y en el 2012 adquirió la "
-"nacionalidad brasileña. Obtuvo el Certificado de Proficiencia en Lengua "
-"Portuguesa para Extranjeros Celpe-Bras, desarrollado y otorgado por el "
-"Ministerio de Educación Brasileño (MEC),"
-
-#: templates/saiba_mais.html:47
-msgid ""
-"nível superior, em 2008. Trabalhou como professora de Espanhol em renomadas "
-"escolas de idiomas por quatorze anos e atualmente ministra aulas no "
-"Instituto Cervantes de Recife, atuando também como palestrante e examinadora "
-"nas bancas do exame DELE (Diploma de Espanhol Língua Estrangeira) desde 2009."
-msgstr ""
-"nivel superior, en el año 2008. Trabajó como profesora de Español en "
-"reconocidas escuelas de idiomas por quince años hasta la llegada a Recife "
-"del Instituto Cervantes, siendo la primera profesora colaboradora contratada "
-"por esta prestigiosa institución; donde dicta clases hasta el día de la "
-"fecha y  participa como examinadora en los tribunales DELE (Diploma de "
-"Español Lengua Extranjera), título otorgado por el Instituto Cervantes de "
-"Recife en nombre del Ministerio de Educación, Cultura y Deporte de España. "
-"Actuó, también, como conferenciante invitada en diversos eventos, tales como "
-"el Curso de Actualización para Profesores de Español, organizado por la "
-"Consejería de Educación – Embajada de España conjuntamente con la SEDUC-PE "
-"(“La Diversidad Cultural del Mundo Hispano”), en la Semana de la Hispanidad "
-"del Instituto Cervantes de Recife y  de la Universidad Católica de "
-"Pernambuco (“Voces Afroargentinas”), y últimamente, en la Tertulia Literaria "
-"del Instituto Cervantes de Recife con la ponencia “Todo lo que le gustaría "
-"saber sobre la Traducción Pública”."
 
 #: templates/saiba_mais.html:48
 msgid "Tradutora com ampla experiência nas áreas:"
@@ -1025,13 +1028,18 @@ msgid "Outros"
 msgstr ""
 
 #: templates/saiba_mais.html:59
+#, fuzzy
 msgid ""
-"É Licenciada em Letras Português e Pós-graduada em Tradução de Espanhol. Com "
-"o intuito de oferecer trabalhos de qualidade e agregar exatidão e precisão "
-"na tradução de terminologia, tem participado de diversos cursos de "
-"atualização em tradução técnica, como por exemplo a “Terceira Jornada de "
-"Tradução Jurídica” na Argentina e no Uruguai “Terminologia Jurídica – "
-"Semelhanças e Diferenças entre os Sistemas Brasileiro e Uruguaio”."
+"Profissional altamente capacitada, tem mais de dez anos de experiência na "
+"área de tradução técnica. Com o objetivo de oferecer trabalhos do mais alto "
+"nível, com exatidão e precisão na tradução da terminologia jurídica e "
+"técnica, participa com regularidade de diversos cursos de atualização em "
+"tradução especializada, como por exemplo a <em>\"Tercera Jornada de "
+"Traducción Jurídica\"</em> no Colegio de Tradutores Públicos de Buenos "
+"Aires, na República Argentina e no curso de Terminologia Jurídica <em>\"El "
+"Derecho Procesal Civil - Semejanzas y Diferencias entre los Sistemas "
+"Brasileño y Uruguayo\"</em> organizado pelo Colegio de Tradutores Públicos "
+"de Uruguai, na cidade de Montevidéu."
 msgstr ""
 "Licenciada en Letras Portugués y Posgraduada en Traducción de Español. A fin "
 "de prestar siempre un servicio impecable, con calidad y precisión en la "
@@ -1046,15 +1054,22 @@ msgstr ""
 "los clientes se sientan muy satisfechos con el servicio de traducción "
 "recibido."
 
-#: templates/saiba_mais.html:70
+#: templates/saiba_mais.html:60
+msgid ""
+"Seu profissionalismo, compromisso e cordialidade no atendimento são os "
+"diferenciais que garantem sempre a satisfação do cliente com o serviço "
+"prestado."
+msgstr ""
+
+#: templates/saiba_mais.html:71
 msgid "Nomeada Pela"
 msgstr "NOMBRADA"
 
-#: templates/saiba_mais.html:78
+#: templates/saiba_mais.html:79
 msgid "Credenciada"
 msgstr "ACREDITADA"
 
-#: templates/saiba_mais.html:106
+#: templates/saiba_mais.html:107
 msgid "Associada"
 msgstr "ASOCIADA"
 
@@ -1064,11 +1079,14 @@ msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
 
 #: templates/traducao_juramentada.html:29
 msgid ""
-"É uma tradução oficial, feita por um Tradutor Público, também chamado de "
+" É uma tradução oficial, feita por um Tradutor Público, também chamado de "
 "Tradutor Juramentado. O Tradutor Público e Intérprete Comercial, nome "
-"correto do ofício, habilitado em um ou mais idiomas estrangeiros e português "
-"é nomeado e matriculado na Junta Comercial do seu estado de residência, após "
-"aprovação em concurso público."
+"correto do ofício, habilitado em um ou mais idiomas estrangeiros e "
+"português, é nomeado pela Junta Comercial do seu estado de residência, após "
+"ser aprovado em concurso público organizado para tal fim. A assinatura e "
+"carimbo deste auxiliar da Justiça outorga caráter oficial às traduções, "
+"dando fé da veracidade e fidelidade do conteúdo de um documento em qualquer "
+"outro idioma. "
 msgstr ""
 "Es una traducción oficial realizada por un Traductor Público, también "
 "llamado Traductor Jurado, nombrado y habilitado por la Junta Comercial del "
@@ -1079,35 +1097,36 @@ msgstr ""
 
 #: templates/traducao_juramentada.html:30
 msgid ""
-"Somente a tradução juramentada é reconhecida oficialmente por instituições e "
-"órgãos públicos no Brasil e tem validade como documento oficial ou legal. "
+" Somente a tradução juramentada é reconhecida oficialmente por instituições "
+"e órgãos públicos no Brasil e tem validade como documento oficial ou legal. "
 "Segundo o Decreto N° 13.609, de 21 de outubro de 1943, capítulo III, artigo "
-"18,"
+"18,\n"
+"                <em>\"Nenhum livro, documento ou papel de qualquer natureza "
+"que for exarado (redigido) em idioma estrangeiro, produzirá efeito em "
+"repartições da União dos Estados e dos municípios, em qualquer instância, "
+"Juízo ou Tribunal ou entidades mantidas, fiscalizadas ou orientadas pelos "
+"poderes públicos, sem ser acompanhado da respectiva tradução feita na "
+"conformidade deste regulamento\".</em> "
 msgstr ""
-"Apenas las traducciones juradas son consideradas válidas y pueden producir "
+" Apenas las traducciones juradas son consideradas válidas y pueden producir "
 "efectos legales ante instituciones oficiales y organismos públicos en "
 "Brasil, en conformidad con el Decreto N° 13.609, del 21 de octubre de 1943, "
-"capítulo III, artículo 18,"
-
-#: templates/traducao_juramentada.html:31
-msgid ""
-"\"Nenhum livro, documento ou papel de qualquer natureza que for exarado "
-"(redigido) em idioma estrangeiro, produzirá efeito em repartições da União "
-"dos Estados e dos municípios, em qualquer instância, Juízo ou Tribunal ou "
-"entidades mantidas, fiscalizadas ou orientadas pelos poderes públicos, sem "
-"ser acompanhado da respectiva tradução feita na conformidade deste "
-"regulamento\"."
-msgstr ""
+"capítulo III, artículo 18,                 <em>\"Nenhum livro, documento ou "
+"papel de qualquer natureza que for exarado (redigido) em idioma estrangeiro, "
+"produzirá efeito em repartições da União dos Estados e dos municípios, em "
+"qualquer instância, Juízo ou Tribunal ou entidades mantidas, fiscalizadas ou "
+"orientadas pelos poderes públicos, sem ser acompanhado da respectiva "
+"tradução feita na conformidade deste regulamento\".</em> "
 
 #: templates/traducao_juramentada.html:32
 msgid ""
-"Com efeito, é necessário que funcionários ou juízes saibam com exatidão o "
+" Com efeito, é necessário que funcionários ou juízes saibam com exatidão o "
 "que consta do documento que recebem para poder agir de acordo com a lei. "
 "Ora, o único idioma que uma pessoa domina obrigatoriamente é o nacional, não "
 "se pode exigir de todos os funcionários que conheçam outro idioma "
-"profundamente ou que sejam especialistas de tradução. E as autoridades "
+"profundamente ou que sejam especialistas de tradução. As autoridades "
 "precisam de traduções rigorosas e claras, para poder tomar decisões em que "
-"os direitos dos cidadãos envolvidos sejam garantidos."
+"os direitos dos cidadãos envolvidos sejam garantidos. "
 msgstr ""
 "En la práctica, indubitablemente, es necesario que los funcionarios "
 "gubernamentales o los jueces  cuenten con una traducción exacta del "
@@ -1120,39 +1139,106 @@ msgstr ""
 "envueltos estén garantizados."
 
 #: templates/traducao_juramentada.html:33
-msgid "O Art. 13 da Constituição de 1988 afirma que "
-msgstr ""
-"Si nos remitimos al Art. 13 de la Constitución  brasileña de 1988 "
-"observaremos donde se establece que "
-
-#: templates/traducao_juramentada.html:33
 msgid ""
-"\"A língua portuguesa é o idioma oficial da República Federativa do Brasil."
-"\" "
-msgstr ""
-
-#: templates/traducao_juramentada.html:34
-msgid "Por isso, o Código Civil estabelece no Art. 140 que "
-msgstr "Por este motivo, el Código Civil estipula en el Art. 140 que "
-
-#: templates/traducao_juramentada.html:34
-msgid ""
+" Se observarmos o Art. 13 da Constituição de 1988, veremos que se estipula "
+"'\n"
+"                    <em> '\"A língua portuguesa é o idioma oficial da "
+"República Federativa do Brasil.\" </em>\n"
+"                 Por isso, o Código Civil estabelece no Art. 140 que <em> "
 "\"Os escritos de obrigação redigidos em língua estrangeira serão, para ter "
-"efeitos legais no país, vertidos em português.\" "
+"efeitos legais no país, vertidos em português.\" </em>\n"
+"                 E lê-se, no Código de Processo Civil, Art. 156 e 157, que "
+"<em> \"Em todos os atos e termos do processo é obrigatório o uso do vernáculo"
+"\" </em> e que <em>\"Só poderá ser junto aos autos documento redigido em "
+"língua estrangeira, quando acompanhado de versão em vernáculo, firmada por "
+"tradutor juramentado\". </em>Por conseguinte, podemos concluir que a "
+"tradução juramentada constitui-se em um documento oficial indispensável para "
+"qualquer trâmite legal. "
 msgstr ""
-
-#: templates/traducao_juramentada.html:35
-msgid "E lê-se, no Código de Processo Civil, Art. 156 e 157, que "
-msgstr "Y leemos, en el Código de Procedimiento Civil, Art. 156 y 157, que "
-
-#: templates/traducao_juramentada.html:35
-msgid ""
-"\"Em todos os atos e termos do processo é obrigatório o uso do vernáculo\" e "
-"que \"Só poderá ser junto aos autos documento redigido em língua "
-"estrangeira, quando acompanhado de versão em vernáculo, firmada por tradutor "
-"juramentado\"."
-msgstr ""
+" Si nos remitimos al Art. 13 de la Constitución  brasileña de 1988 "
+"observaremos donde se establece que                    <em> '\"A língua "
+"portuguesa é o idioma oficial da República Federativa do Brasil.\" </"
+"em>                 Por este motivo, el Código Civil estipula en el Art. 140 "
+"que <em> \"Os escritos de obrigação redigidos em língua estrangeira serão, "
+"para ter efeitos legais no país, vertidos em português.\" </em>   Y leemos, "
+"en el Código de Procedimiento Civil, Art. 156 y 157, que<em> \"Em todos os "
+"atos e termos do processo é obrigatório o uso do vernáculo\" y que \"Só "
+"poderá ser junto aos autos documento redigido em língua estrangeira, quando "
+"acompanhado de versão em vernáculo, firmada por tradutor juramentado\".</em> "
+"Por los motivos ya expuestos es que la traducción jurada se constituye en un "
+"documento oficial indispensable para cualquier trámite legal. "
 
 #: templates/includes/clients.html:5
 msgid "Nossos Clientes"
 msgstr ""
+
+#~ msgid ""
+#~ "Assumimos o compromisso de enviar um orçamento detalhado, para "
+#~ "apreciação, com a maior celeridade."
+#~ msgstr ""
+#~ "Le garantizamos una respuesta inmediata a sus inquietudes, la Traductora "
+#~ "Púbica Andrea Baylé atenderá sus pedidos independientemente de si usted "
+#~ "se encuentra en Recife, en alguna ciudad del interior de Pernambuco o en "
+#~ "cualquier otro punto del país."
+
+#~ msgid "Solicite já o seu orçamento. Clique "
+#~ msgstr "Solicite aquí su presupuesto. Pulse "
+
+#~ msgid "AVERBAÇÃO DE DIVÓRCIO"
+#~ msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
+
+#~ msgid ""
+#~ "Argentina de nascimento e naturalizada brasileira mora no Brasil há 26 "
+#~ "anos. Obteve o Certificado de Proficiência em Língua Portuguesa para "
+#~ "Estrangeiros"
+#~ msgstr ""
+#~ "Es natural de Argentina, vive en Brasil desde 1998 y en el 2012 adquirió "
+#~ "la nacionalidad brasileña. Obtuvo el Certificado de Proficiencia en "
+#~ "Lengua Portuguesa para Extranjeros Celpe-Bras, desarrollado y otorgado "
+#~ "por el Ministerio de Educación Brasileño (MEC),"
+
+#~ msgid ""
+#~ "nível superior, em 2008. Trabalhou como professora de Espanhol em "
+#~ "renomadas escolas de idiomas por quatorze anos e atualmente ministra "
+#~ "aulas no Instituto Cervantes de Recife, atuando também como palestrante e "
+#~ "examinadora nas bancas do exame DELE (Diploma de Espanhol Língua "
+#~ "Estrangeira) desde 2009."
+#~ msgstr ""
+#~ "nivel superior, en el año 2008. Trabajó como profesora de Español en "
+#~ "reconocidas escuelas de idiomas por quince años hasta la llegada a Recife "
+#~ "del Instituto Cervantes, siendo la primera profesora colaboradora "
+#~ "contratada por esta prestigiosa institución; donde dicta clases hasta el "
+#~ "día de la fecha y  participa como examinadora en los tribunales DELE "
+#~ "(Diploma de Español Lengua Extranjera), título otorgado por el Instituto "
+#~ "Cervantes de Recife en nombre del Ministerio de Educación, Cultura y "
+#~ "Deporte de España. Actuó, también, como conferenciante invitada en "
+#~ "diversos eventos, tales como el Curso de Actualización para Profesores de "
+#~ "Español, organizado por la Consejería de Educación – Embajada de España "
+#~ "conjuntamente con la SEDUC-PE (“La Diversidad Cultural del Mundo "
+#~ "Hispano”), en la Semana de la Hispanidad del Instituto Cervantes de "
+#~ "Recife y  de la Universidad Católica de Pernambuco (“Voces "
+#~ "Afroargentinas”), y últimamente, en la Tertulia Literaria del Instituto "
+#~ "Cervantes de Recife con la ponencia “Todo lo que le gustaría saber sobre "
+#~ "la Traducción Pública”."
+
+#~ msgid ""
+#~ "Somente a tradução juramentada é reconhecida oficialmente por "
+#~ "instituições e órgãos públicos no Brasil e tem validade como documento "
+#~ "oficial ou legal. Segundo o Decreto N° 13.609, de 21 de outubro de 1943, "
+#~ "capítulo III, artigo 18,"
+#~ msgstr ""
+#~ "Apenas las traducciones juradas son consideradas válidas y pueden "
+#~ "producir efectos legales ante instituciones oficiales y organismos "
+#~ "públicos en Brasil, en conformidad con el Decreto N° 13.609, del 21 de "
+#~ "octubre de 1943, capítulo III, artículo 18,"
+
+#~ msgid "O Art. 13 da Constituição de 1988 afirma que "
+#~ msgstr ""
+#~ "Si nos remitimos al Art. 13 de la Constitución  brasileña de 1988 "
+#~ "observaremos donde se establece que "
+
+#~ msgid "Por isso, o Código Civil estabelece no Art. 140 que "
+#~ msgstr "Por este motivo, el Código Civil estipula en el Art. 140 que "
+
+#~ msgid "E lê-se, no Código de Processo Civil, Art. 156 e 157, que "
+#~ msgstr "Y leemos, en el Código de Procedimiento Civil, Art. 156 y 157, que "
