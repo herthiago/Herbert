@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-27 12:15-0400\n"
-"PO-Revision-Date: 2015-04-27 10:15-0300\n"
+"PO-Revision-Date: 2015-04-27 13:20-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_AR\n"
@@ -168,9 +168,8 @@ msgid "Fale Conosco"
 msgstr "Contáctenos"
 
 #: templates/como_solicitar.html:114 templates/contato.html:74
-#, fuzzy
 msgid "Serviço Urgente"
-msgstr "Servicio de Traducción Urgente"
+msgstr "Servicio Urgente"
 
 #: templates/consulados.html:26
 msgid "Consulados"
@@ -281,12 +280,12 @@ msgstr ""
 "disposición para aclarar cualquier duda,"
 
 #: templates/contato.html:34
-#, fuzzy
 msgid ""
 " qualquer dúvida, receber suas solicitações e enviar prontamente nossa "
 "proposta de trabalho."
 msgstr ""
-"recibir sus consultas y enviarle rápidamente nuestra propuesta de trabajo."
+" cualquier duda, recibir sus consultas y enviarle rápidamente nuestra "
+"propuesta de trabajo."
 
 #: templates/contato.html:35
 msgid "Se preferir, utilize o formulário abaixo."
