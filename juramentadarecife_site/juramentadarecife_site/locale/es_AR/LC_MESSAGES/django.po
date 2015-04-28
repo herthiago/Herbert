@@ -7,16 +7,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 12:15-0400\n"
-"PO-Revision-Date: 2015-04-27 13:20-0300\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2015-04-27 20:58-0300\n"
+"PO-Revision-Date: 2015-04-27 21:36-0300\n"
+"Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
 "Language: es_AR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.6\n"
+"X-Generator: Poedit 1.7.5\n"
 
 #: juramentadarecife_site/settings/base.py:263
 msgid "Portugues"
@@ -123,19 +123,12 @@ msgid "COMO SOLICITAR uma tradução juramentada?"
 msgstr "¿CÓMO SOLICITAR una traducción jurada?"
 
 #: templates/como_solicitar.html:31
-#, fuzzy
 msgid ""
-"\n"
-"                <p>Para fins de orçamento, envie um e-mail anexando o(s) "
-"documento(s) digitalizado(s) que necessitam ser traduzidos ou marque uma "
-"hora com a Tradutora Pública Andrea Baylé para entregá-los pessoalmente. "
-"Entre em contato através dos telefones ao lado para maiores esclarecimentos "
-"ou preencha o formulário.</p>\n"
-"                <p>Assumimos o compromisso de enviar um orçamento detalhado, "
-"para apreciação, com a maior celeridade. Atenderemos com prazer as suas "
-"solicitações, independentemente de você estar em Recife, em alguma cidade do "
-"interior de Pernambuco ou em qualquer outro ponto do país.</p>\n"
-"                "
+"Para fins de orçamento, envie um e-mail anexando o(s) documento(s) "
+"digitalizado(s) que necessitam ser traduzidos ou marque uma hora com a "
+"Tradutora Pública Andrea Baylé para entregá-los pessoalmente. Entre em "
+"contato através dos telefones ao lado para maiores esclarecimentos ou "
+"preencha o formulário."
 msgstr ""
 "Para poder emitir rápidamente un presupuesto conforme a sus necesidades, le "
 "rogamos que nos envíe un e-mail adjuntando todos los documentos, "
@@ -143,31 +136,43 @@ msgstr ""
 "entregarlos personalmente. Póngase en contacto a través de los números de "
 "teléfono para mayores detalles o rellene el formulario al lado."
 
-#: templates/como_solicitar.html:42
+#: templates/como_solicitar.html:32
+msgid ""
+"Assumimos o compromisso de enviar um orçamento detalhado, para apreciação, "
+"com a maior celeridade. Atenderemos com prazer as suas solicitações, "
+"independentemente de você estar em Recife, em alguma cidade do interior de "
+"Pernambuco ou em qualquer outro ponto do país."
+msgstr ""
+"Le garantizamos una respuesta inmediata a sus inquietudes, la Traductora "
+"Púbica Andrea Baylé atenderá sus pedidos independientemente de si usted se "
+"encuentra en Recife, en alguna ciudad del interior de Pernambuco o en "
+"cualquier otro punto del país."
+
+#: templates/como_solicitar.html:40
 msgid "Orçamento Rápido"
 msgstr "Presupuesto Rápido"
 
-#: templates/como_solicitar.html:48
+#: templates/como_solicitar.html:46
 msgid "Nome"
 msgstr "Nombre"
 
-#: templates/como_solicitar.html:71
+#: templates/como_solicitar.html:69
 msgid "Selecione um documento"
 msgstr "Seleccionar archivo"
 
-#: templates/como_solicitar.html:87
+#: templates/como_solicitar.html:85
 msgid "Descrição do documento"
 msgstr "Descripción del documento"
 
-#: templates/como_solicitar.html:100 templates/contato.html:63
+#: templates/como_solicitar.html:98 templates/contato.html:63
 msgid "Enviar"
 msgstr ""
 
-#: templates/como_solicitar.html:109 templates/contato.html:69
+#: templates/como_solicitar.html:107 templates/contato.html:69
 msgid "Fale Conosco"
 msgstr "Contáctenos"
 
-#: templates/como_solicitar.html:114 templates/contato.html:74
+#: templates/como_solicitar.html:112 templates/contato.html:74
 msgid "Serviço Urgente"
 msgstr "Servicio Urgente"
 
@@ -177,7 +182,7 @@ msgstr "Consulados"
 
 #: templates/consulados.html:34
 msgid "Consulado-Honorário da Espanha"
-msgstr ""
+msgstr "Consulado-Honorário da Espanha"
 
 #: templates/consulados.html:39
 msgid "Expediente: Segundas e Terças das 8 às 11h"
@@ -185,7 +190,7 @@ msgstr "Horario de Atención: Lunes y Martes de 8 a 11 h"
 
 #: templates/consulados.html:52
 msgid "Consulado-Honorário do México"
-msgstr ""
+msgstr "Consulado-Honorário do México"
 
 #: templates/consulados.html:57
 msgid "Expediente: das 09:00 às 11:00h e 13:30 às 15:30h"
@@ -193,7 +198,7 @@ msgstr "Horario de Atención: de 09:00 a 11:00h y de 13:30 a 15:30h"
 
 #: templates/consulados.html:70
 msgid "Consulado da Argentina"
-msgstr ""
+msgstr "Consulado da Argentina"
 
 #: templates/consulados.html:75
 msgid "Expediente: 9:00 às 13:00"
@@ -201,7 +206,7 @@ msgstr "Horario de Atención: de 9:00 a 13:00h"
 
 #: templates/consulados.html:85
 msgid "Consulado Geral da República Bolivariana da Venezuela"
-msgstr ""
+msgstr "Consulado Geral da República Bolivariana da Venezuela"
 
 #: templates/consulados.html:100
 msgid "Outros consulados estrangeiros no Brasil"
@@ -231,7 +236,7 @@ msgstr ""
 
 #: templates/consulados.html:127
 msgid "Escritório de Representação do MRE na Região Nordeste – ERENE"
-msgstr ""
+msgstr "Escritório de Representação do MRE na Região Nordeste – ERENE"
 
 #: templates/consulados.html:131
 msgid ""
@@ -248,36 +253,35 @@ msgstr "Notarías donde certificar la Firma de la Traductora"
 
 #: templates/consulados.html:143
 msgid "Cartório Andrade Lima - 1º Ofício de Notas do Recife"
-msgstr ""
+msgstr "Cartório Andrade Lima - 1º Ofício de Notas do Recife"
 
 #: templates/consulados.html:156
 msgid "Cartório Arnaldo Maciel – 5º Cartório de Notas da Capital"
-msgstr ""
+msgstr "Cartório Arnaldo Maciel – 5º Cartório de Notas da Capital"
 
 #: templates/consulados.html:169
 msgid "Cartório João Roma – 6º Ofício de Notas da Capital"
-msgstr ""
+msgstr "Cartório João Roma – 6º Ofício de Notas da Capital"
 
 #: templates/consulados.html:182
 msgid "Cartório do Registro Civil da Boa Vista"
-msgstr ""
+msgstr "Cartório do Registro Civil da Boa Vista"
 
 #: templates/consulados.html:195
 msgid "Tabelionato Figueiredo – 8º Ofício de Notas do Recife"
-msgstr ""
+msgstr "Tabelionato Figueiredo – 8º Ofício de Notas do Recife"
 
 #: templates/contato.html:33
 msgid "Precisa da Tradução Juramentada dos seus documentos?"
 msgstr "¿Precisa que sus documentos sean traducidos por un Traductor Jurado?"
 
 #: templates/contato.html:34
-#, fuzzy
 msgid ""
 "Entre em contato conosco por telefone ou e-mail, estamos à sua disposição "
 "para esclarecer"
 msgstr ""
 "Póngase en contacto con nosotros por teléfono o e-mail, estamos a su "
-"disposición para aclarar cualquier duda,"
+"disposición para aclarar"
 
 #: templates/contato.html:34
 msgid ""
@@ -293,7 +297,7 @@ msgstr "O si así lo prefiere, utilice el formulario de abajo."
 
 #: templates/contato.html:39
 msgid "Nome "
-msgstr "Nombre"
+msgstr "Nombre "
 
 #: templates/contato.html:55
 msgid "Mensagem "
@@ -301,7 +305,7 @@ msgstr ""
 
 #: templates/contato.html:79 templates/contato_ok.html:47
 msgid "Horário de Trabalho"
-msgstr ""
+msgstr "Horario de Atención"
 
 #: templates/contato_ok.html:32
 msgid ""
@@ -371,7 +375,7 @@ msgstr ""
 
 #: templates/faq.html:78
 msgid "DECRETO Nº 13.609, DE 21 DE OUTUBRO DE 1943. - Art. 35"
-msgstr ""
+msgstr "DECRETO Nº 13.609, DE 21 DE OUTUBRO DE 1943. - Art. 35"
 
 #: templates/faq.html:79
 msgid ""
@@ -380,6 +384,10 @@ msgid ""
 "pena de multa elevada ao dobro na reincidência, cabendo-lhes anotar no final "
 "de cada tradução o total dos emolumentos e selos cobrados\"."
 msgstr ""
+"\"Parágrafo único.- Não é lícito aos tradutores abater, em benefício de quem "
+"quer que seja, os emolumentos que lhes forem fixados na mesma tabela, sob "
+"pena de multa elevada ao dobro na reincidência, cabendo-lhes anotar no final "
+"de cada tradução o total dos emolumentos e selos cobrados\"."
 
 #: templates/faq.html:89
 msgid "O que é consularização?"
@@ -411,7 +419,7 @@ msgstr ""
 
 #: templates/faq.html:100
 msgid "Itamaraty MRE - Portal Consular:"
-msgstr ""
+msgstr "Itamaraty MRE - Portal Consular:"
 
 #: templates/faq.html:101
 msgid ""
@@ -423,6 +431,13 @@ msgid ""
 "Regionais em alguns Estados brasileiros, não têm competência para efetuar "
 "legalização em documentos emitidos em países estrangeiros”. "
 msgstr ""
+"“O Brasil não é signatário da Apostila da Convenção da Haia. Assim, para "
+"produzir efeitos legais no Brasil, os documentos emitidos em países "
+"estrangeiros devem ser legalizados, unicamente, junto às Repartições "
+"Consulares do Ministério das Relações Exteriores (MRE) no exterior. O "
+"Ministério das Relações Exteriores em Brasília, bem como seus Escritórios "
+"Regionais em alguns Estados brasileiros, não têm competência para efetuar "
+"legalização em documentos emitidos em países estrangeiros”. "
 
 #: templates/faq.html:104
 msgid ""
@@ -434,22 +449,22 @@ msgstr ""
 
 #: templates/faq.html:105
 msgid ""
-"“Acordo, por troca de Notas, sobre Simplificação de Legalizações em "
+"\"Acordo, por troca de Notas, sobre Simplificação de Legalizações em "
 "Documentos Públicos, de 16/10/2003, publicado no D.O.U. de 23/04/2004. O "
 "Acordo, que não prevê a isenção total de legalização, estabelece que os "
 "documentos públicos originados em ambos os países, para terem validade no "
 "território do outro, devem ser legalizados apenas pelos respectivos "
 "Ministérios das Relações Exteriores, não havendo necessidade de serem "
-"submetidos à legalização consular”."
+"submetidos à legalização consular\"."
 msgstr ""
-"Acuerdo sobre Simplificación de Legalizaciones en Documentos Públicos "
+"\"Acuerdo sobre Simplificación de Legalizaciones en Documentos Públicos "
 "argentinos y brasileños, del 16/10/2003, publicado em el D.O.U. del "
 "23/04/2004. El Acuerdo, que no prevé la eximición total de legalización, "
 "establece que los documentos públicos emitidos en ambos países, para tener "
 "validez en el territorio del otro, deberán ser legalizados apenas pelos "
 "respectivos Ministerios de Relaciones Exteriores, no  siendo necesaria la "
 "intervención consular a la legalización de los documentos contemplados en el "
-"Acuerdo. "
+"Acuerdo.\""
 
 #: templates/faq.html:107
 msgid "Vide:"
@@ -493,7 +508,7 @@ msgstr ""
 
 #: templates/faq.html:139
 msgid "Decreto 13.609 de 21⁄10⁄43, III, Art. 20. "
-msgstr ""
+msgstr "Decreto 13.609 de 21⁄10⁄43, III, Art. 20. "
 
 #: templates/faq.html:140
 msgid ""
@@ -502,6 +517,10 @@ msgid ""
 "nomeados pelo Presidente da República. Entretanto, terão fé pública em todo "
 "o país as traduções por eles feitas e as certidões que passarem”."
 msgstr ""
+"“Os tradutores públicos e intérpretes comerciais terão jurisdição em todo o "
+"território do Estado em que forem nomeados ou no Distrito Federal quando "
+"nomeados pelo Presidente da República. Entretanto, terão fé pública em todo "
+"o país as traduções por eles feitas e as certidões que passarem”."
 
 #: templates/faq.html:142
 msgid ""
@@ -572,9 +591,8 @@ msgid "TRADUÇÕES OFICIAIS"
 msgstr "TRADUCCIONES OFICIALES"
 
 #: templates/index.html:16
-#, fuzzy
 msgid "Português e Espanhol"
-msgstr "Portugués - Español"
+msgstr "Portugués y Español"
 
 #: templates/index.html:16 templates/index.html.py:17
 msgid "Espanhol – Português"
@@ -589,7 +607,6 @@ msgid "SOLICITE JÁ SEU ORÇAMENTO"
 msgstr ""
 
 #: templates/index.html:19
-#, fuzzy
 msgid "Solicite "
 msgstr "Cómo Solicitar"
 
@@ -598,9 +615,8 @@ msgid " o seu orçamento."
 msgstr " su presupuesto"
 
 #: templates/index.html:23
-#, fuzzy
 msgid "Tradução juramentada"
-msgstr "Traducción Jurada"
+msgstr "Traducción jurada"
 
 #: templates/index.html:23
 msgid "para pessoas físicas"
@@ -645,6 +661,12 @@ msgid ""
 "diferencial garante um serviço preciso e de qualidade, deixando os nossos "
 "clientes muito satisfeitos com o resultado."
 msgstr ""
+"La atención personalizada, la localización adecuada del texto, la "
+"glosarización de términos técnicos, la celeridad en la ejecución, la "
+"puntualidad en la entrega y la absoluta confidencialidad son características "
+"de nuestro trabajo que nos permiten brindar servicios del más alto nivel y "
+"calidad, que dejan siempre a nuestros clientes muy satisfechos con el "
+"resultado."
 
 #: templates/index.html:53
 msgid "SAIBA MAIS"
@@ -704,7 +726,7 @@ msgstr "NUESTROS SERVICIOS"
 
 #: templates/index.html:107
 msgid "EMPRESAS"
-msgstr ""
+msgstr "EMPRESAS"
 
 #: templates/index.html:109
 msgid "CONTRATOS"
@@ -728,7 +750,7 @@ msgstr "LICITACIONES PÚBLICAS"
 
 #: templates/index.html:114
 msgid "Etc."
-msgstr ""
+msgstr "Etc."
 
 #: templates/index.html:130
 msgid "CERTIDÃO DE CASAMENTO"
@@ -736,7 +758,7 @@ msgstr "CERTIFICADO DE MATRIMONIO"
 
 #: templates/index.html:131
 msgid "SENTENÇA JUDICIAL (DIVÓRCIO, SEPARAÇÃO)"
-msgstr ""
+msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
 
 #: templates/index.html:132
 msgid "DECLARAÇÃO DE ESTADO CIVIL"
@@ -749,7 +771,7 @@ msgstr "ANTECEDENTES PENALES"
 #: templates/index.html:134 templates/index.html.py:154
 #: templates/index.html:175
 msgid "Etc..."
-msgstr ""
+msgstr "Etc..."
 
 #: templates/index.html:148
 msgid "ESTUDOS INTERNACIONAIS"
@@ -1028,7 +1050,7 @@ msgstr "Traductora con amplia experiencia en las áreas:"
 
 #: templates/saiba_mais.html:50
 msgid "Jurídica"
-msgstr ""
+msgstr "Jurídica"
 
 #: templates/saiba_mais.html:51
 msgid "Acadêmica"
@@ -1036,7 +1058,7 @@ msgstr "Académica"
 
 #: templates/saiba_mais.html:52
 msgid "Médica"
-msgstr ""
+msgstr "Médica"
 
 #: templates/saiba_mais.html:53
 msgid "Farmacêutica"
@@ -1044,11 +1066,11 @@ msgstr "Farmacéutica"
 
 #: templates/saiba_mais.html:54
 msgid "Comercial"
-msgstr ""
+msgstr "Comercial"
 
 #: templates/saiba_mais.html:55
 msgid "Administrativa"
-msgstr ""
+msgstr "Administrativa"
 
 #: templates/saiba_mais.html:56
 msgid "Contábil"
@@ -1056,10 +1078,9 @@ msgstr "Contable"
 
 #: templates/saiba_mais.html:57
 msgid "Outros"
-msgstr ""
+msgstr "Outros"
 
 #: templates/saiba_mais.html:59
-#, fuzzy
 msgid ""
 "Profissional altamente capacitada, tem mais de dez anos de experiência na "
 "área de tradução técnica. Com o objetivo de oferecer trabalhos do mais alto "
@@ -1080,10 +1101,7 @@ msgstr ""
 "Traductores Públicos de Buenos Aires, en la República Argentina, y en el "
 "curso de Terminología Jurídica: “El Derecho Procesal Civil - Semejanzas y "
 "Diferencias entre los Sistemas Brasileño y Uruguayo” organizado por el "
-"Colegio de Traductores Públicos de Uruguay en la ciudad de Montevideo. Su "
-"profesionalidad, compromiso y cordialidad en el atendimiento hacen con que "
-"los clientes se sientan muy satisfechos con el servicio de traducción "
-"recibido."
+"Colegio de Traductores Públicos de Uruguay en la ciudad de Montevideo."
 
 #: templates/saiba_mais.html:60
 msgid ""
@@ -1091,6 +1109,9 @@ msgid ""
 "diferenciais que garantem sempre a satisfação do cliente com o serviço "
 "prestado."
 msgstr ""
+"Su profesionalidad, compromiso y cordialidad en el atendimiento hacen con "
+"que los clientes se sientan muy satisfechos con el servicio de traducción "
+"recibido."
 
 #: templates/saiba_mais.html:71
 msgid "Nomeada Pela"
