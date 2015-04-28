@@ -4,6 +4,10 @@ img.img-responsive {
   margin-left: auto;
 }
 
+img.img-responsive, .saiba_mais {
+  margin: auto;
+}
+
 body.dark .about-me h2 {
   color: #72c02c;
 }
