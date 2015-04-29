@@ -26,6 +26,10 @@
     <link rel="stylesheet" href="{% static 'plugins/flexslider/flexslider.css' %}">
     <link rel="stylesheet" href="{% static 'plugins/parallax-slider/css/parallax-slider.css' %}">
 
+    <!-- Flags icons -->
+    <link rel="stylesheet" href="{% static 'plugins/flag-icon-css-master/assets/docs.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/flag-icon-css-master/css/flag-icon.css' %}">
+
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="{% static 'css/theme-colors/default.css' %}">
     <link rel="stylesheet" href="{% static 'css/theme-skins/dark.css' %}">
@@ -50,28 +54,47 @@
 <body class="dark">
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header-v3 header-sticky">
+    <div class="header header-sticky">
         <!-- Topbar -->
-        <!--<div class="topbar">-->
-            <!--<div class="container">-->
-                <!--&lt;!&ndash; Topbar Navigation &ndash;&gt;-->
-                <!--<ul class="loginbar pull-right">-->
-                    <!--<li>-->
-                        <!--&lt;!&ndash;<i class="fa fa-globe"></i>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<a>Idioma</a>&ndash;&gt;-->
-                        <!--&lt;!&ndash;<ul class="languages">&ndash;&gt;-->
-                            <!--&lt;!&ndash;<li class="active">&ndash;&gt;-->
-                                <!--&lt;!&ndash;<a href="#">Português <i class="fa fa-check"></i></a>&ndash;&gt;-->
-                            <!--&lt;!&ndash;</li>&ndash;&gt;-->
-                            <!--&lt;!&ndash;<li><a href="/es-ar{{ request.get_full_path }}">Espanhol</a></li>&ndash;&gt;-->
-                        <!--&lt;!&ndash;</ul>&ndash;&gt;-->
-                    <!--</li>-->
-                    <!--&lt;!&ndash;<li class="topbar-devider"></li>&ndash;&gt;-->
-                    <!--&lt;!&ndash;<li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>&ndash;&gt;-->
-                <!--</ul>-->
-                <!--&lt;!&ndash; End Topbar Navigation &ndash;&gt;-->
-            <!--</div>-->
-        <!--</div>-->
+        <div class="topbar">
+            <div class="container">
+                <!-- Topbar Navigation -->
+                <ul class="loginbar pull-right">
+                    <li>
+                    <form action="{% url 'set_language' %}" method="post">
+                      {% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <input name="language" type="hidden" value="pt-br" />
+                      <button type="submit"><span class="flag-icon flag-icon-br"></span></button>
+                    </form>
+                    <form action="{% url 'set_language' %}" method="post">
+                      {% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <input name="language" type="hidden" value="es-ar" />
+                      <button type="submit"><span class="flag-icon flag-icon-ar"></span></button>
+                      <!--<input type="submit" value="Espanhol" />-->
+                    </form>
+                    <!--    <i class="fa fa-globe"></i>
+                        <a>Idioma</a>
+                        <ul class="languages">
+                            <li class="active">
+                                <a href="{% url 'set_language' %}">Português
+                                    <input name="next" type="hidden" value="{{ redirect_to }}" />
+                                    <input name="language" type="hidden" value="pt-br" />
+                                </a>
+                            </li>
+                            <li><a href="{% url 'set_language' %}">Espanhol
+                                <input name="next" type="hidden" value="{{ redirect_to }}" />
+                                <input name="language" type="hidden" value="es-ar" />
+                            </a></li>
+                        </ul>-->
+                    </li>
+                    <!--<li class="topbar-devider"></li>-->
+                    <!--<li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>-->
+                </ul>
+                <!-- End Topbar Navigation -->
+            </div>
+        </div>
         <!-- End Topbar -->
     
         <!-- Navbar -->

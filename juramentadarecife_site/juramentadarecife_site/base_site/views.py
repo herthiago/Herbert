@@ -11,7 +11,7 @@ from django.core.urlresolvers import reverse
 
 def index(request):
     dict_template = {}
-    return render_to_response("index.html", dict_template)
+    return render_to_response("index.html", dict_template, context_instance=RequestContext(request))
 
 
 def saiba_mais(request):

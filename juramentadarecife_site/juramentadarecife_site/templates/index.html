@@ -13,7 +13,7 @@
     <div class="slider-inner">
         <div id="da-slider" class="da-slider">
             <div class="da-slide first-slide">
-                <h2><i>{% trans "TRADUÇÕES OFICIAIS" %}</i> <br /> <i>{% trans "Português e Espanhol" %}</i> <!--<br /> <i>{% trans "Espanhol – Português" %}</i>--> </h2>
+                <h2><i>{% trans "TRADUÇÕES OFICIAIS" %}</i> <br /> <i>{% trans "Português <> Espanhol" %}</i> <!--<br /> <i>{% trans "Espanhol – Português" %}</i>--> </h2>
                 <!--<p><i>{% trans "Português – Espanhol" %}</i> <br /> <i>{% trans "Espanhol – Português" %}</i></p>-->
                 <p><a href="{% url 'como_solicitar' %}"><button class="btn-u btn-u-dark rounded" type="button"><i class="fa fa-chevron-right"></i>{% trans "SOLICITE JÁ SEU ORÇAMENTO" %}</button></a></p>
                 <!--<p><i>{% trans "Solicite " %}<a href="{% url 'como_solicitar' %}">{% trans 'aqui'%}</a>{% trans " o seu orçamento." %}</i></p>-->
@@ -50,7 +50,7 @@
                     <p>{% trans "O atendimento personalizado, localização adequada do texto, padronização terminológica, agilidade na execução do serviço, pontualidade na entrega e absoluto sigilo, são as principais caraterísticas do nosso trabalho. Nosso diferencial garante um serviço preciso e de qualidade, deixando os nossos clientes muito satisfeitos com o resultado." %}</p>
                 </div>
                 <div class="col-md-3 btn-buy animated fadeInRight">
-                    <a href="{% url 'saiba_mais' %}" class="btn-u btn-u-lg"><i class="fa fa-plus-square"></i>{% trans "SAIBA MAIS" %}</a>
+                    <a href="{% url 'saiba_mais' %}" class="btn-u btn-u-lg"><i class="fa fa-chevron-right"></i>{% trans "SAIBA MAIS" %}</a>
                 </div>
             </div>
         </div>
@@ -62,7 +62,7 @@
     <div class="container content">
     	<!-- Service Blocks -->
     	<div class="row margin-bottom-30">
-        	<div class="col-md-4">
+        	<div class="col-md-3">
         		<div class="service">
                     <i class="fa fa-gavel service-icon"></i>
         			<div class="desc">
@@ -71,16 +71,16 @@
         			</div>
         		</div>
         	</div>
-        	<div class="col-md-4">
+        	<div class="col-md-3">
         		<div class="service">
                     <i class="fa fa-usd service-icon"></i>
         			<div class="desc">
         				<h4>{% trans 'Quanto custa uma tradução juramentada?' %}</h4>
-                        <p>{% trans 'O custo da tradução juramentada é calculado com base na Tabela de Emolumentos oficial, homologada pela Junta Comercial de Pernambuco e publicada no DOE, a qual deve ser seguida por todos os tradutores nomeados pela JUCEPE, sob pena de sanções e anulação da tradução. ' %}<a href="{% url 'quanto_custa' %}">{% trans 'Saiba mais'%}</a></p>
+                        <p>{% trans 'O custo da tradução juramentada é calculado com base na Tabela de Emolumentos oficial, homologada pela Junta Comercial de Pernambuco e publicada no DOE, a qual deve ser seguida por todos os tradutores nomeados pela JUCEPE, sob pena de sanções e anulação da tradução. ' %}<br/><a href="{% url 'quanto_custa' %}">{% trans 'Saiba mais'%}</a></p>
         			</div>
         		</div>
         	</div>
-        	<div class="col-md-4">
+        	<div class="col-md-3">
         		<div class="service">
                     <i class="fa fa-comment service-icon"></i>
         			<div class="desc">
@@ -89,6 +89,33 @@
         			</div>
         		</div>
         	</div>
+            <div class="col-md-3">
+                <div class="service">
+                    <form action="{% url 'set_language' %}" method="post">
+                      {% csrf_token %}
+                      <input name="next" type="hidden" value="{{ redirect_to }}" />
+                      <input name="language" type="hidden" value="es-ar" />
+                      <input type="submit" value="Espanhol" />
+                    </form>
+
+                    <!--<form name="form-language" action="{% url 'set_language' %}" method="POST">
+                        {% csrf_token %}
+                        <input name="next" type="hidden" value="{{ request.get_full_path|slice:'3:' }}" />
+                        <select name="language">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                            <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected="selected"{% endif %}>
+                                {{ language.name_local }} ({{ language.code }})
+                            </option>
+                            {% endfor %}
+                        </select>
+                        <input type="submit" value="Go" />
+                    </form>-->
+
+                </div>
+            </div>
     	</div>
     	<!-- End Service Blokcs -->
 

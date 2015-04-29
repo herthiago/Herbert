@@ -4,7 +4,7 @@ img.img-responsive {
   margin-left: auto;
 }
 
-img.img-responsive, .saiba_mais {
+img.img-responsive.saiba_mais {
   margin: auto;
 }
 
