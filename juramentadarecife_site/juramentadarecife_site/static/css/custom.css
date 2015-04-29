@@ -69,6 +69,10 @@ body.dark .contato li, body.dark .contato li a{
     color: #FFFFFF;
 }
 
+.first-slide p i {
+    background: none;
+}
+
 .da-slider{
     background: transparent url(../img/bg/bg_slider.jpg) repeat 0% 0%;
 }
