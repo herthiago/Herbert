@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-04-29 21:14-0300\n"
-"PO-Revision-Date: 2015-04-29 21:15-0300\n"
+"PO-Revision-Date: 2015-04-30 16:37-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
 "Language: es_AR\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.7.6\n"
 
 #: juramentadarecife_site/settings/base.py:263
 msgid "Portugues"
@@ -610,7 +610,7 @@ msgstr "Portugués - Español"
 
 #: templates/index.html:18
 msgid "SOLICITE JÁ SEU ORÇAMENTO"
-msgstr ""
+msgstr "SOLICITE SU PRESUPUESTO"
 
 #: templates/index.html:19
 msgid "Solicite "
