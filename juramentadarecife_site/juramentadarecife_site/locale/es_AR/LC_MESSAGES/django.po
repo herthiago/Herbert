@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-04-27 20:58-0300\n"
-"PO-Revision-Date: 2015-04-27 21:36-0300\n"
+"POT-Creation-Date: 2015-04-29 21:14-0300\n"
+"PO-Revision-Date: 2015-04-29 21:15-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
 "Language: es_AR\n"
@@ -28,13 +28,13 @@ msgstr ""
 
 #: templates/404.html:5 templates/404.html.py:7
 msgid "Página não encontrada"
-msgstr ""
+msgstr "La página solicitada no se encuentra disponible"
 
 #: templates/404.html:17 templates/404.html.py:20
 msgid "Erro"
-msgstr ""
+msgstr "Error"
 
-#: templates/404.html:19 templates/base.html:97 templates/base.html.py:100
+#: templates/404.html:19 templates/base.html:120 templates/base.html.py:123
 #: templates/contato.html:17 templates/contato_ok.html:17
 #: templates/saiba_mais.html:18
 msgid "Início"
@@ -42,79 +42,79 @@ msgstr "Inicio"
 
 #: templates/404.html:33 templates/500.html:3 templates/500.html.py:5
 msgid "Ocorreu um erro"
-msgstr ""
+msgstr "Parece que ocurrió un error"
 
 #: templates/404.html:34
 msgid "A página que você procura não existe."
-msgstr ""
+msgstr "Disculpe, la página solicitada no existe."
 
 #: templates/404.html:35 templates/500.html:18
 msgid "Voltar ao Início"
-msgstr ""
+msgstr "Volver al Inicio"
 
 #: templates/500.html:16
 msgid "Ocorreu um erro no servidor"
-msgstr ""
+msgstr "Ocurrió un error en el servidor"
 
 #: templates/500.html:17
 msgid "Contate o administrador."
-msgstr ""
+msgstr "Entre en contacto con el administrador"
 
-#: templates/base.html:70
+#: templates/base.html:93
 msgid "Ajuda"
 msgstr "Ayuda"
 
-#: templates/base.html:101 templates/saiba_mais.html:16
+#: templates/base.html:124 templates/saiba_mais.html:16
 #: templates/saiba_mais.html.py:19
 msgid "Saiba Mais"
 msgstr "Leer Más"
 
-#: templates/base.html:109 templates/como_solicitar.html:18
+#: templates/base.html:132 templates/como_solicitar.html:18
 #: templates/consulados.html:13 templates/faq.html:16
 #: templates/quanto_custa.html:17 templates/quanto_custa.html.py:29
 #: templates/traducao_juramentada.html:16
 msgid "Tradução Juramentada"
 msgstr "Traducción Jurada"
 
-#: templates/base.html:113 templates/traducao_juramentada.html:14
+#: templates/base.html:136 templates/traducao_juramentada.html:14
 #: templates/traducao_juramentada.html:17
 msgid "O que é"
 msgstr "Qué es"
 
-#: templates/base.html:114 templates/como_solicitar.html:16
+#: templates/base.html:137 templates/como_solicitar.html:16
 #: templates/como_solicitar.html.py:19
 msgid "Como Solicitar"
 msgstr "Cómo Solicitar"
 
-#: templates/base.html:115
+#: templates/base.html:138
 msgid "Quanto Custa"
 msgstr "Tarifas"
 
-#: templates/base.html:116 templates/faq.html:14 templates/faq.html.py:17
+#: templates/base.html:139 templates/faq.html:14 templates/faq.html.py:17
 msgid "Dúvidas Frequentes"
 msgstr "Preguntas Frecuentes"
 
-#: templates/base.html:117 templates/consulados.html:11
+#: templates/base.html:140 templates/consulados.html:11
 #: templates/consulados.html.py:14
 msgid "Consulados e links úteis"
 msgstr "Consulados y links útiles"
 
-#: templates/base.html:127 templates/base.html.py:185
+#: templates/base.html:150 templates/base.html.py:208
 #: templates/contato.html:15 templates/contato.html.py:18
 #: templates/contato_ok.html:15 templates/contato_ok.html.py:18
 #: templates/contato_ok.html:38
 msgid "Contato"
 msgstr "Contáctenos"
 
-#: templates/base.html:178
+#: templates/base.html:201
 msgid "Dúvidas? Entre em contato por telefone ou e-mail"
 msgstr "¿Dudas? Contáctenos por teléfono o e-mail"
 
-#: templates/base.html:188
+#: templates/base.html:211
 msgid "Telefone"
 msgstr "Teléfono"
 
-#: templates/base.html:189
+#: templates/base.html:212
 msgid "Celular"
 msgstr "Celular"
 
@@ -166,7 +166,7 @@ msgstr "Descripción del documento"
 
 #: templates/como_solicitar.html:98 templates/contato.html:63
 msgid "Enviar"
-msgstr ""
+msgstr "Enviar"
 
 #: templates/como_solicitar.html:107 templates/contato.html:69
 msgid "Fale Conosco"
@@ -301,7 +301,7 @@ msgstr "Nombre "
 
 #: templates/contato.html:55
 msgid "Mensagem "
-msgstr ""
+msgstr "MENSAJE "
 
 #: templates/contato.html:79 templates/contato_ok.html:47
 msgid "Horário de Trabalho"
@@ -312,6 +312,8 @@ msgid ""
 "Estamos a disposição para esclarecer as suas dúvidas, receber suas "
 "solicitações e enviar nossa proposta de trabalho."
 msgstr ""
+"CON GUSTO ATENDEREMOS SUS CONSULTAS, RECIBIREMOS SUS PEDIDOS Y ENVIAREMOS "
+"NUESTRA PROPUESTA DE TRABAJO."
 
 #: templates/faq.html:40
 msgid "Quais são os documentos que exigem tradução juramentada?"
@@ -587,12 +589,16 @@ msgstr ""
 "del 25 de agosto de 2011, Arts. 3º y 4º."
 
 #: templates/index.html:16
-msgid "TRADUÇÕES OFICIAIS"
-msgstr "TRADUCCIONES OFICIALES"
+msgid "TRADUÇÕES"
+msgstr "TRADUCCIONES"
 
 #: templates/index.html:16
-msgid "Português e Espanhol"
-msgstr "Portugués y Español"
+msgid "OFICIAIS"
+msgstr "OFICIALES"
+
+#: templates/index.html:16
+msgid "Português <> Espanhol"
+msgstr "Portugués <> Español"
 
 #: templates/index.html:16 templates/index.html.py:17
 msgid "Espanhol – Português"
@@ -720,100 +726,100 @@ msgstr ""
 "presupuesto, le haremos llegar de inmediato nuestra propuesta de trabajo. "
 "PULSE "
 
-#: templates/index.html:96
+#: templates/index.html:123
 msgid "Nossos Serviços"
 msgstr "NUESTROS SERVICIOS"
 
-#: templates/index.html:107
+#: templates/index.html:134
 msgid "EMPRESAS"
 msgstr "EMPRESAS"
 
-#: templates/index.html:109
+#: templates/index.html:136
 msgid "CONTRATOS"
 msgstr "ESTATUTOS SOCIETARIOS"
 
-#: templates/index.html:110
+#: templates/index.html:137
 msgid "ESCRITURAS DE CONSTITUIÇÃO"
 msgstr "ESCRITURAS DE CONSTITUCIÓN"
 
-#: templates/index.html:111
+#: templates/index.html:138
 msgid "PROCURAÇÕES"
 msgstr "PODERES"
 
-#: templates/index.html:112
+#: templates/index.html:139
 msgid "BALANÇOS"
 msgstr "ESTADOS CONTABLES"
 
-#: templates/index.html:113
+#: templates/index.html:140
 msgid "LICITAÇÕES PÚBLICAS"
 msgstr "LICITACIONES PÚBLICAS"
 
-#: templates/index.html:114
+#: templates/index.html:141
 msgid "Etc."
 msgstr "Etc."
 
-#: templates/index.html:130
+#: templates/index.html:157
 msgid "CERTIDÃO DE CASAMENTO"
 msgstr "CERTIFICADO DE MATRIMONIO"
 
-#: templates/index.html:131
+#: templates/index.html:158
 msgid "SENTENÇA JUDICIAL (DIVÓRCIO, SEPARAÇÃO)"
 msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
 
-#: templates/index.html:132
+#: templates/index.html:159
 msgid "DECLARAÇÃO DE ESTADO CIVIL"
 msgstr "FE DE VIDA Y ESTADO"
 
-#: templates/index.html:133
+#: templates/index.html:160
 msgid "ANTECEDENTES PENAIS"
 msgstr "ANTECEDENTES PENALES"
 
-#: templates/index.html:134 templates/index.html.py:154
-#: templates/index.html:175
+#: templates/index.html:161 templates/index.html.py:181
+#: templates/index.html:202
 msgid "Etc..."
 msgstr "Etc..."
 
-#: templates/index.html:148
+#: templates/index.html:175
 msgid "ESTUDOS INTERNACIONAIS"
 msgstr "ESTUDIOS INTERNACIONALES"
 
-#: templates/index.html:150
+#: templates/index.html:177
 msgid "HISTÓRICOS ESCOLARES"
 msgstr "CERTIFICADO ACADÉMICO"
 
-#: templates/index.html:151
+#: templates/index.html:178
 msgid "DIPLOMA UNIVERSITÁRIO"
 msgstr "TÍTULO UNIVERSITARIO"
 
-#: templates/index.html:152
+#: templates/index.html:179
 msgid "DECLARAÇÕES"
 msgstr "CONSTANCIAS"
 
-#: templates/index.html:153
+#: templates/index.html:180
 msgid "HOMOLOGAÇÃO DE ESTUDOS"
 msgstr "HOMOLOGACIÓN DE ESTUDIOS"
 
-#: templates/index.html:168
+#: templates/index.html:195
 msgid "DOCUMENTAÇÃO PESSOAL"
 msgstr "DOCUMENTACIÓN PERSONAL"
 
-#: templates/index.html:170
+#: templates/index.html:197
 msgid "CARTEIRA DE IDENTIDADE"
 msgstr "DOCUMENTO DE IDENTIDAD"
 
-#: templates/index.html:171
+#: templates/index.html:198
 msgid "CARTEIRA DE MOTORISTA"
 msgstr "LICENCIA DE CONDUCIR"
 
-#: templates/index.html:172
+#: templates/index.html:199
 msgid "PASSAPORTE"
 msgstr "PASAPORTE"
 
-#: templates/index.html:173
+#: templates/index.html:200
 msgid "CARTEIRA DE IDENTIDADE PROFISSIONAL"
 msgstr "CARNÉ PROFESIONAL"
 
-#: templates/index.html:174
+#: templates/index.html:201
 msgid "CERTIDÃO DE NASCIMENTO"
 msgstr "CERTIFICADO DE NACIMIENTO"
 
@@ -1222,7 +1228,7 @@ msgstr ""
 
 #: templates/includes/clients.html:5
 msgid "Nossos Clientes"
-msgstr ""
+msgstr "NUESTROS CLIENTES"
 
 #~ msgid "Serviços de tradução juramentada"
 #~ msgstr "Servicios de traducción jurada"

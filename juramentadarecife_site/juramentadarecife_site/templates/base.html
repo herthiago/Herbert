@@ -54,11 +54,11 @@
 <body class="dark">
 <div class="wrapper">
     <!--=== Header ===-->    
-    <div class="header header-sticky">
+    <div class="header-v3 header-sticky">
         <!-- Topbar -->
-        <div class="topbar">
+        <!--<div class="topbar">
             <div class="container">
-                <!-- Topbar Navigation -->
+                &lt;!&ndash; Topbar Navigation &ndash;&gt;
                 <ul class="loginbar pull-right">
                     <li>
                     <form action="{% url 'set_language' %}" method="post">
@@ -71,10 +71,10 @@
                       {% csrf_token %}
                       <input name="next" type="hidden" value="{{ redirect_to }}" />
                       <input name="language" type="hidden" value="es-ar" />
-                      <button type="submit"><span class="flag-icon flag-icon-ar"></span></button>
-                      <!--<input type="submit" value="Espanhol" />-->
+                      <button type="submit" class="flag-icon flag-icon-ar"></button>
+                      &lt;!&ndash;<input type="submit" value="Espanhol" />&ndash;&gt;
                     </form>
-                    <!--    <i class="fa fa-globe"></i>
+                    &lt;!&ndash;    <i class="fa fa-globe"></i>
                         <a>Idioma</a>
                         <ul class="languages">
                             <li class="active">
@@ -87,14 +87,14 @@
                                 <input name="next" type="hidden" value="{{ redirect_to }}" />
                                 <input name="language" type="hidden" value="es-ar" />
                             </a></li>
-                        </ul>-->
+                        </ul>&ndash;&gt;
                     </li>
-                    <!--<li class="topbar-devider"></li>-->
-                    <!--<li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>-->
+                    &lt;!&ndash;<li class="topbar-devider"></li>&ndash;&gt;
+                    &lt;!&ndash;<li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>&ndash;&gt;
                 </ul>
-                <!-- End Topbar Navigation -->
+                &lt;!&ndash; End Topbar Navigation &ndash;&gt;
             </div>
-        </div>
+        </div>-->
         <!-- End Topbar -->
     
         <!-- Navbar -->
