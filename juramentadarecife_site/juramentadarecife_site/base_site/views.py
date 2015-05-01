@@ -16,12 +16,12 @@ def index(request):
 
 def saiba_mais(request):
     dict_template = {}
-    return render_to_response("saiba_mais.html", dict_template)
+    return render_to_response("saiba_mais.html", dict_template, context_instance=RequestContext(request))
 
 
 def traducao_juramentada(request):
     dict_template = {}
-    return render_to_response("traducao_juramentada.html", dict_template)
+    return render_to_response("traducao_juramentada.html", dict_template, context_instance=RequestContext(request))
 
 
 # def como_solicitar(request):
@@ -31,22 +31,22 @@ def traducao_juramentada(request):
 
 def quanto_custa(request):
     dict_template = {}
-    return render_to_response("quanto_custa.html", dict_template)
+    return render_to_response("quanto_custa.html", dict_template, context_instance=RequestContext(request))
 
 
 def faq(request):
     dict_template = {}
-    return render_to_response("faq.html", dict_template)
+    return render_to_response("faq.html", dict_template, context_instance=RequestContext(request))
 
 
 def contato(request):
     dict_template = {}
-    return render_to_response("contato.html", dict_template)
+    return render_to_response("contato.html", dict_template, context_instance=RequestContext(request))
 
 
 def consulados(request):
     dict_template = {}
-    return render_to_response("consulados.html", dict_template)
+    return render_to_response("consulados.html", dict_template, context_instance=RequestContext(request))
 
 
 def contato(request):

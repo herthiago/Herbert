@@ -40,7 +40,7 @@
             </div>
         	<div class="col-md-8 md-margin-bottom-40">
                 <div class="headline"><h2>QUANTO CUSTA uma tradução juramentada?</h2></div>
-                <p>{% trans "O valor da tradução juramentada é determinado por tabela de emolumentos, aprovada e divulgada pelas juntas comerciais no seu Diário Oficial, a qual o Tradutor Público é obrigado a seguir por lei. Atualmente em Pernambuco rege a tabela oficial publicada na Resolução JUCEPE Nº 02 de 25 de agosto de 2011, atualizada pela Resolução JUCEPE Nº 001 de 14 de agosto de 2012." %}</p>
+                <p>{% trans "O valor da tradução juramentada é determinado por tabela de emolumentos, aprovada e divulgada pelas juntas comerciais no Diário Oficial, a qual deve ser seguida por todos os tradutores nomeados pela JUCEPE, sob pena de sanções e anulação da tradução. Atualmente em Pernambuco rege a tabela oficial publicada na Resolução JUCEPE Nº 02 de 25 de agosto de 2011, atualizada pela Resolução JUCEPE Nº 001 de 14 de agosto de 2012." %}</p>
                 <p>{% trans 'Esses preços variam de acordo com:' %}</p>
                     <div class="content-boxes-in-v3">
                         <h3><a href="#"> {% trans 'Tipo de documento' %}</a></h3>
@@ -48,6 +48,11 @@
                             <li><i class="color-green fa fa-check"></i><span style="text-decoration: underline;"><strong> {% trans 'Textos Comuns' %} </strong></span> {% trans ": passaportes, certidões de registro civil, carteiras de identidade, de habilitação profissional e documentos similares, inclusive cartas pessoais que não envolvam textos jurídicos, técnicos ou científicos." %}</li>
                             <li><i class="color-green fa fa-check"></i><span style="text-decoration: underline;"><strong> {% trans 'Textos Especiais' %} </strong></span> {% trans ": jurídicos, técnicos, científicos, comerciais, inclusive bancários e contábeis, certificados e diplomas escolares. " %}</li>
                         </ul>
+                    </div>
+
+                    <div class="content-boxes-in-v3">
+                        <h3><a href=""> {% trans 'Tipo de serviço' %}</a></h3>
+                        <p>{% trans 'Se é uma tradução (do espanhol para o português) ou uma versão (do português para o espanhol)' %}</p>
                     </div>
 
                     <div class="content-boxes-in-v3">
@@ -61,11 +66,14 @@
                         <p>{% trans 'O prazo para a entrega varia de acordo com alguns fatores como:' %}</p>
                         <ul class="list-unstyled">
                             <li><i class="color-green fa fa-check"></i><strong>{% trans 'Tamanho do documento' %} </strong></li>
-                            <li><i class="color-green fa fa-check"></i><strong>{% trans 'Urgência do cliente' %} </strong><p>{% trans 'Resolução Nº 02 – JUCEPE Art. 10 § 1 e 2: Será cobrado um acréscimo de 50% (cinquenta por cento) para os serviços urgentes e de 100% para serviços extraordinários (sábados, domingos, feriados e pontos facultativos)' %}</p></li>
+                            <li><i class="color-green fa fa-check"></i><strong>{% trans 'Urgência do cliente' %} </strong>
+                                <p>{% trans 'Em caso de que o prazo solicitado seja considerado como Urgente ou Extraordinário caberá o pagamento de um acréscimo:' %}</p>
+                                <p>{% trans 'Resolução JUCEPE Nº 02 de 25 de agosto de 2011, Art. 10 § 1 e 2:' %}</p>
+                                <p>"Será cobrado um acréscimo de 50% (cinquenta por cento) para os serviços urgentes e de 100% para serviços extraordinários (sábados, domingos, feriados e pontos facultativos)."</p>
+                            </li>
                             <li><i class="color-green fa fa-check"></i><strong>{% trans 'Volume de entregas já agendadas com outros clientes' %}</strong> </li>
                         </ul>
                     </div>
-
             </div>
 
 
@@ -78,7 +86,7 @@
 
         <div class="heading heading-v1 margin-bottom-20">
             <h2>{% trans 'Tabela de preços'%}</h2>
-            <p>{% trans 'Preços obrigatórios determinados por Resolução JUCEPE nº 001 de 14 de agosto de 2012' %}</p>
+            <p>{% trans 'Preços oficiais determinados por Resolução JUCEPE nº 001 de 14 de agosto de 2012' %}</p>
         </div>
 
         <!-- Pricing Mega v1 -->
