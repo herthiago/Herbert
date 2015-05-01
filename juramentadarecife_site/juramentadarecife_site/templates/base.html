@@ -56,45 +56,14 @@
     <!--=== Header ===-->    
     <div class="header-v3 header-sticky">
         <!-- Topbar -->
-        <!--<div class="topbar">
+        <div class="topbar">
             <div class="container">
-                &lt;!&ndash; Topbar Navigation &ndash;&gt;
-                <ul class="loginbar pull-right">
-                    <li>
-                    <form action="{% url 'set_language' %}" method="post">
-                      {% csrf_token %}
-                      <input name="next" type="hidden" value="{{ redirect_to }}" />
-                      <input name="language" type="hidden" value="pt-br" />
-                      <button type="submit"><span class="flag-icon flag-icon-br"></span></button>
-                    </form>
-                    <form action="{% url 'set_language' %}" method="post">
-                      {% csrf_token %}
-                      <input name="next" type="hidden" value="{{ redirect_to }}" />
-                      <input name="language" type="hidden" value="es-ar" />
-                      <button type="submit" class="flag-icon flag-icon-ar"></button>
-                      &lt;!&ndash;<input type="submit" value="Espanhol" />&ndash;&gt;
-                    </form>
-                    &lt;!&ndash;    <i class="fa fa-globe"></i>
-                        <a>Idioma</a>
-                        <ul class="languages">
-                            <li class="active">
-                                <a href="{% url 'set_language' %}">Português
-                                    <input name="next" type="hidden" value="{{ redirect_to }}" />
-                                    <input name="language" type="hidden" value="pt-br" />
-                                </a>
-                            </li>
-                            <li><a href="{% url 'set_language' %}">Espanhol
-                                <input name="next" type="hidden" value="{{ redirect_to }}" />
-                                <input name="language" type="hidden" value="es-ar" />
-                            </a></li>
-                        </ul>&ndash;&gt;
-                    </li>
-                    &lt;!&ndash;<li class="topbar-devider"></li>&ndash;&gt;
-                    &lt;!&ndash;<li><a href="page_faq.html">{% trans "Ajuda" %}</a></li>&ndash;&gt;
-                </ul>
-                &lt;!&ndash; End Topbar Navigation &ndash;&gt;
+                <!-- Topbar Navigation -->
+                <!--<ul class="loginbar pull-right">
+                </ul>-->
+                <!-- End Topbar Navigation -->
             </div>
-        </div>-->
+        </div>
         <!-- End Topbar -->
     
         <!-- Navbar -->
@@ -151,6 +120,28 @@
                             </a>
                         </li>                    
                         <!-- End Contacts -->
+
+                        <li>
+                            <a>
+                            <form action="{% url 'set_language' %}" method="post">
+                              {% csrf_token %}
+                              <input name="next" type="hidden" value="{{ redirect_to }}" />
+                              <input name="language" type="hidden" value="pt-br" />
+                              <input type="image" src="{% static 'img/icons/flags/br.png' %}" />
+                            </form>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                            <form action="{% url 'set_language' %}" method="post">
+                              {% csrf_token %}
+                              <input name="next" type="hidden" value="{{ redirect_to }}" />
+                              <input name="language" type="hidden" value="es-ar" />
+                              <input type="image" src="{% static 'img/icons/flags/es.png' %}" />
+                              <!--<input type="submit" value="Espanhol" />-->
+                            </form>
+                            </a>
+                        </li>
 
                         <!-- Search Block -->
                         <!-- <li>
