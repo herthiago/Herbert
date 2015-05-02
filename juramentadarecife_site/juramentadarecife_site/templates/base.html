@@ -121,23 +121,23 @@
                         </li>                    
                         <!-- End Contacts -->
 
-                        <li>
+                        <li class="flag">
                             <a>
                             <form action="{% url 'set_language' %}" method="post">
                               {% csrf_token %}
                               <input name="next" type="hidden" value="{{ redirect_to }}" />
                               <input name="language" type="hidden" value="pt-br" />
-                              <input type="image" src="{% static 'img/icons/flags/br.png' %}" />
+                              <input type="image" src="{% static 'img/icons/flags/br_24.png' %}" />
                             </form>
                             </a>
                         </li>
-                        <li>
+                        <li class="flag">
                             <a>
                             <form action="{% url 'set_language' %}" method="post">
                               {% csrf_token %}
                               <input name="next" type="hidden" value="{{ redirect_to }}" />
                               <input name="language" type="hidden" value="es-ar" />
-                              <input type="image" src="{% static 'img/icons/flags/es.png' %}" />
+                              <input type="image" src="{% static 'img/icons/flags/es_24.png' %}" />
                               <!--<input type="submit" value="Espanhol" />-->
                             </form>
                             </a>

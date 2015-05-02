@@ -80,3 +80,7 @@ body.dark .contato li, body.dark .contato li a{
 body.dark .form-control {
     border-color: #FFFFFF;
 }
+
+.header-v3 .navbar-default .navbar-nav > li.flag > a {
+    padding: 30px 30px 17px 20px;
+}
