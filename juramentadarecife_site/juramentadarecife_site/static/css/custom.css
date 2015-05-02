@@ -61,6 +61,10 @@ body.dark .contato li, body.dark .contato li a{
   color: #FFF;
 }
 
+body.dark h3.contato{
+    color: #FFFFFF;
+}
+
 /*body.dark .wrapper p {
   color: #FFFFFF;
 }*/
