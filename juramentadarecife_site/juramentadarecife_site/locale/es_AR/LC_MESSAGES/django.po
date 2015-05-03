@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-01 13:35-0300\n"
+"POT-Creation-Date: 2015-05-03 15:19-0300\n"
 "PO-Revision-Date: 2015-05-01 13:53-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
@@ -760,6 +760,10 @@ msgstr "LICITACIONES PÚBLICAS"
 #: templates/index.html:141
 msgid "Etc."
 msgstr "Etc."
+
+#: templates/index.html:155
+msgid "CASAMENTOS"
+msgstr "MATRIMONIOS"
 
 #: templates/index.html:157
 msgid "CERTIDÃO DE CASAMENTO"

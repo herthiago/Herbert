@@ -88,3 +88,7 @@ body.dark .form-control {
 .header-v3 .navbar-default .navbar-nav > li.flag > a {
     padding: 30px 30px 17px 20px;
 }
+
+body.dark .headline, .no-dotts{
+  border-bottom: none;
+}
