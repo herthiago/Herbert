@@ -682,7 +682,7 @@ msgstr "LEER MÁS"
 
 #: templates/index.html:69
 msgid "O que é tradução juramentada?"
-msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
+msgstr "¿Qué es una traducción jurada?"
 
 #: templates/index.html:70
 msgid ""
@@ -718,7 +718,7 @@ msgstr ""
 
 #: templates/index.html:87
 msgid "Como solicitar uma tradução juramentada?"
-msgstr "¿CÓMO SOLICITAR UNA TRADUCCIÓN JURADA?"
+msgstr "¿Cómo solicitar una traducción jurada?"
 
 #: templates/index.html:88
 msgid ""
@@ -727,11 +727,11 @@ msgid ""
 msgstr ""
 "Póngase en contacto con la Traductora Pública Andrea Baylé y solicite su "
 "presupuesto, le haremos llegar de inmediato nuestra propuesta de trabajo. "
-"PULSE "
+"Pulse "
 
 #: templates/index.html:123
 msgid "Nossos Serviços"
-msgstr "NUESTROS SERVICIOS"
+msgstr "Nuestros Servicios"
 
 #: templates/index.html:134
 msgid "EMPRESAS"
