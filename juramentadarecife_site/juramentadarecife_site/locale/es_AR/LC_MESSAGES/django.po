@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-03 15:19-0300\n"
-"PO-Revision-Date: 2015-05-01 13:53-0300\n"
+"POT-Creation-Date: 2015-05-03 16:00-0300\n"
+"PO-Revision-Date: 2015-05-03 15:56-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
 "Language: es_AR\n"
@@ -568,14 +568,14 @@ msgstr "aquí"
 
 #: templates/faq.html:162
 msgid " para solicitar sua tradução."
-msgstr "para solicitar su traducción."
+msgstr " para solicitar su traducción."
 
 #: templates/faq.html:171
 msgid "Posso solicitar a emissão de uma segunda via da tradução juramentada?"
 msgstr "¿Y si necesito varias copias de la traducción jurada?"
 
 #: templates/faq.html:177
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "Sim, o cliente pode solicitar uma ou várias cópias autenticadas, junto com a "
 "tradução ou versão ou posteriormente. Os valores cobrados por este serviço "
@@ -589,6 +589,10 @@ msgstr ""
 "por la Junta Comercial de cada estado, en Pernambuco se cobra a un 20%% de "
 "los honorarios debidos por el servicio original, si se emiten "
 "simultáneamente con la traducción, y un 50%% si se solicita posteriormente."
+
+#: templates/faq.html:178
+msgid "Resolução JUCEPE Nº 02 de 25 de agosto de 2011, Arts. 3º e 4º."
+msgstr "Resolución JUCEPE Nº 02 del 25 de agosto de 2011, Arts. 3º y 4º."
 
 #: templates/index.html:16
 msgid "TRADUÇÕES"
@@ -833,7 +837,11 @@ msgstr "CERTIFICADO DE NACIMIENTO"
 #: templates/quanto_custa.html:15 templates/quanto_custa.html.py:18
 #: templates/quanto_custa.html:27 templates/quanto_custa.html.py:30
 msgid "Quanto custa"
-msgstr "QUÉ TARIFAS se aplican"
+msgstr "Tarifas"
+
+#: templates/quanto_custa.html:42
+msgid "QUANTO CUSTA uma tradução juramentada?"
+msgstr "¿QUÉ TARIFAS se aplican?"
 
 #: templates/quanto_custa.html:43
 msgid ""
@@ -858,7 +866,7 @@ msgstr "Estos precios varían de acuerdo con:"
 
 #: templates/quanto_custa.html:46
 msgid "Tipo de documento"
-msgstr "EL TIPO DE DOCUMENTO:"
+msgstr "El tipo de documento:"
 
 #: templates/quanto_custa.html:48
 msgid "Textos Comuns"
@@ -900,7 +908,7 @@ msgstr ""
 
 #: templates/quanto_custa.html:59 templates/quanto_custa.html.py:68
 msgid "Tamanho do documento"
-msgstr "EL TAMAÑO DEL DOCUMENTO"
+msgstr "El tamaño del documento"
 
 #: templates/quanto_custa.html:60
 msgid "O valor da tradução depende da quantidade de texto do documento."
@@ -935,7 +943,7 @@ msgstr ""
 
 #: templates/quanto_custa.html:65
 msgid "Prazo de entrega"
-msgstr "EL PLAZO PARA LA ENTREGA"
+msgstr "El plazo para la entrega"
 
 #: templates/quanto_custa.html:66
 msgid "O prazo para a entrega varia de acordo com alguns fatores como:"
@@ -960,7 +968,7 @@ msgstr "Resolución JUCEPE Nº 02 – Art. 10 § 1 y 2:"
 
 #: templates/quanto_custa.html:74
 msgid "Volume de entregas já agendadas com outros clientes"
-msgstr "c. La cantidad de entregas agendadas con otros clientes"
+msgstr "La cantidad de entregas agendadas con otros clientes"
 
 #: templates/quanto_custa.html:88
 msgid "Tabela de preços"
@@ -985,7 +993,7 @@ msgstr "Documentos especiales"
 
 #: templates/quanto_custa.html:120
 msgid "Tradução"
-msgstr "TRADUCCIÓN"
+msgstr "Traducción"
 
 #: templates/quanto_custa.html:121 templates/quanto_custa.html.py:125
 msgid "Espanhol para Português"
