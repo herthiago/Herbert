@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-03 22:38-0300\n"
+"POT-Creation-Date: 2015-05-04 14:40-0300\n"
 "PO-Revision-Date: 2015-05-03 16:12-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
@@ -299,7 +299,7 @@ msgstr "Nombre "
 
 #: templates/contato.html:55
 msgid "Mensagem "
-msgstr "MENSAJE "
+msgstr "Mensaje "
 
 #: templates/contato.html:79 templates/contato_ok.html:47
 msgid "Horário de Trabalho"
@@ -585,9 +585,10 @@ msgid ""
 msgstr ""
 "El cliente puede solicitar una o varias copias certificadas. El importe "
 "cobrado por este servicio está contemplado en la Tarifa Oficial estipulada "
-"por la Junta Comercial de cada estado, en Pernambuco se cobra a un 20%(percent) de "
-"los honorarios debidos por el servicio original, si se emiten "
-"simultáneamente con la traducción, y un 50%(percent) si se solicita posteriormente."
+"por la Junta Comercial de cada estado, en Pernambuco se cobra a un 20%"
+"(percent)s de los honorarios debidos por el servicio original, si se emiten "
+"simultáneamente con la traducción, y un 50%(percent)s si se solicita "
+"posteriormente."
 
 #: templates/faq.html:178
 msgid "Resolução JUCEPE Nº 02 de 25 de agosto de 2011, Arts. 3º e 4º."
