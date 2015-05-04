@@ -1,94 +1,70 @@
+=========================
+juramentadarecife project
+=========================
+
+Projeto do site www.juramentadarecife.com.br
+
+
+Este site foi construído com o framework web Django (versão 1.6.5) e Python (versão 3.4). A configuração para o desenvolvimento do projeto é bastante simples.
+
+Instalação do Python
+====================
+
+Se você estiver em um sistema Linux ou Mac OS X, o Python provavelmente já está instalado. Se não estiver instalado ou
+se não estiver usando um desses sistemas, uma busca rápida na internet pode ajudar na instalação do Python.
+Ou, se preferir siga as instruções neste link: http://www.pythonize.org/blog/iniciando-programacao-python/
+
+Instalação de virtualenv
 ========================
-django-twoscoops-project
-========================
 
-A project template for Django 1.6 (with a tag for Django 1.5).
+Recomendamos utilizar o virtualenv para separar as dependências deste projeto do ambiente python do seu sistema.
+Se você estiver em um sistema Linux ou Mac OS X, você pode utilizar o virtualenvwrapper para ajudar a gerenciar
+diversos virtualenvs criados para diferentes projetos.
 
-To use this project follow these steps:
+Virtualenv
+----------
 
-#. Create your working environment
-#. Install Django
-#. Create the new project using the django-two-scoops template
-#. Install additional dependencies
-#. Use the Django admin to create the project
+Após a instalação do virtualenv, crie um ambiente::
 
-*note: these instructions show creation of a project called "icecream".  You
-should replace this name with the actual name of your project.*
-
-Working Environment
-===================
-
-You have several options in setting up your working environment.  We recommend
-using virtualenv to separate the dependencies of your project from your system's
-python environment.  If on Linux or Mac OS X, you can also use virtualenvwrapper to help manage multiple virtualenvs across different projects.
-
-Virtualenv Only
----------------
-
-First, make sure you are using virtualenv (http://www.virtualenv.org). Once
-that's installed, create your virtualenv::
-
-    $ virtualenv icecream
+    $ virtualenv juramentada
 
 You will also need to ensure that the virtualenv has the project directory
 added to the path. Adding the project directory will allow `django-admin.py` to
 be able to change settings using the `--settings` flag.
 
-Virtualenv with virtualenvwrapper
+Virtualenv com virtualenvwrapper
 ------------------------------------
 
-In Linux and Mac OSX, you can install virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
-which will take care of managing your virtual environments and adding the
-project path to the `site-directory` for you::
+No Linux e Mac OSX, você pode instalar o virtualenvwrapper (http://virtualenvwrapper.readthedocs.org/en/latest/),
+que gerencia seus ambientes virtuais e adiciona o path do projeto ao `site-directory`::
 
-    $ mkdir icecream
-    $ mkvirtualenv -a icecream icecream-dev
-    $ cd icecream && add2virtualenv `pwd`
+    $ mkdir juramentada
+    $ mkvirtualenv -a juramentada juramentada-dev
+    $ cd juramentada && add2virtualenv `pwd`
 
-Using virtualenvwrapper with Windows
+Usando virtualenvwrapper no Windows
 ----------------------------------------
 
-There is a special version of virtualenvwrapper for use with Windows (https://pypi.python.org/pypi/virtualenvwrapper-win).::
+Existe uma versão especial do virtualenvwrapper para Windows (https://pypi.python.org/pypi/virtualenvwrapper-win).::
 
-    > mkdir icecream
-    > mkvirtualenv icecream-dev
-    > add2virtualenv icecream
+    > mkdir juramentada
+    > mkvirtualenv juramentada-dev
+    > add2virtualenv juramentada
 
 
-Installing Django
-=================
+Instalando os pacotes necessários
+=================================
 
-To install Django in the new virtual environment, run the following command::
+Dependendo de onde vocês está instalando as dependências, basta ir até o diretório do projeto aonde está o arquivo
+requirements.txt e executar o seguinte:
 
-    $ pip install django
-
-Creating your project
-=====================
-
-To create a new Django project called '**icecream**' using
-django-twoscoops-project, run the following command::
-
-    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/master.zip --extension=py,rst,html icecream_project
-
-For Django 1.5 users, we recommend::
-
-    $ django-admin.py startproject --template=https://github.com/twoscoops/django-twoscoops-project/archive/1.5.zip --extension=py,rst,html icecream_project
-
-Installation of Dependencies
-=============================
-
-Depending on where you are installing dependencies:
-
-In development::
+Em desenvolvimento::
 
     $ pip install -r requirements/local.txt
 
-For production::
+Para produção::
 
     $ pip install -r requirements.txt
-
-*note: We install production requirements this way because many Platforms as a
-Services expect a requirements.txt file in the root of projects.*
 
 Follows Best Practices
 ======================
@@ -102,11 +78,3 @@ Follows Best Practices
 This project follows best practices as espoused in `Two Scoops of Django: Best Practices for Django 1.6`_.
 
 .. _`Two Scoops of Django: Best Practices for Django 1.6`: http://twoscoopspress.org/products/two-scoops-of-django-1-6
-
-Acknowledgements
-================
-
-- Many thanks to Randall Degges for the inspiration to write the book and django-skel.
-- All of the contributors_ to this project.
-
-.. _contributors: https://github.com/twoscoops/django-twoscoops-project/blob/master/CONTRIBUTORS.txt
