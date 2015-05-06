@@ -1178,7 +1178,7 @@ msgstr "ASOCIADA"
 
 #: templates/traducao_juramentada.html:28
 msgid "O QUE É tradução juramentada?"
-msgstr "¿QUÉ ES UNA TRADUCCIÓN JURADA?"
+msgstr "¿QUÉ ES una traducción jurada?"
 
 #: templates/traducao_juramentada.html:29
 msgid ""
@@ -1273,7 +1273,7 @@ msgstr ""
 
 #: templates/includes/clients.html:5
 msgid "Nossos Clientes"
-msgstr "NUESTROS CLIENTES"
+msgstr "Nuestros Clientes"
 
 #~ msgid ""
 #~ "Resolução Nº 02 – JUCEPE Art. 10 § 1 e 2: Será cobrado um acréscimo de 50%"
