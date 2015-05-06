@@ -25,10 +25,7 @@
     <link rel="stylesheet" href="{% static 'plugins/font-awesome/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'plugins/flexslider/flexslider.css' %}">
     <link rel="stylesheet" href="{% static 'plugins/parallax-slider/css/parallax-slider.css' %}">
-
-    <!-- Flags icons -->
-    <link rel="stylesheet" href="{% static 'plugins/flag-icon-css-master/assets/docs.css' %}">
-    <link rel="stylesheet" href="{% static 'plugins/flag-icon-css-master/css/flag-icon.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/sky-forms/version-2.0.1/css/custom-sky-forms.css' %}">
 
     <!-- CSS Theme -->    
     <link rel="stylesheet" href="{% static 'css/theme-colors/default.css' %}">
@@ -123,22 +120,25 @@
 
                         <li class="flag">
                             <a>
-                            <form action="{% url 'set_language' %}" method="post">
+                            <form class="sky-form" action="{% url 'set_language' %}" method="post">
                               {% csrf_token %}
                               <input name="next" type="hidden" value="{{ redirect_to }}" />
                               <input name="language" type="hidden" value="pt-br" />
-                              <input type="image" src="{% static 'img/icons/flags/br_24.png' %}" />
+                              <!--<input type="image" src="{% static 'img/icons/flags/br_24.png' %}" />-->
+                              <button type="submit" class="button rounded">{% trans 'Português' %}</button>
+                              <!--<input type="submit" value="{% trans 'Português' %}" />-->
                             </form>
                             </a>
                         </li>
                         <li class="flag">
                             <a>
-                            <form action="{% url 'set_language' %}" method="post">
+                            <form class="sky-form" action="{% url 'set_language' %}" method="post">
                               {% csrf_token %}
                               <input name="next" type="hidden" value="{{ redirect_to }}" />
                               <input name="language" type="hidden" value="es-ar" />
-                              <input type="image" src="{% static 'img/icons/flags/es_24.png' %}" />
-                              <!--<input type="submit" value="Espanhol" />-->
+                              <!--<input type="image" src="{% static 'img/icons/flags/es_24.png' %}" />-->
+                              <!--<input type="submit" value="{% trans 'Espanhol' %}" />-->
+                              <button type="submit" class="button rounded">{% trans 'Espanhol' %}</button>
                             </form>
                             </a>
                         </li>

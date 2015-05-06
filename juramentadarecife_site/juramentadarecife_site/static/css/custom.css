@@ -86,7 +86,16 @@ body.dark .form-control {
 }
 
 .header-v3 .navbar-default .navbar-nav > li.flag > a {
-    padding: 30px 30px 17px 20px;
+    padding: 25px 10px 17px 20px;
+}
+
+.header-v3 .navbar-default .navbar-nav > li.flag > a > form.sky-form {
+  border: none;
+}
+
+.header-v3 .navbar-default .navbar-nav > li.flag > a > form.sky-form .button {
+  margin: 0px;
+
 }
 
 body.dark .headline.no-dotts{

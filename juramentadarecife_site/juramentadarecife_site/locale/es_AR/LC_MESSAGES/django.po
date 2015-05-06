@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-04 14:40-0300\n"
+"POT-Creation-Date: 2015-05-06 10:30-0300\n"
 "PO-Revision-Date: 2015-05-03 16:12-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
@@ -22,9 +22,9 @@ msgstr ""
 msgid "Portugues"
 msgstr ""
 
-#: juramentadarecife_site/settings/base.py:264
+#: juramentadarecife_site/settings/base.py:264 templates/base.html:142
 msgid "Espanhol"
-msgstr ""
+msgstr "Español"
 
 #: templates/404.html:5 templates/404.html.py:7
 msgid "Página não encontrada"
@@ -95,22 +95,26 @@ msgstr "Preguntas Frecuentes"
 msgid "Consulados e links úteis"
 msgstr "Consulados y links útiles"
 
-#: templates/base.html:119 templates/base.html.py:199
+#: templates/base.html:119 templates/base.html.py:200
 #: templates/contato.html:15 templates/contato.html.py:18
 #: templates/contato_ok.html:15 templates/contato_ok.html.py:18
 #: templates/contato_ok.html:38
 msgid "Contato"
 msgstr "Contáctenos"
 
-#: templates/base.html:192
+#: templates/base.html:131
+msgid "Português"
+msgstr "Portugués"
+
+#: templates/base.html:193
 msgid "Dúvidas? Entre em contato por telefone ou e-mail"
 msgstr "¿Dudas? Contáctenos por teléfono o e-mail"
 
-#: templates/base.html:202
+#: templates/base.html:203
 msgid "Telefone"
 msgstr "Teléfono"
 
-#: templates/base.html:203
+#: templates/base.html:204
 msgid "Celular"
 msgstr "Celular"
 
@@ -269,7 +273,7 @@ msgstr "Cartório do Registro Civil da Boa Vista"
 msgid "Tabelionato Figueiredo – 8º Ofício de Notas do Recife"
 msgstr "Tabelionato Figueiredo – 8º Ofício de Notas do Recife"
 
-#: templates/contato.html:33
+#: templates/contato.html:32 templates/contato.html.py:33
 msgid "Precisa da Tradução Juramentada dos seus documentos?"
 msgstr "¿Precisa que sus documentos sean traducidos por un Traductor Jurado?"
 
@@ -575,6 +579,7 @@ msgid "Posso solicitar a emissão de uma segunda via da tradução juramentada?"
 msgstr "¿Y si necesito varias copias de la traducción jurada?"
 
 #: templates/faq.html:177
+#, python-format
 msgid ""
 "Sim, o cliente pode solicitar uma ou várias cópias autenticadas, junto com a "
 "tradução ou versão ou posteriormente. Os valores cobrados por este serviço "
@@ -585,9 +590,9 @@ msgid ""
 msgstr ""
 "El cliente puede solicitar una o varias copias certificadas. El importe "
 "cobrado por este servicio está contemplado en la Tarifa Oficial estipulada "
-"por la Junta Comercial de cada estado, en Pernambuco se cobra a un 20%"
-"(percent)s de los honorarios debidos por el servicio original, si se emiten "
-"simultáneamente con la traducción, y un 50%(percent)s si se solicita "
+"por la Junta Comercial de cada estado, en Pernambuco se cobra a un "
+"20%(percent)s de los honorarios debidos por el servicio original, si se "
+"emiten simultáneamente con la traducción, y un 50%(percent)s si se solicita "
 "posteriormente."
 
 #: templates/faq.html:178
@@ -603,8 +608,8 @@ msgid "OFICIAIS"
 msgstr "OFICIALES"
 
 #: templates/index.html:16
-msgid "Português <> Espanhol"
-msgstr "Portugués <> Español"
+msgid "Português < > Espanhol"
+msgstr "Portugués < > Español"
 
 #: templates/index.html:16 templates/index.html.py:17
 msgid "Espanhol – Português"
