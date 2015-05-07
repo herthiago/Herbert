@@ -101,3 +101,7 @@ body.dark .form-control {
 body.dark .headline.no-dotts{
   border-bottom: none;
 }
+
+.btn-u.btn-u-index {
+  background: #000;
+}
