@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-06 10:30-0300\n"
+"POT-Creation-Date: 2015-05-12 20:48-0300\n"
 "PO-Revision-Date: 2015-05-03 16:12-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
@@ -22,7 +22,8 @@ msgstr ""
 msgid "Portugues"
 msgstr ""
 
-#: juramentadarecife_site/settings/base.py:264 templates/base.html:142
+#: juramentadarecife_site/settings/base.py:264 templates/base.html:140
+#: templates/base.html.py:141
 msgid "Espanhol"
 msgstr "Español"
 
@@ -34,7 +35,7 @@ msgstr "La página solicitada no se encuentra disponible"
 msgid "Erro"
 msgstr "Error"
 
-#: templates/404.html:19 templates/base.html:89 templates/base.html.py:92
+#: templates/404.html:19 templates/base.html:86 templates/base.html.py:89
 #: templates/contato.html:17 templates/contato_ok.html:17
 #: templates/saiba_mais.html:18
 msgid "Início"
@@ -60,61 +61,61 @@ msgstr "Ocurrió un error en el servidor"
 msgid "Contate o administrador."
 msgstr "Entre en contacto con el administrador"
 
-#: templates/base.html:93 templates/saiba_mais.html:16
+#: templates/base.html:90 templates/saiba_mais.html:16
 #: templates/saiba_mais.html.py:19
 msgid "Saiba Mais"
 msgstr "Leer Más"
 
-#: templates/base.html:101 templates/como_solicitar.html:18
+#: templates/base.html:98 templates/como_solicitar.html:18
 #: templates/consulados.html:13 templates/faq.html:16
 #: templates/quanto_custa.html:17 templates/quanto_custa.html.py:29
 #: templates/traducao_juramentada.html:16
 msgid "Tradução Juramentada"
 msgstr "Traducción Jurada"
 
-#: templates/base.html:105 templates/traducao_juramentada.html:14
+#: templates/base.html:102 templates/traducao_juramentada.html:14
 #: templates/traducao_juramentada.html:17
 msgid "O que é"
 msgstr "Qué es"
 
-#: templates/base.html:106 templates/como_solicitar.html:16
+#: templates/base.html:103 templates/como_solicitar.html:16
 #: templates/como_solicitar.html.py:19
 msgid "Como Solicitar"
 msgstr "Cómo Solicitar"
 
-#: templates/base.html:107
+#: templates/base.html:104
 msgid "Quanto Custa"
 msgstr "Tarifas"
 
-#: templates/base.html:108 templates/faq.html:14 templates/faq.html.py:17
+#: templates/base.html:105 templates/faq.html:14 templates/faq.html.py:17
 msgid "Dúvidas Frequentes"
 msgstr "Preguntas Frecuentes"
 
-#: templates/base.html:109 templates/consulados.html:11
+#: templates/base.html:106 templates/consulados.html:11
 #: templates/consulados.html.py:14
 msgid "Consulados e links úteis"
 msgstr "Consulados y links útiles"
 
-#: templates/base.html:119 templates/base.html.py:200
+#: templates/base.html:116 templates/base.html.py:199
 #: templates/contato.html:15 templates/contato.html.py:18
 #: templates/contato_ok.html:15 templates/contato_ok.html.py:18
 #: templates/contato_ok.html:38
 msgid "Contato"
 msgstr "Contáctenos"
 
-#: templates/base.html:131
+#: templates/base.html:128 templates/base.html.py:129
 msgid "Português"
 msgstr "Portugués"
 
-#: templates/base.html:193
+#: templates/base.html:192
 msgid "Dúvidas? Entre em contato por telefone ou e-mail"
 msgstr "¿Dudas? Contáctenos por teléfono o e-mail"
 
-#: templates/base.html:203
+#: templates/base.html:202
 msgid "Telefone"
 msgstr "Teléfono"
 
-#: templates/base.html:204
+#: templates/base.html:203
 msgid "Celular"
 msgstr "Celular"
 
@@ -604,12 +605,12 @@ msgid "TRADUÇÕES"
 msgstr "TRADUCCIONES"
 
 #: templates/index.html:16
-msgid "OFICIAIS"
-msgstr "OFICIALES"
+msgid "JURAMENTADAS"
+msgstr "JURADAS"
 
 #: templates/index.html:16
-msgid "Português < > Espanhol"
-msgstr "Portugués < > Español"
+msgid "Espanhol < > Português"
+msgstr "Español < > Portugués"
 
 #: templates/index.html:16 templates/index.html.py:17
 msgid "Espanhol – Português"
@@ -623,43 +624,31 @@ msgstr "Portugués - Español"
 msgid "SOLICITE JÁ SEU ORÇAMENTO"
 msgstr "SOLICITE SU PRESUPUESTO"
 
-#: templates/index.html:19
-msgid "Solicite "
-msgstr "Cómo Solicitar"
-
-#: templates/index.html:19 templates/index.html.py:88
-msgid "aqui"
-msgstr "aquí"
-
-#: templates/index.html:19
-msgid " o seu orçamento."
-msgstr " su presupuesto"
-
-#: templates/index.html:23
+#: templates/index.html:22
 msgid "Tradução juramentada"
 msgstr "Traducción jurada"
 
-#: templates/index.html:23
+#: templates/index.html:22
 msgid "para pessoas físicas"
 msgstr "para personas físicas"
 
-#: templates/index.html:23
+#: templates/index.html:22
 msgid "e jurídicas"
 msgstr "y jurídicas"
 
-#: templates/index.html:24
+#: templates/index.html:23
 msgid "Válidas em todo o Brasil"
 msgstr "Con validez en todo el territorio brasileño "
 
-#: templates/index.html:24
+#: templates/index.html:23
 msgid "e no Exterior"
 msgstr "Y en el extranjero"
 
-#: templates/index.html:48
+#: templates/index.html:47
 msgid "Andrea Baylé - Traduções Juramentadas"
 msgstr "Andrea Baylé – Traducciones Juradas"
 
-#: templates/index.html:49
+#: templates/index.html:48
 msgid ""
 "Oferecemos serviços de tradução pública a pessoas físicas ou jurídicas, "
 "traduções oficiais válidas em todo o Brasil e no exterior, de documentos que "
@@ -674,7 +663,7 @@ msgstr ""
 "nombrada por la JUCEPE y acreditada por el MRE, con amplia experiencia y "
 "alto grado de capacitación."
 
-#: templates/index.html:50
+#: templates/index.html:49
 msgid ""
 "O atendimento personalizado, localização adequada do texto, padronização "
 "terminológica, agilidade na execução do serviço, pontualidade na entrega e "
@@ -689,15 +678,15 @@ msgstr ""
 "calidad, que dejan siempre a nuestros clientes muy satisfechos con el "
 "resultado."
 
-#: templates/index.html:53
+#: templates/index.html:52
 msgid "SAIBA MAIS"
 msgstr "LEER MÁS"
 
-#: templates/index.html:69
+#: templates/index.html:68
 msgid "O que é tradução juramentada?"
 msgstr "¿Qué es una traducción jurada?"
 
-#: templates/index.html:70
+#: templates/index.html:69
 msgid ""
 "Tradução Juramentada é um tipo especial de tradução feita por um Tradutor "
 "Público concursado e habilitado pela Junta Comercial do seu Estado, de um "
@@ -709,15 +698,15 @@ msgstr ""
 "documento oficial que precise producir efectos legales en Brasil o en el "
 "extranjero."
 
-#: templates/index.html:70 templates/index.html.py:79
+#: templates/index.html:69 templates/index.html.py:78
 msgid "Saiba mais"
 msgstr "Leer Más"
 
-#: templates/index.html:78
+#: templates/index.html:77
 msgid "Quanto custa uma tradução juramentada?"
 msgstr "¿Qué tarifas se aplican?"
 
-#: templates/index.html:79
+#: templates/index.html:78
 msgid ""
 "O custo da tradução juramentada é calculado com base na Tabela de "
 "Emolumentos oficial, homologada pela Junta Comercial de Pernambuco e "
@@ -729,11 +718,11 @@ msgstr ""
 "que debe ser observado por todos los traductores públicos, bajo pena de ley "
 "e invalidación de la traducción."
 
-#: templates/index.html:87
+#: templates/index.html:86
 msgid "Como solicitar uma tradução juramentada?"
 msgstr "¿Cómo solicitar una traducción jurada?"
 
-#: templates/index.html:88
+#: templates/index.html:87
 msgid ""
 "Entre em contato com a Tradutora Pública Andrea Baylé e peça um orçamento. "
 "Receberá prontamente uma resposta com a nossa proposta detalhada. Clique "
@@ -742,104 +731,108 @@ msgstr ""
 "presupuesto, le haremos llegar de inmediato nuestra propuesta de trabajo. "
 "Pulse "
 
-#: templates/index.html:123
+#: templates/index.html:87
+msgid "aqui"
+msgstr "aquí"
+
+#: templates/index.html:122
 msgid "Nossos Serviços"
 msgstr "Nuestros Servicios"
 
-#: templates/index.html:134
+#: templates/index.html:133
 msgid "EMPRESAS"
 msgstr "EMPRESAS"
 
-#: templates/index.html:136
+#: templates/index.html:135
 msgid "CONTRATOS"
 msgstr "ESTATUTOS SOCIETARIOS"
 
-#: templates/index.html:137
+#: templates/index.html:136
 msgid "ESCRITURAS DE CONSTITUIÇÃO"
 msgstr "ESCRITURAS DE CONSTITUCIÓN"
 
-#: templates/index.html:138
+#: templates/index.html:137
 msgid "PROCURAÇÕES"
 msgstr "PODERES"
 
-#: templates/index.html:139
+#: templates/index.html:138
 msgid "BALANÇOS"
 msgstr "ESTADOS CONTABLES"
 
-#: templates/index.html:140
+#: templates/index.html:139
 msgid "LICITAÇÕES PÚBLICAS"
 msgstr "LICITACIONES PÚBLICAS"
 
-#: templates/index.html:141
+#: templates/index.html:140
 msgid "Etc."
 msgstr "Etc."
 
-#: templates/index.html:155
+#: templates/index.html:154
 msgid "CASAMENTOS"
 msgstr "MATRIMONIOS"
 
-#: templates/index.html:157
+#: templates/index.html:156
 msgid "CERTIDÃO DE CASAMENTO"
 msgstr "CERTIFICADO DE MATRIMONIO"
 
-#: templates/index.html:158
+#: templates/index.html:157
 msgid "SENTENÇA JUDICIAL (DIVÓRCIO, SEPARAÇÃO)"
 msgstr "SENTENCIA JUDICIAL (DIVORCIO, SEPARACIÓN)"
 
-#: templates/index.html:159
+#: templates/index.html:158
 msgid "DECLARAÇÃO DE ESTADO CIVIL"
 msgstr "FE DE VIDA Y ESTADO"
 
-#: templates/index.html:160
+#: templates/index.html:159
 msgid "ANTECEDENTES PENAIS"
 msgstr "ANTECEDENTES PENALES"
 
-#: templates/index.html:161 templates/index.html.py:181
-#: templates/index.html:202
+#: templates/index.html:160 templates/index.html.py:180
+#: templates/index.html:201
 msgid "Etc..."
 msgstr "Etc..."
 
-#: templates/index.html:175
+#: templates/index.html:174
 msgid "ESTUDOS INTERNACIONAIS"
 msgstr "ESTUDIOS INTERNACIONALES"
 
-#: templates/index.html:177
+#: templates/index.html:176
 msgid "HISTÓRICOS ESCOLARES"
 msgstr "CERTIFICADO ACADÉMICO"
 
-#: templates/index.html:178
+#: templates/index.html:177
 msgid "DIPLOMA UNIVERSITÁRIO"
 msgstr "TÍTULO UNIVERSITARIO"
 
-#: templates/index.html:179
+#: templates/index.html:178
 msgid "DECLARAÇÕES"
 msgstr "CONSTANCIAS"
 
-#: templates/index.html:180
+#: templates/index.html:179
 msgid "HOMOLOGAÇÃO DE ESTUDOS"
 msgstr "HOMOLOGACIÓN DE ESTUDIOS"
 
-#: templates/index.html:195
+#: templates/index.html:194
 msgid "DOCUMENTAÇÃO PESSOAL"
 msgstr "DOCUMENTACIÓN PERSONAL"
 
-#: templates/index.html:197
+#: templates/index.html:196
 msgid "CARTEIRA DE IDENTIDADE"
 msgstr "DOCUMENTO DE IDENTIDAD"
 
-#: templates/index.html:198
+#: templates/index.html:197
 msgid "CARTEIRA DE MOTORISTA"
 msgstr "LICENCIA DE CONDUCIR"
 
-#: templates/index.html:199
+#: templates/index.html:198
 msgid "PASSAPORTE"
 msgstr "PASAPORTE"
 
-#: templates/index.html:200
+#: templates/index.html:199
 msgid "CARTEIRA DE IDENTIDADE PROFISSIONAL"
 msgstr "CARNÉ PROFESIONAL"
 
-#: templates/index.html:201
+#: templates/index.html:200
 msgid "CERTIDÃO DE NASCIMENTO"
 msgstr "CERTIFICADO DE NACIMIENTO"
 
@@ -1279,6 +1272,18 @@ msgstr ""
 #: templates/includes/clients.html:5
 msgid "Nossos Clientes"
 msgstr "Nuestros Clientes"
+
+#~ msgid "OFICIAIS"
+#~ msgstr "OFICIALES"
+
+#~ msgid "Português < > Espanhol"
+#~ msgstr "Portugués < > Español"
+
+#~ msgid "Solicite "
+#~ msgstr "Cómo Solicitar"
+
+#~ msgid " o seu orçamento."
+#~ msgstr " su presupuesto"
 
 #~ msgid ""
 #~ "Resolução Nº 02 – JUCEPE Art. 10 § 1 e 2: Será cobrado um acréscimo de 50%"
