@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-05-12 20:48-0300\n"
+"POT-Creation-Date: 2015-05-13 21:48-0300\n"
 "PO-Revision-Date: 2015-05-03 16:12-0300\n"
 "Last-Translator: Anderson <andersonberg@gmail.com>\n"
 "Language-Team: \n"
@@ -22,8 +22,8 @@ msgstr ""
 msgid "Portugues"
 msgstr ""
 
-#: juramentadarecife_site/settings/base.py:264 templates/base.html:140
-#: templates/base.html.py:141
+#: juramentadarecife_site/settings/base.py:264 templates/base.html:150
+#: templates/base.html.py:151
 msgid "Espanhol"
 msgstr "Español"
 
@@ -35,7 +35,7 @@ msgstr "La página solicitada no se encuentra disponible"
 msgid "Erro"
 msgstr "Error"
 
-#: templates/404.html:19 templates/base.html:86 templates/base.html.py:89
+#: templates/404.html:19 templates/base.html:96 templates/base.html.py:99
 #: templates/contato.html:17 templates/contato_ok.html:17
 #: templates/saiba_mais.html:18
 msgid "Início"
@@ -61,61 +61,61 @@ msgstr "Ocurrió un error en el servidor"
 msgid "Contate o administrador."
 msgstr "Entre en contacto con el administrador"
 
-#: templates/base.html:90 templates/saiba_mais.html:16
+#: templates/base.html:100 templates/saiba_mais.html:16
 #: templates/saiba_mais.html.py:19
 msgid "Saiba Mais"
 msgstr "Leer Más"
 
-#: templates/base.html:98 templates/como_solicitar.html:18
+#: templates/base.html:108 templates/como_solicitar.html:18
 #: templates/consulados.html:13 templates/faq.html:16
 #: templates/quanto_custa.html:17 templates/quanto_custa.html.py:29
 #: templates/traducao_juramentada.html:16
 msgid "Tradução Juramentada"
 msgstr "Traducción Jurada"
 
-#: templates/base.html:102 templates/traducao_juramentada.html:14
+#: templates/base.html:112 templates/traducao_juramentada.html:14
 #: templates/traducao_juramentada.html:17
 msgid "O que é"
 msgstr "Qué es"
 
-#: templates/base.html:103 templates/como_solicitar.html:16
+#: templates/base.html:113 templates/como_solicitar.html:16
 #: templates/como_solicitar.html.py:19
 msgid "Como Solicitar"
 msgstr "Cómo Solicitar"
 
-#: templates/base.html:104
+#: templates/base.html:114
 msgid "Quanto Custa"
 msgstr "Tarifas"
 
-#: templates/base.html:105 templates/faq.html:14 templates/faq.html.py:17
+#: templates/base.html:115 templates/faq.html:14 templates/faq.html.py:17
 msgid "Dúvidas Frequentes"
 msgstr "Preguntas Frecuentes"
 
-#: templates/base.html:106 templates/consulados.html:11
+#: templates/base.html:116 templates/consulados.html:11
 #: templates/consulados.html.py:14
 msgid "Consulados e links úteis"
 msgstr "Consulados y links útiles"
 
-#: templates/base.html:116 templates/base.html.py:199
+#: templates/base.html:126 templates/base.html.py:209
 #: templates/contato.html:15 templates/contato.html.py:18
 #: templates/contato_ok.html:15 templates/contato_ok.html.py:18
 #: templates/contato_ok.html:38
 msgid "Contato"
 msgstr "Contáctenos"
 
-#: templates/base.html:128 templates/base.html.py:129
+#: templates/base.html:138 templates/base.html.py:139
 msgid "Português"
 msgstr "Portugués"
 
-#: templates/base.html:192
+#: templates/base.html:202
 msgid "Dúvidas? Entre em contato por telefone ou e-mail"
 msgstr "¿Dudas? Contáctenos por teléfono o e-mail"
 
-#: templates/base.html:202
+#: templates/base.html:212
 msgid "Telefone"
 msgstr "Teléfono"
 
-#: templates/base.html:203
+#: templates/base.html:213
 msgid "Celular"
 msgstr "Celular"
 
@@ -625,8 +625,8 @@ msgid "SOLICITE JÁ SEU ORÇAMENTO"
 msgstr "SOLICITE SU PRESUPUESTO"
 
 #: templates/index.html:22
-msgid "Tradução juramentada"
-msgstr "Traducción jurada"
+msgid "TRADUÇÕES OFICIAIS"
+msgstr "TRADUCCIONES OFICIALES"
 
 #: templates/index.html:22
 msgid "para pessoas físicas"
@@ -1272,6 +1272,9 @@ msgstr ""
 #: templates/includes/clients.html:5
 msgid "Nossos Clientes"
 msgstr "Nuestros Clientes"
+
+#~ msgid "Tradução juramentada"
+#~ msgstr "Traducción jurada"
 
 #~ msgid "OFICIAIS"
 #~ msgstr "OFICIALES"

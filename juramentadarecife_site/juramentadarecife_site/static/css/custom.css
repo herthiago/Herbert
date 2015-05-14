@@ -73,6 +73,10 @@ body.dark h3.contato{
     color: #FFFFFF;
 }
 
+.da-slide .da-img {
+  top: 50px;
+}
+
 .first-slide p i {
     background: none;
 }
