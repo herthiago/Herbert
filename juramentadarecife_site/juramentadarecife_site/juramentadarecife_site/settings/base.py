@@ -224,18 +224,38 @@ LOGGING = {
         }
     },
     'handlers': {
-        'file': {
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+            'formatter': 'default',
+        },
+        'mail_admins': {
             'level': 'ERROR',
-            'filename': '/home/django/logs/django_error.log',
-            'class': 'loggin.FileHandler'
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler',
         }
     },
     'loggers': {
+        # Silence SuspiciousOperation.DisallowedHost exception ('Invalid
+        # HTTP_HOST' header messages). Set the handler to 'null' so we don't
+        # get those annoying emails.
+        'django.security.DisallowedHost': {
+            'handlers': ['null'],
+            'propagate': False,
+        },
         'django.request': {
-            'handlers': ['file'],
+            'handlers': ['mail_admins'],
             'level': 'ERROR',
             'propagate': True,
         },
+        '': {
+            'handlers': ['console', ],
+            'level': 'INFO',
+        }
     }
 }
 ########## END LOGGING CONFIGURATION
