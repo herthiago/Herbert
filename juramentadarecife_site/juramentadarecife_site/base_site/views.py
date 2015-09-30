@@ -103,7 +103,7 @@ def como_solicitar(request):
 
             doc_fullpath = docpath + docfile.name
             doc_fullpath = doc_fullpath.encode('utf-8')
-            email.attach_file(doc_fullpath)
+            email.attach_file(doc_fullpath.decode('utf-8'))
             email.send(fail_silently=False)
 
             return HttpResponseRedirect(reverse("contato_ok"))
