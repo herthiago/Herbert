@@ -118,6 +118,7 @@ def como_solicitar(request):
 
 def save_document(docfile, docpath):
     doc_fullpath = docpath + docfile.name
+    doc_fullpath = doc_fullpath.encode('utf-8')
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
             documento.write(chunk)
