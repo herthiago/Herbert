@@ -101,7 +101,9 @@ def como_solicitar(request):
                                  settings.DEFAULT_FROM_EMAIL,
                                  [settings.DEFAULT_TO_EMAIL])
 
-            email.attach_file(docpath+docfile.name)
+            doc_fullpath = docpath + docfile.name
+            doc_fullpath = doc_fullpath.encode('utf-8')
+            email.attach_file(doc_fullpath)
             email.send(fail_silently=False)
 
             return HttpResponseRedirect(reverse("contato_ok"))
