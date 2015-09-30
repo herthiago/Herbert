@@ -119,7 +119,7 @@ def como_solicitar(request):
 
 def save_document(docfile, docpath):
     from unicodedata import normalize
-    nome = normalize('NFKD', os.path.basename(docfile.name)).encode('ASCII', 'ignore')
+    nome = normalize('NFKD', docfile.name).encode('utf-8')
     doc_fullpath = docpath + str(nome.decode())
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
