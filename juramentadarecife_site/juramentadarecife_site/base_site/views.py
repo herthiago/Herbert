@@ -94,16 +94,15 @@ def como_solicitar(request):
             docpath = settings.SITE_ROOT + "/documentos/"
 
             # salva o documento no diretório especificado
-            save_document(docfile, docpath)
+            doc_fullpath = save_document(docfile, docpath)
 
             email = EmailMessage("Email: %s" % email_str,
                                  "Mensagem:\n%s" % mensagem,
                                  settings.DEFAULT_FROM_EMAIL,
                                  [settings.DEFAULT_TO_EMAIL])
 
-            doc_fullpath = docpath + docfile.name
-            doc_fullpath = doc_fullpath.encode('utf-8')
-            email.attach_file(doc_fullpath.decode('utf-8'))
+            email.encoding = "utf-8"
+            email.attach_file(doc_fullpath)
             email.send(fail_silently=False)
 
             return HttpResponseRedirect(reverse("contato_ok"))
@@ -119,8 +118,12 @@ def como_solicitar(request):
 
 
 def save_document(docfile, docpath):
-    doc_fullpath = docpath + docfile.name
+    from unicodedata import normalize
+    nome = normalize('NFKD', str(docfile)).encode('ASCII', 'ignore')
+    doc_fullpath = docpath + str(nome)
     doc_fullpath = doc_fullpath.encode('utf-8')
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
             documento.write(chunk)
+
+    return doc_fullpath
