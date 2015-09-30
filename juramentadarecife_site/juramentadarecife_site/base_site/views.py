@@ -101,7 +101,6 @@ def como_solicitar(request):
                                  settings.DEFAULT_FROM_EMAIL,
                                  [settings.DEFAULT_TO_EMAIL])
 
-            email.encoding = "utf-8"
             email.attach_file(doc_fullpath)
             email.send(fail_silently=False)
 
@@ -120,8 +119,7 @@ def como_solicitar(request):
 def save_document(docfile, docpath):
     from unicodedata import normalize
     nome = normalize('NFKD', str(docfile)).encode('ASCII', 'ignore')
-    doc_fullpath = docpath + str(nome)
-    doc_fullpath = doc_fullpath.encode('utf-8')
+    doc_fullpath = docpath + str(nome.decode())
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
             documento.write(chunk)
