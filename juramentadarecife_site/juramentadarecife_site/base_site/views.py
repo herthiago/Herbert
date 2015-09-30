@@ -96,6 +96,7 @@ def como_solicitar(request):
 
             # salva o documento no diretório especificado
             doc_fullpath = save_document(docfile, docpath)
+            import pdb;pdb.set_trace()
 
             email = EmailMessage("Email: %s" % email_str,
                                  "Mensagem:\n%s" % mensagem,
@@ -118,9 +119,9 @@ def como_solicitar(request):
 
 
 def save_document(docfile, docpath):
-    from unicodedata import normalize
-    nome = normalize('NFKD', docfile.name).encode('utf-8')
-    doc_fullpath = docpath + str(nome.decode())
+    # from unicodedata import normalize
+    # nome = normalize('NFKD', docfile.name).encode('ASCII', 'ignore')
+    doc_fullpath = docpath + str(docfile.name.encode('utf-8'))
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
             documento.write(chunk)
