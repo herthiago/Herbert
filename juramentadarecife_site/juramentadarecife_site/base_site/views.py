@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+import os
 from django.shortcuts import render_to_response
 from django.core.mail import send_mail, EmailMessage
 from django.template import RequestContext
@@ -118,7 +119,7 @@ def como_solicitar(request):
 
 def save_document(docfile, docpath):
     from unicodedata import normalize
-    nome = normalize('NFKD', str(docfile)).encode('ASCII', 'ignore')
+    nome = normalize('NFKD', os.path.basename(docfile.name)).encode('ASCII', 'ignore')
     doc_fullpath = docpath + str(nome.decode())
     with open(doc_fullpath, 'wb+') as documento:
         for chunk in docfile.chunks():
